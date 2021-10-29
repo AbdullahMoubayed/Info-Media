@@ -1,1 +1,35 @@
 @import 'root.css';
+
+img{
+    width: 15rem;
+}
+
+.menu-btn{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-top: 10rem;
+}
+
+.menu-btn_burger{
+    width: 2rem;
+    height: .15rem;
+    background-color: black;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: .15rem;
+    background-color: black;
+    transition: all .5s ease-in-out;
+    transform: translateY(-1rem);
+}
+
+.open{
+    display: flex;
+}

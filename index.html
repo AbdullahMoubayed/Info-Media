@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Authors" content="Abdullah & David">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/vue@3.0.0"></script>
-    <title>Info-Media Website</title>
-</head>
-<body>
-    <header id="start">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Authors" content="Abdullah & David">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/vue@3.0.0"></script>
+        <title>Info-Media Website</title>
+    </head>
+    <body>
+        <div id="app">
+        <header id="start">
         <nav>
-            <ul>
-                <a href="#start"><img src="assets/img/infomedia.svg" alt="Info-Media"></a>
-                <i class="menu"></i>
+            <a href="#start"><img src="assets/img/infomedia.svg" alt="Info-Media"></a>
+            <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
+                <div class="menu-btn_burger"></div>
+            </i>
+            <ul v-if='isOpen'>
+                <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+                    <div class="menu-btn_burger"></div>
+                </i>
                 <li><a href="#om">Om Info-media</a></li>
                 <li><a href="#gor">Vad vi gör</a></li>
                 <li><a href="#varfor">Varför Info-Media</a></li>
@@ -51,88 +57,87 @@
         <input class="btn" type="button" value="Läs mer">
         
 
-        <div id="app">
             <div class="språk-grid-container" v-for="item in språk">
                 <div class="språk-item">
                     <div class="språk"><img :src="item.url" alt=""></div>
                     <p>{{ item.title }}</p>
                 </div>
             </div>    
-        </div>
+            
+            
+        </section>
         
-
-    </section>
-
-    <section>
-        <h1>Varför Info-Media?</h1>
-        <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom datorteknik är väldigt efterfrågat i samhället.</p>
-        <input class="btn" type="button" value="Läs mer">
-        <img src="assets/img/blabla.png" alt="Blender example">
-        <img src="assets/img/codak.jpg" alt=""> <!--"Multipicture part1" -->
-        <!-- <img src="assets/" alt=""> <!--"Multipicture part2" -->
-
-    </section>
-
-    <section>
-        <h1>Kursstruktur</h1>
-        <p>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
-        <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
-        <input class="btn" type="button" value="Studieplan">
-    </section>
-
-    <section>
-        <h2>Ord från tidigare elever</h2>
-        <h1>hello</h1>
+        <section>
+            <h1>Varför Info-Media?</h1>
+            <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom datorteknik är väldigt efterfrågat i samhället.</p>
+            <input class="btn" type="button" value="Läs mer">
+            <img src="assets/img/blabla.png" alt="Blender example">
+            <img src="assets/img/codak.jpg" alt=""> <!--"Multipicture part1" -->
+            <!-- <img src="assets/" alt=""> <!--"Multipicture part2" -->
+            
+        </section>
+        
+        <section>
+            <h1>Kursstruktur</h1>
+            <p>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
+            <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
+            <input class="btn" type="button" value="Studieplan">
+        </section>
+        
+        <section>
+            <h2>Ord från tidigare elever</h2>
+            <h1>hello</h1>
             <div>
                 <img src="assets/img/elev-Lucas-Wass.jpg" alt=""> <!--Insert picture on first student -->
                 <p>"Skolan har fantastiska och engagerade lärare som har hjälpt mig att utvecklas och skapa ett djupare intresse inom matematik, fysik, CAD, bildredigering och programmering; ämnen jag använder mig av varje dag som apputvecklare."</p>
                 <p>Lukas Wass</p>
                 <p>Apputvecklare på byBrick Elevate</p>        
             </div>
-
-        <div>
-            <img src="assets/img/elev-Emil-Ivarsson.jpg" alt=""> <!--Insert picture on first student -->
-            <p>"Det absolut viktigaste med att gå på teknik är att du får med dig massor av kunskap för framtiden och får viktiga kurser för att kunna ha många valmöjligheter att välja den universitetsutbildning du vill gå i framtiden."</p>
-            <p>Emil Ivarsson</p>
-            <p>Studerar vid Polishögskolan i Stockholm</p>
-        </div>
-    </section>
-
-    <section>
-        <h1>Kontakt</h1>
-            <!-- Etta och tvåa -->
-        <form method="post">
-            <label for="namn">Förnamn</label>
-                <input type="text">
-            <label for="">Efternamn</label>
-                <input type="text">
-            <label for="namn">E-mail</label>
-                <input type="text">
-            <input type="submit" value="">
             
-
-
-        </form>
-    </section>
-    <footer>
-        <a href="#start">
-            <p>vacker pil</p><a/> <!--Replace with arrows-->
-        <img src="assets/img/infomedia.svg" alt="Allé Info-Media">
-        <h3>Kontakt</h3>
-        <p>0582-35 500</p>
-        <p>alleskolan@alleskolan.eu</p>
-        <h3>Besöksadress</h3>
-        <p>Södra Allén 14, Hallsberg</p>
-        <a href="https://sv-se.facebook.com/alleskolanhallsberg/" class="fb">
-            <img src="assets/icon/facebook-outline.svg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
-            <img src="assets/icon/instagram.svg" alt="Instagram"></a>
-
-        <p class="anka">We ❤️ <img src="assets/img/ankan.jpg" alt="Fantastisk anka"></p>
-        <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
-        <p class="author">Coded with ❤️ by David & Abdullah</p>
-
-    </footer>
-    <script src="js/app.js"></script>
-</body>
-</html>
+            <div>
+                <img src="assets/img/elev-Emil-Ivarsson.jpg" alt=""> <!--Insert picture on first student -->
+                <p>"Det absolut viktigaste med att gå på teknik är att du får med dig massor av kunskap för framtiden och får viktiga kurser för att kunna ha många valmöjligheter att välja den universitetsutbildning du vill gå i framtiden."</p>
+                <p>Emil Ivarsson</p>
+                <p>Studerar vid Polishögskolan i Stockholm</p>
+            </div>
+        </section>
+        
+        <section>
+            <h1>Kontakt</h1>
+            <!-- Etta och tvåa -->
+            <form method="post">
+                <label for="namn">Förnamn</label>
+                <input type="text">
+                <label for="">Efternamn</label>
+                <input type="text">
+                <label for="namn">E-mail</label>
+                <input type="text">
+                <input type="submit" value="">
+                
+                
+                
+            </form>
+        </section>
+        <footer>
+            <a href="#start">
+                <p>hej</p><a/> <!--Replace with arrows-->
+                <img src="assets/img/infomedia.svg" alt="Allé Info-Media">
+                <h3>Kontakt</h3>
+                <p>0582-35 500</p>
+                <p>alleskolan@alleskolan.eu</p>
+                <h3>Besöksadress</h3>
+                <p>Södra Allén 14, Hallsberg</p>
+                <a href="https://sv-se.facebook.com/alleskolanhallsberg/" class="fb">
+                    <img src="assets/icon/facebook-outline.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
+                        <img src="assets/icon/instagram.svg" alt="Instagram"></a>
+                        
+                        <p class="anka">We ❤️ <img src="assets/img/ankan.jpg" alt="Fantastisk anka"></p>
+                        <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
+                        <p class="author">Coded with ❤️ by David & Abdullah</p>
+                        
+                    </footer>
+                    <script src="js/app.js"></script>
+                </div>
+                </body>
+                </html>
