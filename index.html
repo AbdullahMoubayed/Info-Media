@@ -11,28 +11,34 @@
     </head>
     <body>
         <div id="app">
-        <header id="start">
-        <nav>
-            <a href="#start"><img src="assets/img/infomedia.svg" alt="Info-Media"></a>
-            <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
-                <div class="menu-btn_burger"></div>
-            </i>
-            <ul v-if='isOpen'>
-                <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+            <header id="start">
+            <nav>
+                <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
+                <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
+                    <div class="menu-btn_burger"></div>
                     <div class="menu-btn_burger"></div>
                 </i>
-                <li><a href="#om">Om Info-media</a></li>
-                <li><a href="#gor">Vad vi gör</a></li>
-                <li><a href="#varfor">Varför Info-Media</a></li>
-                <li><a href="#struktur">Kursstruktur</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+                <ul v-if='isOpen'>
+                    <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger"></div>
+                        <div class="menu-btn_burger"></div>
+                    </i>
+                    <li><a href="#om">Om Info-media</a></li>
+                    <li><a href="#gor">Vad vi gör</a></li>
+                    <li><a href="#varfor">Varför Info-Media</a></li>
+                    <li><a href="#struktur">Kursstruktur</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <section id="hero">
-        <input class="btn" type="button" value="Öppet hus">
-        <input class="btn" type="button" value="Studieplan">
+        <h1>Info-Media</h1>
+        <p>Gör dina digitala idéer verkliga</p>
+        <div class="btns">
+            <button class="btn white_t" type="button">Öppet hus</button>
+            <input class="btn purple_t" type="button" value="Studieplan">
+        </div>
         <img src="assets/img/hero.png" alt="Computah">
         <h1 class="framtid">Framtid</h1>
     </section>
@@ -113,9 +119,6 @@
                 <label for="namn">E-mail</label>
                 <input type="text">
                 <input type="submit" value="">
-                
-                
-                
             </form>
         </section>
         <footer>
