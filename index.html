@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Authors" content="Abdullah & David">
         <link rel="stylesheet" href="css/style.css">
+        <!--Some JS-script for great stuff-->
         <script src="https://unpkg.com/vue@3.0.0"></script>
         <title>Info-Media Website</title>
     </head>
@@ -16,7 +17,7 @@
             <!-- The start of the header -->
             <header id="start">
             <nav>
-                <!-- Tow icons for closing and opening the menu -->
+                <!-- Two icons for closing and opening the menu -->
                 <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
                 <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
                     <div class="menu-btn_burger"></div>
@@ -48,10 +49,10 @@
         <h1 class="framtid">Framtid</h1>
     </section>
 
-    <!-- The contacting floated circel -->
+    <!-- The contacting floated circle -->
     <button class="contact">CN</button>
     
-    <!-- Om sektionen -->
+    <!-- "Om"-sektionen -->
     <section id="om">
         <h1>Om Info-Media</h1>
         <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
@@ -62,7 +63,7 @@
         <img src="assets/img/VR.jpg" alt="vr nerd">
     </section>
     
-    <!-- Vad vi gör sektionen -->
+    <!-- "Vad vi gör"-sektionen -->
     <section>
         <h1>Vad vi gör</h1>
 
@@ -71,7 +72,7 @@
         <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
         <input class="btn" type="button" value="Läs mer">
         
-        <!-- The grid of the laungrages that we are going to learn -->
+        <!-- The grid of the languages that we are going to learn -->
             <div class="språk-grid-container" v-for="item in språk">
                 <div class="språk-item">
                     <div class="språk"><img :src="item.url" alt=""></div>
@@ -81,7 +82,7 @@
             
         </section>
         
-        <!-- Varför Info-Media sektionen -->
+        <!-- "Varför Info-Media"-sektionen -->
         <section>
             <h1>Varför Info-Media?</h1>
             <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom datorteknik är väldigt efterfrågat i samhället.</p>
@@ -91,7 +92,7 @@
             <!-- <img src="assets/" alt=""> <!--"Multipicture part2" -->
         </section>
         
-        <!-- Kursstruktur sektionen -->
+        <!-- Kursstruktur-sektionen -->
         <section>
             <h1>Kursstruktur</h1>
             <p>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
@@ -99,7 +100,7 @@
             <input class="btn" type="button" value="Studieplan">
         </section>
         
-        <!-- Ord från tidigare elever sektionen -->
+        <!-- "Ord från tidigare elever"-sektionen -->
         <section>
             <h2>Ord från tidigare elever</h2>
             <h1>hello</h1>
@@ -118,7 +119,7 @@
             </div>
         </section>
         
-        <!-- kontakt sektionen -->
+        <!-- Kontakt-sektionen -->
         <section>
             <h1>Kontakt</h1>
             <!-- Etta och tvåa -->
@@ -133,7 +134,7 @@
             </form>
         </section>
 
-        <!-- The footer sectionen -->
+        <!-- The footer-section -->
         <footer>
             <a href="#start">
                 <p>hej</p><a/> <!--Replace with arrows-->
@@ -148,12 +149,14 @@
                     <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
                         <img src="assets/icon/instagram.svg" alt="Instagram"></a>
                         
+                        <!--Most important area of the whole website-->
                         <p class="anka">We ❤️ <img src="assets/img/ankan.jpg" alt="Fantastisk anka"></p>
                         <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
                         <p class="author">Coded with ❤️ by David & Abdullah</p>
                         
         </footer>
         </div>
+        <!--Linking/fetching JS-script for some great functions-->
         <script src="js/app.js"></script>
     </body>
 </html>

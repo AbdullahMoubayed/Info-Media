@@ -1,9 +1,11 @@
+/*Importing some "basic rules" for the design*/
 @import 'root.css';
 
 header{
     background-color: var(--purple-l);
 }
 
+/*Order of the nav-items*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@ nav {
     width: 9rem;
 }
 
-/* Menu functionaity */
+/* Menu functionality */
 .menu-btn{
     height: 1rem;
     cursor: pointer;
