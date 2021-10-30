@@ -47,6 +47,8 @@ nav {
     display: flex;
 }
 
+/* Hero section */
+
 #hero{
     display: flex;
     flex-direction: column;
@@ -71,25 +73,6 @@ h1{
 .btns{
     text-align: center;
     margin-top: 1rem;
-}
-
-.btn{
-    border-radius: 5.9375rem;
-    padding: 1rem 2rem;
-    border: none;
-    font-size: 1.1rem
-}
-
-.purple_t{
-    color: #fff; 
-    background: var(--purple);
-    margin-left: .5rem;
-}
-
-.white_t{
-    margin-right: .5rem;
-    background: #fff;
-    color: var(--purple);
 }
 
 #hero img{
