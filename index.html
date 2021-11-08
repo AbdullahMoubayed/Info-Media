@@ -10,75 +10,73 @@
         <script src="https://unpkg.com/vue@3.0.0"></script>
         <title>Info-Media Website</title>
     </head>
-    <body>
-        <!-- #app för att vi använder Vu.ja -->
-        <div id="app">
-            
-            <header id="start">
-                <nav>
-                    <!-- Two icons for closing and opening the menu -->
-                    <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
-                    <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
+    <!-- #app för att vi använder Vu.ja -->   
+    <body id="app">
+        <header id="start">
+            <nav>
+                <!-- Two icons for closing and opening the menu -->
+                <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
+                <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
+                    <div class="menu-btn_burger"></div>
+                    <div class="menu-btn_burger"></div>
+                </i>
+                    <!-- The menu itself  -->
+                <ul v-if='isOpen'>
+                    <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
                         <div class="menu-btn_burger"></div>
                         <div class="menu-btn_burger"></div>
                     </i>
-                     <!-- The menu itself  -->
-                    <ul v-if='isOpen'>
-                        <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
-                            <div class="menu-btn_burger"></div>
-                            <div class="menu-btn_burger"></div>
-                        </i>
-                        <li><a href="#om">Om Info-media</a></li>
-                        <li><a href="#gor">Vad vi gör</a></li>
-                        <li><a href="#varfor">Varför Info-Media</a></li>
-                        <li><a href="#struktur">Kursstruktur</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </header>
+                    <li><a href="#om">Om Info-media</a></li>
+                    <li><a href="#gor">Vad vi gör</a></li>
+                    <li><a href="#varfor">Varför Info-Media</a></li>
+                    <li><a href="#struktur">Kursstruktur</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
                 
             </div>
         <!-- The hero section -->
-    <section id="hero">
-        <h1>Info-Media</h1>
-        <p>Gör dina digitala idéer verkliga</p>
-        <div class="btns">
-            <button class="btn white_t" type="button">Öppet hus</button>
-            <input class="btn purple_t" type="button" value="Studieplan">
-        </div>
-        <img src="assets/img/hero.png" alt="Computah">
-        <h1 class="framtid">Framtid</h1>
-    </section>
+        <section id="hero">
+            <h1>Info-Media</h1>
+            <p>Gör dina digitala idéer verkliga</p>
+            <div class="btns">
+                <button class="btn white_t" type="button">Öppet hus</button>
+                <input class="btn purple_t" type="button" value="Studieplan">
+            </div>
+            <img src="assets/img/hero.png" alt="Computah">
+            <h1 class="framtid">Framtid</h1>
+        </section>
 
-    <!-- The contacting floated circle -->
-    <button class="contact">CN</button>
-    
-    <!-- "Om"-sektionen -->
-    <section id="om">
-        <h1>Om Info-Media</h1>
-        <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
-
-        <div class="om-btns">
-            <input class="btn" type="button" value="Läs mer">
-            <input class="btn" type="button" value="Elev för en dag">
-        </div>
-        <img id="pic1" src="assets/img/code.jpg" alt="computar nerd">
-        <img  id="pic2" src="assets/img/VR.jpg" alt="vr nerd">
-    </section>
-    
-    <!-- "Vad vi gör"-sektionen -->
-    <section id="gor">
-        <h1>Vad vi gör</h1>
-
-        <p>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
-        <p>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
-        <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
-        <input class="btn" type="button" value="Läs mer">
+        <!-- The contacting floated circle -->
+        <button class="contact">CN</button>
         
+        <!-- "Om"-sektionen -->
+        <section id="om">
+            <h1>Om <br> Info-Media</h1>
+            <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
+
+            <div class="om-btns">
+                <input class="btn purple_t" type="button" value="Läs mer">
+                <input class="btn purple_t" type="button" value="Elev för en dag">
+            </div>
+            <img id="pic1" src="assets/img/code.jpg" alt="computar nerd">
+            <img  id="pic2" src="assets/img/VR.jpg" alt="vr nerd">
+        </section>
+        
+        <!-- "Vad vi gör"-sektionen -->
+        <section id="gor">
+            <h1>Vad vi gör</h1>
+
+            <p>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
+            <p>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
+            <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
+            <input class="btn" type="button" value="Läs mer">
+            
         <!-- The grid of the languages that we are going to learn -->
-            <div class="språk-grid-container" v-for="item in språk">
-                <div class="språk-item">
-                    <div class="språk"><img :src="item.url" alt=""></div>
+            <div class="språk-grid-container">
+                <div class="språk-item" v-for="item in språk">
+                    <img :src="item.url" alt="språk">
                     <p>{{ item.title }}</p>
                 </div>
             </div>    
@@ -86,12 +84,12 @@
         </section>
         
         <!-- "Varför Info-Media"-sektionen -->
-        <section>
-            <h1>Varför Info-Media?</h1>
+        <section id="varfor">
+            <h1>Varför <br> Info-Media?</h1>
             <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom datorteknik är väldigt efterfrågat i samhället.</p>
-            <input class="btn" type="button" value="Läs mer">
-            <img src="assets/img/blabla.png" alt="Blender example">
-            <img src="assets/img/codak.jpg" alt=""> <!--"Multipicture part1" -->
+            <div id="v-div"><input class="btn purple_t" type="button" value="Läs mer"></div>
+            <div class='v-wrapper'><img id="v-img-1" src="assets/img/blalba.png" alt="Blender example"></div>
+            <div class='v-wrapper'><img id="v-img-2" src="assets/img/codak.jpg" alt=""></div> <!--"Multipicture part1" -->
             <!-- <img src="assets/" alt=""> <!--"Multipicture part2" -->
         </section>
         
@@ -159,7 +157,6 @@
                         <p class="author">Coded with ❤️ by David & Abdullah</p>
                         
         </footer>
-        </div>
         <!--Linking/fetching JS-script for some great functions-->
         <script src="js/app.js"></script>
     </body>

@@ -70,6 +70,9 @@ section#hero{
   flex-direction: column;
   justify-content: center;
   background: $purple-l;
+  border-bottom-left-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+  z-index: 5;
 
   h1{
     margin-top: 2rem;
@@ -104,6 +107,8 @@ section#hero{
     font-size: 100px;
     color: $purple-l;
     text-align: center;
+    margin-bottom: 3rem;
+    z-index: -1;
   }
 }
 
@@ -143,23 +148,26 @@ section#om{
   .om-btns{
     width: 100%;
     margin: auto;
-    display: grid;
-    grid-row-gap: 3rem;
+    text-align: center;
+
+    input{
+      margin-bottom: 1.5rem;
+    }
   }
 
   /*First two pictures*/
   #pic1{
-    width: 70%;
+    width: 13rem;
     transform: rotate(-17deg);
     border-radius: 2rem;
-    margin: 3rem 0 0 -5rem;
+    margin: 3rem 0 0 -6rem;
   }
 
   #pic2 {
-    width: 70%;
+    width: 13rem;
     transform: rotate(12deg);
     border-radius: 2rem;
-    margin: -14rem 0 0 11rem;  
+    margin: -15rem 0 0 11rem;  
   }
 
   /*ettor och nollor*/
@@ -167,10 +175,12 @@ section#om{
 
 section#gor {
   text-align: center;
-  background: $purple-l; 
+  background: $purple-l;
+  border-radius: 100rem;
+  padding: 2rem 0;
 
   h1{
-    font-size: 3rem;
+    font-size: 3.2rem;
     width: 50%; /*100% makes it centered apparently*/
     margin: 3.5rem 0 3.5rem 6rem; /*Make it more centered if needed*/
   }
@@ -184,4 +194,69 @@ section#gor {
     background: white;
     color: $purple;
   }
+
+  .språk-grid-container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+
+    .språk-item{
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem 0.6rem;
+      margin-right: 1rem;
+
+      img{
+        width: 4rem;
+      }
+
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+section#varfor{
+  margin: auto;
+  text-align: center;
+  padding: 6rem 2.1875rem;
+
+  h1{
+    font-size: 3.2rem;
+  }
+
+  p{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+  }
+
+  #v-div{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .v-wrapper{
+    width: 100%;
+    margin-top: 2rem;
+
+    img{
+      width: 17rem;
+      border-radius: 1rem;    
+    }
+
+    #v-img-1{
+      margin-right: -10rem;
+    }
+
+    #v-img-2{
+      margin-left: -10rem;
+    }
+  }
+  
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, html, body {
   padding: 0;
   margin: 0;
@@ -92,6 +93,9 @@ section#hero {
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(176, 0, 138, 0.08);
+  border-bottom-left-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+  z-index: 5;
 }
 
 section#hero h1 {
@@ -128,6 +132,8 @@ section#hero .framtid {
   font-size: 100px;
   color: rgba(176, 0, 138, 0.08);
   text-align: center;
+  margin-bottom: 3rem;
+  z-index: -1;
 }
 
 .contact {
@@ -177,34 +183,38 @@ section#om .text {
 section#om .om-btns {
   width: 100%;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 3rem;
+  text-align: center;
+}
+
+section#om .om-btns input {
+  margin-bottom: 1.5rem;
 }
 
 section#om #pic1 {
-  width: 70%;
+  width: 13rem;
   -webkit-transform: rotate(-17deg);
           transform: rotate(-17deg);
   border-radius: 2rem;
-  margin: 3rem 0 0 -5rem;
+  margin: 3rem 0 0 -6rem;
 }
 
 section#om #pic2 {
-  width: 70%;
+  width: 13rem;
   -webkit-transform: rotate(12deg);
           transform: rotate(12deg);
   border-radius: 2rem;
-  margin: -14rem 0 0 11rem;
+  margin: -15rem 0 0 11rem;
 }
 
 section#gor {
   text-align: center;
   background: rgba(176, 0, 138, 0.08);
+  border-radius: 100rem;
+  padding: 2rem 0;
 }
 
 section#gor h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   width: 50%;
   /*100% makes it centered apparently*/
   margin: 3.5rem 0 3.5rem 6rem;
@@ -219,5 +229,72 @@ section#gor p {
 section#gor .btn {
   background: white;
   color: #B0008B;
+}
+
+section#gor .språk-grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+  margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+section#gor .språk-grid-container .språk-item {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 0.6rem;
+  margin-right: 1rem;
+}
+
+section#gor .språk-grid-container .språk-item img {
+  width: 4rem;
+}
+
+section#gor .språk-grid-container .språk-item p {
+  margin-bottom: 0;
+}
+
+section#varfor {
+  margin: auto;
+  text-align: center;
+  padding: 6rem 2.1875rem;
+}
+
+section#varfor h1 {
+  font-size: 3.2rem;
+}
+
+section#varfor p {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+section#varfor #v-div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+section#varfor .v-wrapper {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+section#varfor .v-wrapper img {
+  width: 17rem;
+  border-radius: 1rem;
+}
+
+section#varfor .v-wrapper #v-img-1 {
+  margin-right: -10rem;
+}
+
+section#varfor .v-wrapper #v-img-2 {
+  margin-left: -10rem;
 }
 /*# sourceMappingURL=style.css.map */
