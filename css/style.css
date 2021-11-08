@@ -121,12 +121,63 @@ h1{
 
 #om h1{
     font-size: 3rem;
+    
+}
+
+#om .text{
+    margin: 3rem 0;
+    line-height: 1.5rem;
+
 }
 
 #om .om-btns{
     width: 100%;
     margin: auto;
     display: grid;
+    grid-row-gap: 3rem;
+}
+ /*First two pictures*/
+#pic1{
+    width: 70%;
+    transform: rotate(-17deg);
+    border-radius: 2rem;
+    margin: 3rem 0 0 -5rem;
+    
+}
+
+#pic2 {
+    width: 70%;
+    transform: rotate(12deg);
+    border-radius: 2rem;
+    margin: -14rem 0 0 11rem;
+    
+}
+/*ettor och nollor*/
+
+/*Vad vi gör - Section*/
+#gor {
+    text-align: center;
+    background: var(--purple-l);
+    
+}
+
+#gor h1{
+    font-size: 3rem;
+    width: 50%; /*100% makes it centered apparently*/
+    margin: 3.5rem 0 3.5rem 6rem; /*Make it more centered if needed*/
+    
+}
+
+#gor p {
+    margin: 1rem 2rem 2rem 2rem;
+    line-height: 1.5rem;
 
 }
+
+#gor .btn{
+    background: white;
+    color: var(--purple);
+
+}
+
 
