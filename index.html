@@ -11,32 +11,33 @@
         <title>Info-Media Website</title>
     </head>
     <body>
-
         <!-- #app för att vi använder Vu.ja -->
         <div id="app">
-            <!-- The start of the header -->
-            <header id="start">
-            <nav>
-                <!-- Two icons for closing and opening the menu -->
-                <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
-                <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
-                    <div class="menu-btn_burger"></div>
-                    <div class="menu-btn_burger"></div>
-                </i>
-                <!-- The menu itself -->
-                <ul v-if='isOpen'>
-                    <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+            
+            <!--<header id="start">
+                <nav>
+                    Two icons for closing and opening the menu
+                    <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
+                    <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
                         <div class="menu-btn_burger"></div>
                         <div class="menu-btn_burger"></div>
                     </i>
-                    <li><a href="#om">Om Info-media</a></li>
-                    <li><a href="#gor">Vad vi gör</a></li>
-                    <li><a href="#varfor">Varför Info-Media</a></li>
-                    <li><a href="#struktur">Kursstruktur</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
+                     The menu itself 
+                    <ul v-if='isOpen'>
+                        <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+                            <div class="menu-btn_burger"></div>
+                            <div class="menu-btn_burger"></div>
+                        </i>
+                        <li><a href="#om">Om Info-media</a></li>
+                        <li><a href="#gor">Vad vi gör</a></li>
+                        <li><a href="#varfor">Varför Info-Media</a></li>
+                        <li><a href="#struktur">Kursstruktur</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </header> -->
+                
+            </div>
         <!-- The hero section -->
     <section id="hero">
         <h1>Info-Media</h1>
@@ -57,14 +58,16 @@
         <h1>Om Info-Media</h1>
         <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
 
-        <input class="btn" type="button" value="Läs mer">
-        <input class="btn" type="button" value="Elev för en dag">
-        <img src="assets/img/code.jpg" alt="computar nerd">
-        <img src="assets/img/VR.jpg" alt="vr nerd">
+        <div class="om-btns">
+            <input class="btn" type="button" value="Läs mer">
+            <input class="btn" type="button" value="Elev för en dag">
+        </div>
+        <img id="pic1" src="assets/img/code.jpg" alt="computar nerd">
+        <img  id="pic2" src="assets/img/VR.jpg" alt="vr nerd">
     </section>
     
     <!-- "Vad vi gör"-sektionen -->
-    <section>
+    <section id="gor">
         <h1>Vad vi gör</h1>
 
         <p>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
@@ -152,6 +155,7 @@
                         <!--Most important area of the whole website 😎 -->
                         <p class="anka">We ❤️ <img src="assets/img/ankan.jpg" alt="Fantastisk anka"></p>
                         <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
+                        <!-- 2nd-Most important area of the whole website 😎 -->
                         <p class="author">Coded with ❤️ by David & Abdullah</p>
                         
         </footer>

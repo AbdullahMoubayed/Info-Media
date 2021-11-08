@@ -122,10 +122,102 @@ section#hero img {
 
 section#hero .framtid {
   font-family: arial;
+  /*Should change font*/
   text-transform: uppercase;
   margin-top: -6rem;
   font-size: 100px;
   color: rgba(176, 0, 138, 0.08);
   text-align: center;
+}
+
+.contact {
+  width: 5rem;
+  height: 5rem;
+  background-color: #b0008b;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0.2rem 0.81818rem #b0008b;
+          box-shadow: 0 0.2rem 0.81818rem #b0008b;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  cursor: pointer;
+}
+
+section#om {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-align: center;
+  padding: 1rem 2.1875rem;
+  /*First two pictures*/
+  /*ettor och nollor*/
+}
+
+section#om h1 {
+  font-size: 3rem;
+}
+
+section#om .text {
+  margin: 3rem 0;
+  line-height: 1.5rem;
+}
+
+section#om .om-btns {
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 3rem;
+}
+
+section#om #pic1 {
+  width: 70%;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  border-radius: 2rem;
+  margin: 3rem 0 0 -5rem;
+}
+
+section#om #pic2 {
+  width: 70%;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+  border-radius: 2rem;
+  margin: -14rem 0 0 11rem;
+}
+
+section#gor {
+  text-align: center;
+  background: rgba(176, 0, 138, 0.08);
+}
+
+section#gor h1 {
+  font-size: 3rem;
+  width: 50%;
+  /*100% makes it centered apparently*/
+  margin: 3.5rem 0 3.5rem 6rem;
+  /*Make it more centered if needed*/
+}
+
+section#gor p {
+  margin: 1rem 2rem 2rem 2rem;
+  line-height: 1.5rem;
+}
+
+section#gor .btn {
+  background: white;
+  color: #B0008B;
 }
 /*# sourceMappingURL=style.css.map */
