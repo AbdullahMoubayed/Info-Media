@@ -2,26 +2,26 @@
 <!-- 
 ----< HEADER >---- 
 -->
-            <header id="start">
-            <nav>
-                <!-- Two icons for closing and opening the menu -->
-                <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
-                <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
-                    <div class="menu-btn_burger"></div>
-                    <div class="menu-btn_burger"></div>
-                </i>
-                <!-- The menu itself -->
-                <ul v-if='isOpen'>
-                    <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
-                        <div class="menu-btn_burger"></div>
-                        <div class="menu-btn_burger"></div>
-                    </i>
-                    <li><a href="#om">Om Info-media</a></li>
-                    <li><a href="#gor">Vad vi gör</a></li>
-                    <li><a href="#varfor">Varför Info-Media</a></li>
-                    <li><a href="#struktur">Kursstruktur</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header id="start">
+    <nav>
+        <!-- Two icons for closing and opening the menu -->
+        <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
+        <i v-if='!isOpen' class="menu-btn" :class='{ open: !isOpen }' @click='toggleMenu'>
+            <div class="menu-btn_burger"></div>
+            <div class="menu-btn_burger"></div>
+        </i>
+        <!-- The menu itself -->
+        <ul v-if='isOpen'>
+            <i class="menu-btn" :class='{ open: isOpen }' @click='toggleMenu'>
+                <div class="menu-btn_burger"></div>
+                <div class="menu-btn_burger"></div>
+            </i>
+            <li><a href="#om">Om Info-media</a></li>
+            <li><a href="#gor">Vad vi gör</a></li>
+            <li><a href="#varfor">Varför Info-Media</a></li>
+            <li><a href="#struktur">Kursstruktur</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
 </html>

@@ -98,11 +98,90 @@ section#hero{
   }
 
   .framtid{
-    font-family: arial;
+    font-family: arial; /*Should change font*/
     text-transform: uppercase;
     margin-top: -6rem;
     font-size: 100px;
     color: $purple-l;
     text-align: center;
+  }
+}
+
+//contact 
+.contact{
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(176, 0, 139, 60%);
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  z-index: 100;
+  box-shadow: 0 0.2rem 0.818181rem rgba(176, 0, 139, 71%);
+  backdrop-filter: blur(13px);
+  cursor: pointer;
+}
+
+section#om{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  padding: 1rem 2.1875rem;
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .text{
+    margin: 3rem 0;
+    line-height: 1.5rem;
+  }
+
+  .om-btns{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 3rem;
+  }
+
+  /*First two pictures*/
+  #pic1{
+    width: 70%;
+    transform: rotate(-17deg);
+    border-radius: 2rem;
+    margin: 3rem 0 0 -5rem;
+  }
+
+  #pic2 {
+    width: 70%;
+    transform: rotate(12deg);
+    border-radius: 2rem;
+    margin: -14rem 0 0 11rem;  
+  }
+
+  /*ettor och nollor*/
+}
+
+section#gor {
+  text-align: center;
+  background: $purple-l; 
+
+  h1{
+    font-size: 3rem;
+    width: 50%; /*100% makes it centered apparently*/
+    margin: 3.5rem 0 3.5rem 6rem; /*Make it more centered if needed*/
+  }
+
+  p {
+    margin: 1rem 2rem 2rem 2rem;
+    line-height: 1.5rem;
+  }
+
+  .btn{
+    background: white;
+    color: $purple;
   }
 }
