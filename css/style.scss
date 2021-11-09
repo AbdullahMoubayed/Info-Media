@@ -448,23 +448,24 @@ footer{
   background: $purple-l;
   align-items: center;
   text-align: center;
-    
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   #alle{
     width: 45%;
     margin: 1.0625rem;
   }
   h3{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 2rem 0 0.5rem 0;
   }
   
   /*nummer osv*/
 
   .sm{
     width: 2rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 2rem 0.5rem 1.5rem 0.5rem;
   }
   .pil{
     width: 2rem;
@@ -486,9 +487,16 @@ footer{
     
     margin-top: 0.1rem;
   }
+
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
   #best{
-    width: 2rem;
-    margin-left: 2.5rem;
+    width: 1.5rem;
   }
   p{
     padding: 0.5rem;
