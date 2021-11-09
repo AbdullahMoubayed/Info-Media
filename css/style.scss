@@ -79,7 +79,7 @@ header{
 
       i{
         margin-left: auto;
-        margin-top: 1rem;
+        margin-top: 1.19rem;
         margin-bottom: 3rem;
       }
 
@@ -116,7 +116,7 @@ section#hero{
   padding-top: 5rem;
 
   h1{
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: 4rem;
     text-align: center;
     color: $purple;
@@ -176,7 +176,8 @@ section#om{
   text-align: center;
   text-align: center;
   padding: 1rem 2.1875rem;
-  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
 
   h1{
     font-size: 3rem;
@@ -207,10 +208,9 @@ section#om{
 
   #pic2 {
     width: 13rem;
-    border-radius: 2rem 0 2rem 0 2rem;
-    margin: 0 0 0 11rem;
-    right: 0;
-    overflow: hidden;
+    transform: rotate(12deg);
+    border-radius: 2rem;
+    margin: -15rem 0 0 11rem; 
   }
 
   /*ettor och nollor*/
@@ -242,7 +242,7 @@ section#gor {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    margin: 2rem;
+    padding: 1rem 2rem;
     margin-top: 4rem;
     margin-bottom: 5rem;
 
@@ -267,6 +267,7 @@ section#varfor{
   margin: auto;
   text-align: center;
   padding: 6rem 2.1875rem;
+  overflow: hidden;
 
   h1{
     font-size: 3.2rem;
@@ -343,6 +344,7 @@ section#ord{
   div{
     display: flex;
     align-items: flex-start;
+    margin: 1.5rem auto;
 
     &#2{
       direction: ltr;
@@ -359,6 +361,23 @@ section#ord{
     /*each separate student*/
     div{
       display: inline-block;
+      margin: auto 1.5rem;
+      font-size: 0.95rem;
+
+      .name {
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+
+      .work{
+        margin-top: 0.4rem;
+        color: gray;
+        font-size: 0.8rem;
+      }
+
+      p{
+        font-style: italic;
+      }
     }
   } 
 }

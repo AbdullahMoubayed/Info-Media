@@ -1,7 +1,7 @@
 const app = Vue.createApp( {
     data() {
       return {
-        isOpen: true,
+        isOpen: false,
         språk: [
             { url: 'assets/img/språk/html.png', title: 'HTML' },
             { url: 'assets/img/språk/css.png', title: 'CSS' },
