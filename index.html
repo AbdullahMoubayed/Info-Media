@@ -94,63 +94,75 @@
         </section>
         
         <!-- Kursstruktur-sektionen -->
-        <section>
+        <section id='Kursstruktur'>
             <h1>Kursstruktur</h1>
             <p>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
             <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
-            <input class="btn" type="button" value="Studieplan">
+            <input class="btn purple_t" type="button" value="Studieplan">
         </section>
         
         <!-- "Ord från tidigare elever"-sektionen -->
         <section id='ord'>
-            <h2>Ord från tidigare elever</h2>
+            <h1>Ord från <br> tidigare elever</h1>
             <div>
-                <img src="assets/img/elev-Lucas-Wass.jpg" alt=""> <!--Insert picture on first student -->
-                <p>"Skolan har fantastiska och engagerade lärare som har hjälpt mig att utvecklas och skapa ett djupare intresse inom matematik, fysik, CAD, bildredigering och programmering; ämnen jag använder mig av varje dag som apputvecklare."</p>
-                <p>Lukas Wass</p>
-                <p>Apputvecklare på byBrick Elevate</p>        
+                <img id="1" src="assets/img/elev-Lucas-Wass.jpg" alt="">
+                <!--Insert picture on first student -->
+                <div>
+                    <p>"Skolan har fantastiska och engagerade lärare som har hjälpt mig att utvecklas och skapa ett djupare intresse
+                        inom matematik, fysik, CAD, bildredigering och programmering; ämnen jag använder mig av varje dag som
+                        apputvecklare."</p>
+                    <p>Lukas Wass</p>
+                    <p>Apputvecklare på byBrick Elevate</p>
+                </div>
             </div>
             
             <div>
-                <img src="assets/img/elev-Emil-Ivarsson.jpg" alt=""> <!--Insert picture on first student -->
-                <p>"Det absolut viktigaste med att gå på teknik är att du får med dig massor av kunskap för framtiden och får viktiga kurser för att kunna ha många valmöjligheter att välja den universitetsutbildning du vill gå i framtiden."</p>
-                <p>Emil Ivarsson</p>
-                <p>Studerar vid Polishögskolan i Stockholm</p>
+                <img id="2" src="assets/img/elev-Emil-Ivarsson.jpg" alt="">
+                <!--Insert picture on first student -->
+                <div>
+                    <p>"Det absolut viktigaste med att gå på teknik är att du får med dig massor av kunskap för framtiden och får
+                        viktiga kurser för att kunna ha många valmöjligheter att välja den universitetsutbildning du vill gå i
+                        framtiden."</p>
+                    <p>Emil Ivarsson</p>
+                    <p>Studerar vid Polishögskolan i Stockholm</p>
+                </div>
             </div>
         </section>
         
         <!-- Kontakt-sektionen -->
-        <section>
+        <section id="contact">
             <h1>Kontakt</h1>
+<!--EETTA OCHCHH TWÅOUA-->
             <!-- Etta och tvåa -->
             <form method="post">
-                <label for="namn">Förnamn</label>
-                <input type="text">
-                <label for="">Efternamn</label>
-                <input type="text">
-                <label for="namn">E-mail</label>
-                <input type="text">
-                <input type="submit" value="">
+                <label style=" grid-area: header;" for="fnamn">Förnamn</label>
+                <label style=" grid-area: main;" for="lname">Efternamn</label>
+                <input style=" grid-area: sidebar;" name="name" type="text">
+                <input style=" grid-area: footer;" name='lname' type="text">
+                <label style=" grid-area: nothing;" for="namn">E-mail</label>
+                <input style=" grid-area: notnothing;" class='f' type="text">
+                <input style=" grid-area: else;" class='btn white_t' type="submit" value="">
             </form>
         </section>
 
         <!-- The footer-section -->
         <footer>
             <a href="#start">
-                <p>hej</p><a/> <!--Replace with arrows-->
-                <img src="assets/img/infomedia.svg" alt="Allé Info-Media">
+                <span id="pil"></span>
+            <a/>
+                <img id="alle" src="assets/img/infomedia.svg" alt="Allé Info-Media">
                 <h3>Kontakt</h3>
                 <p>0582-35 500</p>
                 <p>alleskolan@alleskolan.eu</p>
                 <h3>Besöksadress</h3>
                 <p>Södra Allén 14, Hallsberg</p>
                 <a href="https://sv-se.facebook.com/alleskolanhallsberg/" class="fb">
-                    <img src="assets/icon/facebook-outline.svg" alt="Facebook"></a>
+                    <img class="sm" src="assets/icon/facebook-outline.svg" alt="Facebook"></a>
                     <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
-                        <img src="assets/icon/instagram.svg" alt="Instagram"></a>
+                        <img class="sm" src="assets/icon/instagram.svg" alt="Instagram"></a>
                         
                         <!--Most important area of the whole website 😎 -->
-                        <p class="anka">We ❤️ <img src="assets/img/ankan.jpg" alt="Fantastisk anka"></p>
+                        <span><p class="anka">We ❤️ </p><img id="best" src="assets/img/ankan.png" alt="Fantastisk anka"></span>
                         <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
                         <!-- 2nd-Most important area of the whole website 😎 -->
                         <p class="author">Coded with ❤️ by David & Abdullah</p>

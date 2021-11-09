@@ -28,6 +28,8 @@ $purple-l: rgba(176, 0, 138, 0.08);
   font-size: 1.1rem
 }
 
+//Kontaktknapp
+
 header{
   background-color: $purple-l;
 
@@ -104,7 +106,7 @@ section#hero{
     font-family: arial; /*Should change font*/
     text-transform: uppercase;
     margin-top: -6rem;
-    font-size: 100px;
+    width: 100%;
     color: $purple-l;
     text-align: center;
     margin-bottom: 3rem;
@@ -135,6 +137,7 @@ section#om{
   text-align: center;
   text-align: center;
   padding: 1rem 2.1875rem;
+  position: relative;
 
   h1{
     font-size: 3rem;
@@ -167,7 +170,8 @@ section#om{
     width: 13rem;
     transform: rotate(12deg);
     border-radius: 2rem;
-    margin: -15rem 0 0 11rem;  
+    margin: -15rem 0 0 11rem; 
+    overflow: hidden;
   }
 
   /*ettor och nollor*/
@@ -182,11 +186,11 @@ section#gor {
   h1{
     font-size: 3.2rem;
     width: 50%; /*100% makes it centered apparently*/
-    margin: 3.5rem 0 3.5rem 6rem; /*Make it more centered if needed*/
+    margin: 3.5rem 0 3rem 6rem; /*Make it more centered if needed*/
   }
 
   p {
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 0 2rem 2rem 2rem;
     line-height: 1.5rem;
   }
 
@@ -261,16 +265,141 @@ section#varfor{
   
 }
 
+section#Kursstruktur{
+  margin: auto;
+  text-align: center;
+  background: $purple-l;
+  border-radius: 100rem;
+  padding: 6rem 3rem;
+
+  h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  p{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    line-height: 1.8rem;
+  }
+  input{
+    margin-top: 3rem;
+  }
+}
+
 section#ord{
   width: 100%;
   padding: 6rem 2.1875rem;
   display: flex;
   justify-content: center;
-
-  h2{
-    
+  flex-direction: column;
+  
+  h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
-
+  
+  /*both students*/
   div{
+    display: flex;
+    align-items: flex-start;
+
+    &#2{
+      direction: ltr;
+    }
+
+    &#2{
+      direction: rtl;
+    }
+
+    img{
+      width: 4rem;
+      border-radius: 50%;
+    }
+    /*each separate student*/
+    div{
+      display: inline-block;
+    }
+  } 
+}
+
+#contact{
+  margin: auto;
+  background: $purple-l;
+  border-radius: 100rem;
+  padding: 6rem 0;
+  margin-bottom: 5rem;
+  
+  h1{
+    text-align: center;
+    color: #38524F;
+    margin-bottom: 2rem;
+    font-size: 3rem;
   }
+
+  form{
+    margin: 0 2rem;
+    margin-top: 3rem;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 0.6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header main main"
+    "sidebar sidebar footer footer"
+    "nothing . . ."
+    "notnothing notnothing notnothing notnothing"
+    ". else else ."; 
+
+    input[type="text"]{
+      border: none;
+      padding: 0.9rem;
+      border-radius: 0.5rem;
+    }
+
+    input[type="submit"]{
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+footer{
+  background: $purple-l;
+  align-items: center;
+  text-align: center;
+    
+
+    #alle{
+      width: 45%;
+      margin: 1.0625rem;
+    }
+    h3{
+      
+      
+      font-weight: 300;
+      margin: 1rem 0 1rem 0;
+    }
+    
+    /*nummer osv*/
+
+    .sm{
+      width: 2rem;
+      margin: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #best{
+      width: 0.2px;
+      margin-left: 2.5rem;
+    }
+    p{
+      padding: 1rem;
+    }
 }
