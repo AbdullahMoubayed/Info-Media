@@ -33,7 +33,7 @@ $purple-l: #F9EBF6;
 header{
   background-color: $purple-l;
   position: fixed;
-  z-index: 100;
+  z-index: 111;
   width: 100%;
 
   nav{
@@ -59,7 +59,7 @@ header{
       .menu-btn_burger{
         width: 2rem;
         height: .15rem;
-        background-color: black;
+        background-color: #38524F;
         transition: all .5s ease-in-out;
       }
     }
@@ -88,12 +88,32 @@ header{
         margin-left: 1rem;
         list-style: none;
         text-align: left;
-
+        
         a{
           text-decoration: none;
           font-size: 2rem;
           color: #38524F;
           font-weight: thin;
+          background-image: linear-gradient(#38524F, #38524F);
+          background-size: 0 0.105rem;
+          background-repeat: no-repeat;
+          background-position: left bottom;
+          transition: background-size 500ms ease;
+
+          &:hover{
+            background-size: 100% 0.105rem;
+          }
+        }
+      }
+
+      div.i{
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-bottom: 1rem;
+
+        img{
+          width: 2rem;
         }
       }
     }
@@ -430,50 +450,60 @@ footer{
   text-align: center;
     
 
-    #alle{
-      width: 45%;
-      margin: 1.0625rem;
-    }
-    h3{
-      
-      font-size: 2rem;
-      font-weight: 300;
-      margin: 1rem 0 1rem 0;
-    }
-    
-    /*nummer osv*/
+  #alle{
+    width: 45%;
+    margin: 1.0625rem;
+  }
+  h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  
+  /*nummer osv*/
 
-    .sm{
-      width: 2rem;
-      margin: 1rem 0.5rem 1rem 0.5rem;
-    }
-    .pil{
-      width: 2rem;
-      display: flex;
-      //align-items: center;
-      //justify-content: center;
-      transform: rotate(180deg);
-      //background: $purple-l;
-      margin: auto;
-      
-      
-    }
-    #pil1{
-      margin-top: 0.5rem;
-      margin-bottom: -1rem;
-      
-    }
-    #pil2{
-      
-      margin-top: 0.1rem;
-    }
-    #best{
-      width: 2rem;
-      margin-left: 2.5rem;
-    }
-    p{
-      padding: 0.5rem;
-      border: 0.1rem solid red;
-      margin-top: 0;
-    }
+  .sm{
+    width: 2rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .pil{
+    width: 2rem;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+    transform: rotate(180deg);
+    //background: $purple-l;
+    margin: auto;
+    
+    
+  }
+  #pil1{
+    margin-top: 0.5rem;
+    margin-bottom: -1rem;
+    
+  }
+  #pil2{
+    
+    margin-top: 0.1rem;
+  }
+  #best{
+    width: 2rem;
+    margin-left: 2.5rem;
+  }
+  p{
+    padding: 0.5rem;
+    margin-top: 0;
+  }
+
+  .ic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .icon{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
 }
