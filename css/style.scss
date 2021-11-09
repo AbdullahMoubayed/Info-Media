@@ -378,7 +378,7 @@ footer{
     }
     h3{
       
-      
+      font-size: 2rem;
       font-weight: 300;
       margin: 1rem 0 1rem 0;
     }
@@ -389,17 +389,33 @@ footer{
       width: 2rem;
       margin: 1rem 0.5rem 1rem 0.5rem;
     }
-
-    span{
+    .pil{
+      width: 2rem;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      //align-items: center;
+      //justify-content: center;
+      transform: rotate(180deg);
+      //background: $purple-l;
+      margin: auto;
+      
+      
+    }
+    #pil1{
+      margin-top: 0.5rem;
+      margin-bottom: -1rem;
+      
+    }
+    #pil2{
+      
+      margin-top: 0.1rem;
     }
     #best{
-      width: 0.2px;
+      width: 2rem;
       margin-left: 2.5rem;
     }
     p{
-      padding: 1rem;
+      padding: 0.5rem;
+      border: 0.1rem solid red;
+      margin-top: 0;
     }
 }

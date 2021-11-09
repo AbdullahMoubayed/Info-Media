@@ -427,6 +427,7 @@ footer #alle {
 }
 
 footer h3 {
+  font-size: 2rem;
   font-weight: 300;
   margin: 1rem 0 1rem 0;
 }
@@ -436,24 +437,33 @@ footer .sm {
   margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
-footer span {
+footer .pil {
+  width: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: auto;
+}
+
+footer #pil1 {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+footer #pil2 {
+  margin-top: 0.1rem;
 }
 
 footer #best {
-  width: 0.2px;
+  width: 2rem;
   margin-left: 2.5rem;
 }
 
 footer p {
-  padding: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid red;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
