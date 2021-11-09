@@ -245,10 +245,9 @@ section#om #pic1 {
 
 section#om #pic2 {
   width: 13rem;
-  -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
-  border-radius: 2rem;
-  margin: -15rem 0 0 11rem;
+  border-radius: 2rem 0 2rem 0 2rem;
+  margin: 0 0 0 11rem;
+  right: 0;
   overflow: hidden;
 }
 
