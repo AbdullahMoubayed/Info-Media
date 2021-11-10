@@ -601,4 +601,25 @@ footer .icon {
   width: 1.5rem;
   margin-right: 0.5rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+#allinfo {
+  margin: 2.3125rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#allinfo p {
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+title {
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+}
+/*# sourceMappingURL=lasmer.css.map */

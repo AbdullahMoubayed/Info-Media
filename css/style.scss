@@ -41,7 +41,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.1875rem;
-    // position: relative;
+    
 
     .logo {
       width: 9rem;
@@ -216,7 +216,7 @@ section#om{
     width: 100%;
     margin: auto;
     text-align: center;
-    //cursor: pointer;
+    
 
     input{
       margin-bottom: 1.5rem;
@@ -475,10 +475,10 @@ footer{
   .pil{
     width: 2rem;
     display: flex;
-    //align-items: center;
-    //justify-content: center;
+    align-items: center;
+    justify-content: center;
     transform: rotate(180deg);
-    //background: $purple-l;
+    background: $purple-l;
     margin: auto;
     
     
