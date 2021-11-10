@@ -602,6 +602,14 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
+#pilpil {
+  width: 50% !important;
+  margin-top: -1.5rem !important;
+  margin-left: 6rem !important;
+  -webkit-filter: drop-shadow(0 0 0.3rem #b0008b);
+          filter: drop-shadow(0 0 0.3rem #b0008b);
+}
+
 .poang-plan {
   background: #F9EBF6;
   margin: auto;
