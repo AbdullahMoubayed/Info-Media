@@ -126,14 +126,13 @@ header{
 
 /* Hero section */
 section#hero{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0;
+  padding-top: 5rem;
+  margin: 0 0 3rem 0;
   background: $purple-l;
   border-bottom-left-radius: 100rem;
   border-bottom-right-radius: 100rem;
   z-index: 5;
-  padding-top: 5rem;
 
   h1{
     margin-top: 3rem;
@@ -194,19 +193,35 @@ section#hero{
 
 }
 
-section#om{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+section{
+  margin: auto;
   text-align: center;
   padding: 1rem 2.1875rem;
+  margin: 3rem 0;
   overflow: hidden;
-  margin-top: 3rem;
+}
 
-  h1{
-    font-size: 3rem;
+section.round{
+  background: $purple-l;
+  border-radius: 100rem;
+  padding: 6rem 2.1875rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+.after::after{
+    content: "";
+    display: block;
+    padding: 0.04rem;
+    background: $purple;
+    width: 35%;
+    margin: auto;
+    margin-top: 1rem;
   }
 
+section#om{
   .text{
     margin: 3rem 0;
     line-height: 1.5rem;
@@ -228,7 +243,7 @@ section#om{
     width: 13rem;
     transform: rotate(-17deg);
     border-radius: 2rem;
-    margin: 3rem 0 0 -6rem;
+    margin: 3rem 0 0 -17rem;
   }
 
   #pic2 {
@@ -242,34 +257,30 @@ section#om{
 }
 
 section#gor {
-  text-align: center;
-  background: $purple-l;
-  border-radius: 100rem;
-  padding: 2rem 0;
+  padding: 6rem 0;
 
   h1{
-    font-size: 3.2rem;
-    width: 50%; /*100% makes it centered apparently*/
-    margin: 3.5rem 0 3rem 6rem; /*Make it more centered if needed*/
+    // font-size: 3.2rem;
+    margin: 0 2.1875rem 2rem 2.1875rem;
   }
 
   p {
-    margin: 0 2rem 2rem 2rem;
     line-height: 1.5rem;
+    margin: 2rem 2.1875rem;
   }
 
   .btn{
     background: white;
     color: $purple;
+    margin: 1rem 0 0 0;
   }
 
   .språk-grid-container{
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    padding: 1rem 2rem;
+    padding: 0 2.1875rem;    
     margin-top: 4rem;
-    margin-bottom: 5rem;
 
     .språk-item{
       background: #fff;
@@ -289,14 +300,7 @@ section#gor {
 }
 
 section#varfor{
-  margin: auto;
-  text-align: center;
-  padding: 6rem 2.1875rem;
-  overflow: hidden;
 
-  h1{
-    font-size: 3.2rem;
-  }
 
   p{
     margin-top: 2rem;
@@ -331,15 +335,11 @@ section#varfor{
 }
 
 section#Kursstruktur{
-  margin: auto;
-  text-align: center;
-  background: $purple-l;
-  border-radius: 100rem;
   padding: 6rem 3rem;
 
   h1{
-    font-size: 2.5rem;
     margin-bottom: 3rem;
+    font-size: 2.5rem;
   }
 
   p{
@@ -353,11 +353,7 @@ section#Kursstruktur{
 }
 
 section#ord{
-  width: 100%;
   padding: 6rem 2.1875rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   
   h1{
     text-align: center;
@@ -392,38 +388,56 @@ section#ord{
       .name {
         font-weight: bold;
         margin-top: 1rem;
+        text-align: left;
       }
 
       .work{
         margin-top: 0.4rem;
         color: gray;
         font-size: 0.8rem;
+        text-align: left;
       }
 
       p{
         font-style: italic;
+        text-align: left;
       }
     }
   } 
 }
 
 #contact{
-  margin: auto;
-  background: $purple-l;
-  border-radius: 100rem;
-  padding: 6rem 0;
-  margin-bottom: 5rem;
   
   h1{
     text-align: center;
     color: #38524F;
-    margin-bottom: 2rem;
-    font-size: 3rem;
+  }
+
+  .steps{
+    display: flex;
+    justify-content: space-between;
+    width: 5.5rem;
+    margin: auto;
+    padding-top: 2rem;
+
+    .step{
+      background: #fff;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.active{
+        background: $purple;
+        color: #fff;    
+      }
+    }
   }
 
   form{
-    margin: 0 2rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: grid;
     row-gap: 1rem;
     column-gap: 0.6rem;
@@ -436,14 +450,22 @@ section#ord{
     "notnothing notnothing notnothing notnothing"
     ". else else ."; 
 
+    label{
+      margin-right: auto;
+      font-size: .9em;
+      color: #38524F;
+      margin-bottom: -0.35rem;
+    }
+
     input[type="text"]{
       border: none;
       padding: 0.9rem;
       border-radius: 0.5rem;
     }
 
-    input[type="submit"]{
-      margin-top: 1rem;
+    button{
+      margin-top: 1.5rem;
+      margin: auto;
     }
 
   }

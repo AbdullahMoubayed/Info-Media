@@ -7,7 +7,6 @@
         <meta name="Authors" content="Abdullah & David">
         <link rel="stylesheet" href="css/style.css">
         <!--Some JS-script for great stuff-->
-        <script src="https://unpkg.com/vue@3.0.0"></script>
         <title>Info-Media Website</title>
     </head>
     <!-- #app för att vi använder Vu.ja -->   
@@ -61,7 +60,7 @@
         
         <!-- "Om"-sektionen -->
         <section id="om" class="flex j_center t_center">
-            <h1>Om <br> Info-Media</h1>
+            <h1 class='after'>Om <br> Info-Media</h1>
             <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
 
             <div class="om-btns m_auto t_center">
@@ -74,11 +73,11 @@
         </section>
         
         <!-- "Vad vi gör"-sektionen -->
-        <section id="gor" class="t_center purple-1">
-            <h1>Vad vi gör</h1>
+        <section id="gor" class="round">
+            <h1 class='after'>Vad vi gör</h1>
 
-            <p>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
-            <p>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
+            <p class='after'>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
+            <p class='after'>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
             <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
             <input class="btn purple" type="button" value="Läs mer">
             
@@ -93,8 +92,8 @@
         </section>
         
         <!-- "Varför Info-Media"-sektionen -->
-        <section id="varfor" class="m_auto t_center">
-            <h1>Varför <br> Info-Media?</h1>
+        <section id="varfor" >
+            <h1 class='after'>Varför <br> Info-Media?</h1>
             <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom datorteknik är väldigt efterfrågat i samhället.</p>
             <div id="v-div" class="m_auto t_center"><input class="btn purple_t" type="button" value="Läs mer"></div>
             <div class='v-wrapper'><img id="v-img-1" src="assets/img/blalba.png" alt="Blender example"></div>
@@ -103,9 +102,9 @@
         </section>
         
         <!-- Kursstruktur-sektionen -->
-        <section id='Kursstruktur' class="m_auto t_center purple-1">
-            <h1>Kursstruktur</h1>
-            <p>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
+        <section id='Kursstruktur' class="round">
+            <h1 class='after'>Kursstruktur</h1>
+            <p class='after'>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
             <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
             <input class="btn purple_t" type="button" value="Studieplan">
         </section>
@@ -139,10 +138,14 @@
         </section>
         
         <!-- Kontakt-sektionen -->
-        <section id="contact" class="m_auto purple-1">
-            <h1 class="t_center">Kontakt</h1>
+        <section id="contact" class="round">
+            <h1 class="after t_center">Kontakt</h1>
 <!--EETTA OCHCHH TWÅOUA-->
             <!-- Etta och tvåa -->
+            <div class="steps">
+                <div class="step active"><span>1</span></div>
+                <div class="step"><span>2</span></div>
+            </div>
             <form method="post">
                 <label style=" grid-area: header;" for="fnamn">Förnamn</label>
                 <label style=" grid-area: main;" for="lname">Efternamn</label>
@@ -150,7 +153,7 @@
                 <input style=" grid-area: footer;" name='lname' type="text">
                 <label style=" grid-area: nothing;" for="namn">E-mail</label>
                 <input style=" grid-area: notnothing;" class='f' type="text">
-                <input style=" grid-area: else;" class='btn white_t' type="submit" value="">
+                <button style=" grid-area: else;" class='btn white_t'> <img src="assets/icon/pil-right.svg" alt="next"> </button>
             </form>
         </section>
 
@@ -178,6 +181,7 @@
             <p class="author">Coded with ❤️ by David & Abdullah</p>     
         </footer>
         <!--Linking/fetching JS-script for some great functions-->
+        <script src="https://unpkg.com/vue@3.0.0"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
