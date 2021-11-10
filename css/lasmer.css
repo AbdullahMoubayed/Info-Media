@@ -602,6 +602,46 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
+.poang-plan {
+  background: #F9EBF6;
+  margin: auto;
+  text-align: center;
+  background: #F9EBF6;
+  border-radius: 100rem;
+  padding: 6rem 3rem;
+}
+
+.poang-plan ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0.2rem;
+}
+
+.poang-plan ul li {
+  list-style: none;
+}
+
+.poang-plan div.div {
+  background: #ffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.poang-plan h3 {
+  text-align: center;
+}
+
 #allinfo {
   margin: 2.3125rem;
   font-family: "Raleway", sans-serif;
@@ -612,14 +652,31 @@ footer .icon {
   margin-bottom: 0.5rem;
 }
 
-title {
+#allinfo title {
   text-align: center;
 }
 
-h3 {
+#allinfo h3 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   margin-top: 3.5rem;
+}
+
+#allinfo #card {
+  background: #F9EBF6;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+#allinfo #card #datum {
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+#allinfo #card p {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=lasmer.css.map */

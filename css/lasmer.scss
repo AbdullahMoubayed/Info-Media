@@ -1,5 +1,39 @@
 @import 'style.scss';
 
+.poang-plan{
+    background: $purple-l;
+    margin: auto;
+    text-align: center;
+    background: $purple-l;
+    border-radius: 100rem;
+    padding: 6rem 3rem;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0.2rem;
+
+        li{
+            list-style: none;
+        }
+    }
+    
+    
+
+    div.div{
+        background: #ffff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3{
+        text-align: center;
+    }
+}
+
 #allinfo{
     margin: 2.3125rem;
     font-family: "Raleway", sans-serif;
@@ -8,19 +42,34 @@
         line-height: 1.5rem;
         margin-bottom: 0.5rem;
     }
+
+    title{
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        margin-top: 3.5rem;
+        
+    }
+    
+    #card{
+        background: $purple-l;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        
+
+        #datum{
+            font-size: 1.2rem;
+            font-weight: 550;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
 }
 
-title{
-    text-align: center;
-}
-
-h3{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    margin-top: 3.5rem;
-}
-
-img{
-    width: 1rem;
-}
