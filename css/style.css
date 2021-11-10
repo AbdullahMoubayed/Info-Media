@@ -235,12 +235,11 @@ section#om {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  text-align: center;
   padding: 1rem 2.1875rem;
   overflow: hidden;
   margin-top: 3rem;
   /*First two pictures*/
-  /*ettor och nollor*/
+  /*ettor och nollor insert here*/
 }
 
 section#om h1 {
@@ -509,7 +508,7 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  /*nummer osv*/
+  /*nummer osv m. ikoner*/
 }
 
 footer #alle {

@@ -152,6 +152,7 @@ section#hero{
   .btns{
     text-align: center;
     margin-top: 1rem;
+    
   }
 
   img{
@@ -194,7 +195,6 @@ section#om{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  text-align: center;
   padding: 1rem 2.1875rem;
   overflow: hidden;
   margin-top: 3rem;
@@ -212,6 +212,7 @@ section#om{
     width: 100%;
     margin: auto;
     text-align: center;
+    //cursor: pointer;
 
     input{
       margin-bottom: 1.5rem;
@@ -233,7 +234,7 @@ section#om{
     margin: -15rem 0 0 11rem; 
   }
 
-  /*ettor och nollor*/
+  /*ettor och nollor insert here*/
 }
 
 section#gor {
@@ -461,7 +462,7 @@ footer{
     margin: 2rem 0 0.5rem 0;
   }
   
-  /*nummer osv*/
+  /*nummer osv m. ikoner*/
 
   .sm{
     width: 2rem;
