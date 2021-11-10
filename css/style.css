@@ -120,8 +120,8 @@ header nav ul li a {
   background-size: 0 0.105rem;
   background-repeat: no-repeat;
   background-position: left bottom;
-  -webkit-transition: background-size 500ms ease;
-  transition: background-size 500ms ease;
+  -webkit-transition: background-size 500ms cubic-bezier(0.55, 0.16, 0, 0.94);
+  transition: background-size 500ms cubic-bezier(0.55, 0.16, 0, 0.94);
 }
 
 header nav ul li a:hover {
@@ -206,21 +206,30 @@ section#hero .framtid {
   z-index: -1;
 }
 
-.contact {
+.contact-cr {
   width: 5rem;
   height: 5rem;
-  background-color: #b0008b;
+  background-color: rgba(176, 0, 139, 0.6);
   border-radius: 50%;
   border: none;
   position: fixed;
-  top: 90%;
-  right: 5%;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 100;
-  -webkit-box-shadow: 0 0.2rem 0.81818rem #b0008b;
-          box-shadow: 0 0.2rem 0.81818rem #b0008b;
-  -webkit-backdrop-filter: blur(13px);
-          backdrop-filter: blur(13px);
+  -webkit-box-shadow: 0 0.1rem 0.9rem -3px rgba(197, 32, 132, 0.5);
+          box-shadow: 0 0.1rem 0.9rem -3px rgba(197, 32, 132, 0.5);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#om {
