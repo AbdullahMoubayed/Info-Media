@@ -680,7 +680,7 @@ footer .icon {
   text-align: center;
   background: #F9EBF6;
   border-radius: 100rem;
-  padding: 6rem 3rem;
+  padding: 8rem 3rem;
 }
 
 .poang-plan ul {
@@ -700,7 +700,7 @@ footer .icon {
 .poang-plan div.div {
   background: #ffff;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem -2rem 0;
   border-radius: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,8 +710,13 @@ footer .icon {
           justify-content: space-between;
 }
 
+.poang-plan .NIU {
+  padding-top: 1rem;
+}
+
 .poang-plan h3 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #allinfo {
@@ -750,5 +755,98 @@ footer .icon {
 #allinfo #card p {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+footer {
+  background: #F9EBF6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /*nummer osv m. ikoner*/
+}
+
+footer #alle {
+  width: 45%;
+  margin: 1.0625rem;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 2rem 0 0.5rem 0;
+}
+
+footer .sm {
+  width: 2rem;
+  margin: 2rem 0.5rem 1.5rem 0.5rem;
+}
+
+footer .pil {
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: #F9EBF6;
+  margin: auto;
+}
+
+footer #pil1 {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+footer #pil2 {
+  margin-top: 0.1rem;
+}
+
+footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer #best {
+  width: 1.5rem;
+}
+
+footer p {
+  padding: 0.5rem;
+  margin-top: 0;
+}
+
+footer .ic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .icon {
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=lasmer.css.map */
