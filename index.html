@@ -20,7 +20,7 @@
                     <div class="menu-btn_burger"></div>
                 </i>
                     <!-- The menu itself  -->
-                <ul v-if='isOpen' class="flex">
+                <ul v-show='isOpen' :class='{ activ: isOpen }'>
                     <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
                         <div class="menu-btn_burger"></div>
                         <div class="menu-btn_burger"></div>
