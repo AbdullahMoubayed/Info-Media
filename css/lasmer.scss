@@ -4,7 +4,6 @@
     
     width: 50% !important;
     margin-top: -1.5rem !important; 
-    margin-left: 6rem !important;
     filter: drop-shadow(0 0 0.3rem rgba(176, 0, 139, 1));
 }
 
@@ -46,8 +45,8 @@
 
 
 #allinfo{
-    margin: 2.3125rem;
     font-family: "Raleway", sans-serif;
+    text-align: left;
 
     p{
         line-height: 1.5rem;
@@ -67,9 +66,10 @@
     }
     
     #card{
-        background: $purple-l;
-        border-radius: 1rem;
-        padding: 2rem;
+        // background: $purple-l;
+        border: 0.3rem solid  $purple-l;
+        border-radius: 1.5rem;
+        padding: 3rem 2rem;
         text-align: center;
         
 

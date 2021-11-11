@@ -99,8 +99,9 @@ header nav ul {
 }
 
 header nav ul.activ {
-  -webkit-animation: fadeIn 0.5s ease-in;
-          animation: fadeIn 0.5s ease-in;
+  -webkit-animation: fadeIn 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
+          animation: fadeIn 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
+  opacity: 1;
 }
 
 @-webkit-keyframes fadeIn {
@@ -127,6 +128,36 @@ header nav ul.activ {
   }
 }
 
+@-webkit-keyframes upper {
+  0% {
+    margin-top: 4rem;
+    opacity: 0;
+  }
+  1% {
+    margin-top: 4rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes upper {
+  0% {
+    margin-top: 4rem;
+    opacity: 0;
+  }
+  1% {
+    margin-top: 4rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 2rem;
+    opacity: 1;
+  }
+}
+
 header nav ul i {
   margin-left: auto;
   margin-top: 1.19rem;
@@ -138,6 +169,8 @@ header nav ul li {
   margin-left: 1rem;
   list-style: none;
   text-align: left;
+  -webkit-animation: upper 0.65s cubic-bezier(0, 0, 0.2, 1);
+          animation: upper 0.65s cubic-bezier(0, 0, 0.2, 1);
 }
 
 header nav ul li a {
@@ -637,7 +670,6 @@ footer .icon {
 #pilpil {
   width: 50% !important;
   margin-top: -1.5rem !important;
-  margin-left: 6rem !important;
   -webkit-filter: drop-shadow(0 0 0.3rem #b0008b);
           filter: drop-shadow(0 0 0.3rem #b0008b);
 }
@@ -683,8 +715,8 @@ footer .icon {
 }
 
 #allinfo {
-  margin: 2.3125rem;
   font-family: "Raleway", sans-serif;
+  text-align: left;
 }
 
 #allinfo p {
@@ -704,9 +736,9 @@ footer .icon {
 }
 
 #allinfo #card {
-  background: #F9EBF6;
-  border-radius: 1rem;
-  padding: 2rem;
+  border: 0.3rem solid #F9EBF6;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 

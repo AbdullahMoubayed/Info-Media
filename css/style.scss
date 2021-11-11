@@ -77,22 +77,7 @@ header{
       display: flex;
       flex-direction: column;
       opacity: 0;
-      animation: fadeout 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
-        
-      @keyframes fadeout {
-        0% { 
-          opacity: 1; 
-          display: flex;
-        }
-        1% { 
-          opacity: 1;
-          display: flex;
-         }
-        100% { 
-          opacity: 0; 
-          display: none;
-        }
-      }
+      
 
       &.activ{
         animation: fadeIn 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
@@ -103,6 +88,23 @@ header{
           100% { opacity:1 }
         }
         opacity: 1;
+
+        @keyframes upper {
+          0% { 
+            margin-top: 4rem;
+             opacity: 0;
+          }
+          1% { 
+            margin-top: 4rem;
+            opacity: 0;
+
+          }
+          100% { 
+            margin-top: 2rem;
+            opacity: 1;
+
+          }
+        }
       }
 
       i{
@@ -116,6 +118,7 @@ header{
         margin-left: 1rem;
         list-style: none;
         text-align: left;
+        animation: upper 0.65s cubic-bezier(0, 0, 0.2, 1);
         
         a{
           text-decoration: none;
