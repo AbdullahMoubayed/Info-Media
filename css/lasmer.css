@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*  Mediaqueries to make the website responaible to nearly all device  */
-@media (min-device-width: 600px) {
-  *, body {
-    padding: 14rem 5rem;
-  }
-}
-
 *, html, body {
   padding: 0;
   margin: 0;
@@ -713,6 +706,12 @@ footer .ic {
 footer .icon {
   width: 1.5rem;
   margin-right: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  * {
+    background: black;
+  }
 }
 
 #pilpil {
