@@ -707,4 +707,10 @@ footer .icon {
   width: 1.5rem;
   margin-right: 0.5rem;
 }
+
+@media (min-width: 600px) {
+  * {
+    background: black;
+  }
+}
 /*# sourceMappingURL=style.css.map */

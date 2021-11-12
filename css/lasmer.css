@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*  Mediaqueries to make the website responaible to nearly all device  */
+@media (min-device-width: 600px) {
+  *, body {
+    padding: 14rem 5rem;
+  }
+}
+
 *, html, body {
   padding: 0;
   margin: 0;
@@ -446,8 +453,56 @@ section#Kursstruktur input {
   margin-top: 3rem;
 }
 
+.poang-plan {
+  background: #F9EBF6;
+  margin: auto;
+  text-align: center;
+  background: #F9EBF6;
+  border-radius: 100rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.poang-plan ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  text-align: left;
+}
+
+.poang-plan ul li {
+  list-style: none;
+}
+
+.poang-plan div.div {
+  background: #ffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.poang-plan .NIU {
+  padding: 0.5rem 0;
+  color: #312e2e;
+}
+
+.poang-plan h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 section#ord {
-  padding: 6rem 2.1875rem;
+  padding: 3rem 2.1875rem;
   /*both students*/
 }
 
@@ -505,74 +560,66 @@ section#ord div div p {
   text-align: left;
 }
 
-#contact h1 {
-  text-align: center;
-  color: #38524F;
+section#contact {
+  padding: 1rem;
+  margin: 3rem 1.5rem;
 }
 
-#contact .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 5.5rem;
-  margin: auto;
-  padding-top: 2rem;
+section#contact #rtlperson {
+  direction: rtl;
 }
 
-#contact .steps .step {
-  background: #fff;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
+section#contact #rtlperson h3 {
+  text-align: right;
+}
+
+section#contact #rtlperson p {
+  direction: ltr;
+}
+
+section#contact .cperson h3 {
+  text-align: left;
+}
+
+section#contact .cperson div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.3rem solid #F9EBF6;
+  background-color: #f9ebf62d;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
 }
 
-#contact .steps .step.active {
-  background: #B0008B;
-  color: #fff;
-}
-
-#contact form {
-  margin-top: 2.5rem;
-  display: -ms-grid;
-  display: grid;
-  row-gap: 1rem;
-  -webkit-column-gap: 0.6rem;
-          column-gap: 0.6rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "header header main main" "sidebar sidebar footer footer" "nothing . . ." "notnothing notnothing notnothing notnothing" ". else else .";
-}
-
-#contact form label {
+section#contact .cperson div span {
+  text-align: left;
+  margin-left: 1.5rem;
   margin-right: auto;
-  font-size: .9em;
-  color: #38524F;
-  margin-bottom: -0.35rem;
 }
 
-#contact form input[type="text"] {
-  border: none;
-  padding: 0.9rem;
-  border-radius: 0.5rem;
+section#contact .cperson div span h5 {
+  font-size: 1rem;
 }
 
-#contact form button {
-  margin-top: 1.5rem;
-  margin: auto;
+section#contact .cperson div span a {
+  text-decoration: none;
+  color: #555555;
+}
+
+section#contact .cperson div span p {
+  color: #555555;
+}
+
+section#contact .cperson div img {
+  width: 3rem;
+  border-radius: 50%;
 }
 
 footer {
@@ -682,6 +729,7 @@ footer .icon {
   background: #F9EBF6;
   border-radius: 100rem;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .poang-plan ul {
