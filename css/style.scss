@@ -35,6 +35,7 @@ header{
   position: fixed;
   z-index: 111;
   width: 100%;
+  
 
   nav{
     display: flex;
@@ -159,6 +160,7 @@ header{
 section#hero{
   padding: 0;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   margin: 0 0 3rem 0;
   background: $purple-l;
   border-bottom-left-radius: 100rem;
@@ -383,8 +385,49 @@ section#Kursstruktur{
   }
 }
 
+
+.poang-plan{
+  background: $purple-l;
+  margin: auto;
+  text-align: center;
+  background: $purple-l;
+  border-radius: 100rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: left;
+
+    li{
+      list-style: none;
+    }
+  }
+  
+div.div{
+  background: #ffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NIU{
+  padding: 0.5rem 0;
+  color: rgb(49, 46, 46);
+}
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+}   
+}
+
 section#ord{
-  padding: 6rem 2.1875rem;
+  padding: 3rem 2.1875rem;
   
   h1{
     text-align: center;
@@ -437,70 +480,62 @@ section#ord{
   } 
 }
 
-#contact{
-  
-  h1{
-    text-align: center;
-    color: #38524F;
+section#contact{
+  padding: 1rem;
+  margin: 3rem 1.5rem;
+
+  #rtlperson{
+    direction: rtl;
+
+    h3{
+      text-align: right;
+    }
+    p{
+      direction: ltr;
+    }
+    
   }
 
-  .steps{
-    display: flex;
-    justify-content: space-between;
-    width: 5.5rem;
-    margin: auto;
-    padding-top: 2rem;
+  .cperson{
 
-    .step{
-      background: #fff;
-      height: 2rem;
-      width: 2rem;
-      border-radius: 50%;
+    h3{
+      text-align: left;
+    }
+
+    div{
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      border: 0.3rem solid $purple-l;
+      background-color: #f9ebf62d;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin: 1.5rem 0;
 
-      &.active{
-        background: $purple;
-        color: #fff;    
+      span{
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: auto;
+        h5{
+          font-size: 1rem;
+        }
+        a{
+          text-decoration: none;
+          color: rgb(85, 85, 85);
+        }
+        p{
+          color: rgb(85, 85, 85);
+        }
+      }
+
+      img{
+        width: 3rem;
+        border-radius: 50%;
       }
     }
   }
-
-  form{
-    margin-top: 2.5rem;
-    display: grid;
-    row-gap: 1rem;
-    column-gap: 0.6rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header main main"
-    "sidebar sidebar footer footer"
-    "nothing . . ."
-    "notnothing notnothing notnothing notnothing"
-    ". else else ."; 
-
-    label{
-      margin-right: auto;
-      font-size: .9em;
-      color: #38524F;
-      margin-bottom: -0.35rem;
-    }
-
-    input[type="text"]{
-      border: none;
-      padding: 0.9rem;
-      border-radius: 0.5rem;
-    }
-
-    button{
-      margin-top: 1.5rem;
-      margin: auto;
-    }
-
-  }
 }
+
 
 footer{
   background: $purple-l;

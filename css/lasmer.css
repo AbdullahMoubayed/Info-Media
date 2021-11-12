@@ -216,6 +216,7 @@ header nav .open {
 section#hero {
   padding: 0;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   margin: 0 0 3rem 0;
   background: #F9EBF6;
   border-bottom-left-radius: 100rem;
@@ -680,7 +681,7 @@ footer .icon {
   text-align: center;
   background: #F9EBF6;
   border-radius: 100rem;
-  padding: 8rem 3rem;
+  padding-top: 5rem;
 }
 
 .poang-plan ul {
@@ -690,7 +691,8 @@ footer .icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1rem 0.2rem;
+  margin: 1rem;
+  text-align: left;
 }
 
 .poang-plan ul li {
@@ -700,7 +702,7 @@ footer .icon {
 .poang-plan div.div {
   background: #ffff;
   padding: 1rem;
-  margin: 1rem -2rem 0;
+  margin: 1rem 0;
   border-radius: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,7 +713,8 @@ footer .icon {
 }
 
 .poang-plan .NIU {
-  padding-top: 1rem;
+  padding: 0.5rem 0;
+  color: #312e2e;
 }
 
 .poang-plan h3 {

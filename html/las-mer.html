@@ -14,13 +14,13 @@
     <header id="start" class="purple-1">
         <nav class="flex i_center">
             <!-- Two icons for closing and opening the menu -->
-            <a href="#start"><img class="logo" src="../assets/img/infomedia.svg" alt="Info-Media"></a>
-            <i v-if='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
+            <a href="http://localhost:5501/index.html"><img class="logo" src="../assets/img/infomedia.svg" alt="Info-Media"></a>
+            <i v-show='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
                 <div class="menu-btn_burger"></div>
                 <div class="menu-btn_burger"></div>
             </i>
             <!-- The menu itself  -->
-            <ul v-if='isOpen' class="flex">
+            <ul v-show='isOpen' class="flex">
                 <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
                     <div class="menu-btn_burger"></div>
                     <div class="menu-btn_burger"></div>
@@ -51,60 +51,59 @@
             <input class="btn purple_t t_center" type="button" value="Studieplan">
         </div>
         <img class="t_center" src="../assets/img/aboute.png" alt="Computah">
-        <h1 class="framtid t_center">Framtid</h1>
     </section>
 <section class='poang-plan'>
     <h3>Poängplan</h3>
-    <div>
-        <ul>
-            <li>Inriktningar</li>
-            <li>Åk 2</li>
-            <li>Åk 3</li>
-        </ul>
-        <div class='div'>
-            <span>Dator- och nätverksteknik</span>
-            <span>100p</span>
-        </div>
-        <div class='div'>
-            <span>Programmering 1</span>
-            <span>100p</span>
-        </div>
-        <div class='div'>
-            <span>Webbutveckling 1</span>
-            <span>100p</span>
-        </div>
+    <ul>
+        <li>Inriktningar</li>
+        <li>Åk 2</li>
+        <li>Åk 3</li>
+    </ul>
+    <div class='div'>
+        <span>Dator- och nätverksteknik</span>
+        <span>100p</span>
+    </div>
+    <div class='div'>
+        <span>Programmering 1</span>
+        <span>100p</span>
+    </div>
+    <div class='div'>
+        <span>Webbutveckling 1</span>
+        <span>100p</span>
+    </div>
 
-        <ul>
-            <li>Programfördjupningar</li>
-            <li>Åk 2</li>
-            <li>Åk 3</li>
-        </ul>
-        <div class='div'>
-            <span>Digitalt skapande 1 *</span>
-            <span>100p</span>
-        </div>
-        <div class='div'>
-            <span>Webbserverprogrammering 1 *</span>
-            <span>100p</span>
-        </div>
+    <ul>
+        <li>Programfördjupningar</li>
+        <li>Åk 2</li>
+        <li>Åk 3</li>
+    </ul>
+    <div class='div'>
+        <span>Digitalt skapande 1 *</span>
+        <span>100p</span>
+    </div>
+    <div class='div'>
+        <span>Webbserverprogrammering 1 *</span>
+        <span>100p</span>
+    </div>
 
-        <ul>
-            <li>Tilläggskurser för Teknikerspåret</li>
-            <li>Åk 2</li>
-            <li>Åk 3</li>
-        </ul>
-        <div class='div'>
-            <span>Gränssnittsdesign</span>
-            <span>100p</span>
-        </div>
-        <div class='div'>Teknik - specialisering 1</span>
-            <span>100p</span>
-        </div>
+    <ul>
+        <li>Tilläggskurser för Teknikerspåret</li>
+        <li>Åk 2</li>
+        <li>Åk 3</li>
+    </ul>
+    <div class='div'>
+        <span>Gränssnittsdesign</span>
+        <span>100p</span>
+    </div>
+    <div class='div'>
+        <span>Teknik - specialisering 1</span>
+        <span>100p</span>
+    </div>
 
-        <ul>
-            <li>Tilläggskurser för Ingenjörspåret</li>
-            <li>Åk 2</li>
-            <li>Åk 3</li>
+    <ul>
+        <li>Tilläggskurser <br> för Ingenjörspåret</li>
+        <li>Åk 2</li>
+        <li>Åk 3</li>
         </ul>
         <div class='div'>
             <span>Fysik 2</span>
@@ -116,7 +115,6 @@
         </div>
         <div class="NIU">
             <p><i>*Ingår ej i ordinarie studieplan för NIU eller RIG-elever</i></p>
-        </div>
     </div>
 </section>
     <section id="allinfo">
@@ -175,6 +173,7 @@
             <p>För frågor kring “elev-för-en-dag” så kan du kontakta teknikprogrammets S.Y.V. (studie- och yrkesvägledare) ifall du har specifika frågor kring din vistelse hos Alléskolan.</p>
         </div>
     </section>
+
 <footer class="purple-1 i_center t_center">
     <a href="#start">
         <img class="pil" id="pil1" src="assets/icon/arrow.png" alt="Hem"></img>

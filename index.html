@@ -14,8 +14,8 @@
         <header id="start" class="purple-1">
             <nav class="flex i_center">
                 <!-- Two icons for closing and opening the menu -->
-                <a href="#start"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
-                <i v-if='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
+                <a href="#"><img class="logo" src="assets/img/infomedia.svg" alt="Info-Media"></a>
+                <i v-show='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
                     <div class="menu-btn_burger"></div>
                     <div class="menu-btn_burger"></div>
                 </i>
@@ -49,14 +49,13 @@
             <p>Gör dina digitala idéer <i>verkliga</i></p>
             <div class="btns">
                 <a href="html/las-mer.html"><button class="btn white_t t_center" type="button">Öppet hus</button></a>
-                <input class="btn purple_t t_center" type="button" value="Studieplan">
+                <a href="html/las-mer.html"><input class="btn purple_t t_center" type="button" value="Studieplan"></a>
             </div>
             <img class="t_center" src="assets/img/hero.png" alt="Computah">
-            <h1 class="framtid t_center">Framtid</h1>
         </section>
 
         <!-- The contacting floated circle -->
-        <button class="contact-cr"><img src="assets/img/contact.svg" alt=""></button>
+        <a href="#contact"><button class="contact-cr"><img src="assets/img/contact.svg" alt=""></button></a>
         
         <!-- "Om"-sektionen -->
         <section id="om" class="flex j_center t_center">
@@ -79,7 +78,7 @@
             <p class='after'>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
             <p class='after'>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
             <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
-            <input class="btn purple" type="button" value="Läs mer">
+            <a href="html/las-mer.html"><input class="btn purple" type="button" value="Läs mer"></a>
             
         <!-- The grid of the languages that we are going to learn -->
             <div class="språk-grid-container flex">
@@ -90,7 +89,8 @@
             </div>    
             
         </section>
-        
+
+        <!-- We love Ankor! -->
         <!-- "Varför Info-Media"-sektionen -->
         <section id="varfor" >
             <h1 class='after'>Varför <br> Info-Media?</h1>
@@ -106,9 +106,121 @@
             <h1 class='after'>Kursstruktur</h1>
             <p class='after'>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
             <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
-            <input class="btn purple_t" type="button" value="Studieplan">
+            <a href="html/las-mer.html"><input class="btn purple_t" type="button" value="Studieplan"></a>
+            </section>
+            
+            <section class='poang-plan'>
+                <h3>Poängplan</h3>
+                <ul>
+                    <li>Inriktningar</li>
+                    <li>Åk 2</li>
+                    <li>Åk 3</li>
+                </ul>
+                <div class='div'>
+                    <span>Dator- och nätverksteknik</span>
+                    <span>100p</span>
+                </div>
+                <div class='div'>
+                    <span>Programmering 1</span>
+                    <span>100p</span>
+                </div>
+                <div class='div'>
+                    <span>Webbutveckling 1</span>
+                    <span>100p</span>
+                </div>
+            
+                <ul>
+                    <li>Programfördjupningar</li>
+                    <li>Åk 2</li>
+                    <li>Åk 3</li>
+                </ul>
+            
+                <!-- Ingen hatar ankor! -->
+            
+                <div class='div'>
+                    <span>Digitalt skapande 1 *</span>
+                    <span>100p</span>
+                </div>
+                <div class='div'>
+                    <span>Webbserverprogrammering 1 *</span>
+                    <span>100p</span>
+                </div>
+            
+                <ul>
+                    <li>Tilläggskurser för Teknikerspåret</li>
+                    <li>Åk 2</li>
+                    <li>Åk 3</li>
+                </ul>
+                <div class='div'>
+                    <span>Gränssnittsdesign</span>
+                    <span>100p</span>
+                </div>
+                <div class='div'>
+                    <span>Teknik - specialisering 1</span>
+                    <span>100p</span>
+                </div>
+            
+                <ul>
+                    <li>Tilläggskurser <br> för Ingenjörspåret</li>
+                    <li>Åk 2</li>
+                    <li>Åk 3</li>
+                </ul>
+                <div class='div'>
+                    <span>Fysik 2</span>
+                    <span>100p</span>
+                </div>
+                <div class='div'>
+                    <span>Matematik 4 </span>
+                    <span>100p</span>
+                </div>
+                <div class="NIU">
+                    <p><i>*Ingår ej i ordinarie studieplan för NIU eller RIG-elever</i></p>
+                </div>
+            </section>
+            
+            <!-- Ankor är bäst -->
+            
+            <section id="contact">
+                <div class="cperson">
+                    <h3>Rektor för teknikprogrammet</h3>
+                    <div>
+                        <img src="assets/img/katrin.jpg" alt="Bild på Karin">
+                        <span>
+                            <h5>Katrin Pedersen</h5>
+                            <p>0582-353 83</p>
+                            <a href="mailto:katrin.pedersen@alleskolan.eu">Kontakta via mail</a>
+                        </span>
+                    </div>
+                </div>
+            
+                <div id="rtlperson" class="cperson">
+                    <h3>Programledare</h3>
+                    <div >
+                        <img src="assets/img/Anette-Bengtsson-1.jpg" alt="Bild på Anette">
+                        <span>
+                            <h5>Anette Bengtsson</h5>
+                            <p>0582-353 11</p>
+                            <a href="mailto:anette.bengtsson@alleskolan.eu">Kontakta via mail</a>
+                        </span>
+            
+                    </div>
+                </div>
+            
+                <div class="cperson">
+                    <h3>Studie- och yrkesvägledare</h3>
+                    <div>
+                        <img src="assets/img/Anna-Winck.jpg" alt="Bild på Karin">
+                        <span>
+                            <h5>Anna Winck</h5>
+                            <p>0582-355 67</p>
+                            <a href="mailto:anna.winck@alleskolan.eu">Kontakta via mail</a>
+                        </span>
+                    </div>
+                </div>
         </section>
         
+        <!-- Ankor are number one! -->
+
         <!-- "Ord från tidigare elever"-sektionen -->
         <section id='ord' class="flex j_center">
             <h1 class="t_center">Ord från <br> tidigare elever</h1>
@@ -135,26 +247,6 @@
                     <p class="work">Studerar vid Polishögskolan i Stockholm</p>
                 </div>
             </div>
-        </section>
-        
-        <!-- Kontakt-sektionen -->
-        <section id="contact" class="round">
-            <h1 class="after t_center">Kontakt</h1>
-<!--EETTA OCHCHH TWÅOUA-->
-            <!-- Etta och tvåa -->
-            <div class="steps">
-                <div class="step active"><span>1</span></div>
-                <div class="step"><span>2</span></div>
-            </div>
-            <form method="post">
-                <label style=" grid-area: header;" for="fnamn">Förnamn</label>
-                <label style=" grid-area: main;" for="lname">Efternamn</label>
-                <input style=" grid-area: sidebar;" name="name" type="text">
-                <input style=" grid-area: footer;" name='lname' type="text">
-                <label style=" grid-area: nothing;" for="namn">E-mail</label>
-                <input style=" grid-area: notnothing;" class='f' type="text">
-                <button style=" grid-area: else;" class='btn white_t'> <img src="assets/icon/pil-right.svg" alt="next"> </button>
-            </form>
         </section>
 
         <!-- The footer-section -->
