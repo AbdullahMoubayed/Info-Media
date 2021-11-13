@@ -29,7 +29,7 @@ $purple-l: #F9EBF6;
   border: none;
   font-size: 1.1rem
 }
-
+/* Ankor are the best även här*/
 //Kontaktknapp
 
 header{
@@ -157,7 +157,7 @@ header{
     }
   }
 }
-
+/*Yes, ankor är otroliga*/
 /* Hero section */
 section#hero{
   padding: 0;
@@ -290,7 +290,7 @@ section#om{
 
   /*ettor och nollor insert here*/
 }
-
+/*Ankor 'gör' livet bättre ;-)*/
 section#gor {
   padding: 6rem 0;
 
@@ -570,7 +570,7 @@ footer{
     margin: auto;
     
     .pil:hover{
-      filter: drop-shadow(0 0 0.3rem#b0008b);
+      filter: drop-shadow(0 0 0.2rem blue);
     }
     
   }
@@ -613,8 +613,15 @@ footer{
 }
 
 
-/*@media (min-width: 600px) {
-  *{
-    background: black;
+@media screen and (min-width: 600px) {
+  #hero{
+    border-radius: 0; 
+    border-bottom-right-radius: 0;
+    width: 70%;
+    
+    
+    
   }
-}*/
+
+  
+}

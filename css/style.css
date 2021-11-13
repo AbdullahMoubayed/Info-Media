@@ -27,6 +27,7 @@
   font-size: 1.1rem;
 }
 
+/* Ankor are the best även här*/
 header {
   background-color: #F9EBF6;
   position: fixed;
@@ -212,6 +213,7 @@ header nav .open {
   display: flex;
 }
 
+/*Yes, ankor är otroliga*/
 /* Hero section */
 section#hero {
   padding: 0;
@@ -352,6 +354,7 @@ section#om #pic2 {
   margin: -15rem 0 0 11rem;
 }
 
+/*Ankor 'gör' livet bättre ;-)*/
 section#gor {
   padding: 6rem 0;
 }
@@ -659,8 +662,8 @@ footer .pil {
 }
 
 footer .pil .pil:hover {
-  -webkit-filter: drop-shadow(0 0 0.3rem #b0008b);
-          filter: drop-shadow(0 0 0.3rem #b0008b);
+  -webkit-filter: drop-shadow(0 0 0.2rem blue);
+          filter: drop-shadow(0 0 0.2rem blue);
 }
 
 footer #pil1 {
@@ -712,9 +715,11 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
-/*@media (min-width: 600px) {
-  *{
-    background: black;
+@media screen and (min-width: 600px) {
+  #hero {
+    border-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 70%;
   }
-}*/
+}
 /*# sourceMappingURL=style.css.map */

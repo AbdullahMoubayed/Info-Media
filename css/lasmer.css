@@ -658,6 +658,11 @@ footer .pil {
   margin: auto;
 }
 
+footer .pil .pil:hover {
+  -webkit-filter: drop-shadow(0 0 0.2rem blue);
+          filter: drop-shadow(0 0 0.2rem blue);
+}
+
 footer #pil1 {
   margin-top: 0.5rem;
   margin-bottom: -1rem;
@@ -707,9 +712,14 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
-@media (min-width: 600px) {
-  * {
-    background: black;
+@media screen and (min-width: 600px) {
+  body {
+    padding: 2rem;
+    background: blue;
+    /*margin-left: 7rem;*/
+  }
+  img {
+    width: 1rem;
   }
 }
 
