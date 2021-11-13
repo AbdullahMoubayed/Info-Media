@@ -613,15 +613,20 @@ footer{
 }
 
 
-@media screen and (min-width: 600px) {
-  #hero{
-    border-radius: 0; 
-    border-bottom-right-radius: 0;
-    width: 70%;
-    
-    
-    
-  }
+@media screen and (min-width: 600px) { /*SCSS not working here?!?!?!*/
 
-  
+    section#hero{
+    
+    
+      margin-left: auto;
+      border-bottom-left-radius: 25%;
+      border-bottom-right-radius: 0;
+      width: 62.7%;
+    
+      img{
+        width: 60%;
+      } 
+    }
+    
+  //}
 }
