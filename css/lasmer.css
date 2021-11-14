@@ -716,15 +716,45 @@ footer .icon {
 }
 
 @media screen and (min-width: 600px) {
-  /*SCSS not working here?!?!?!*/
   section#hero {
     margin-left: auto;
-    border-bottom-left-radius: 25%;
+    border-bottom-left-radius: 30%;
     border-bottom-right-radius: 0;
     width: 62.7%;
+    height: 48rem;
+  }
+  section#hero h1, section#hero p {
+    position: absolute;
+    left: 8rem;
+  }
+  section#hero h1 {
+    top: 7.6875rem;
+    font-size: 5rem;
+  }
+  section#hero p {
+    margin-left: 0;
+    top: 17rem;
+    font-weight: 300;
+  }
+  section#hero p u {
+    -webkit-filter: drop-shadow(0 0 0.1rem #B0008B);
+            filter: drop-shadow(0 0 0.1rem #B0008B);
   }
   section#hero img {
-    width: 60%;
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#hero div.btns {
+    position: absolute;
+    direction: rtl;
+    left: 8rem;
+    top: 25rem;
+  }
+  section#hero div.btns .white_t {
+    border: 0.1rem solid #B0008B;
+    margin-left: 2rem;
   }
 }
 
