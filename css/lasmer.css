@@ -27,6 +27,7 @@
   font-size: 1.1rem;
 }
 
+/* Ankor are the best även här*/
 header {
   background-color: #F9EBF6;
   position: fixed;
@@ -212,6 +213,7 @@ header nav .open {
   display: flex;
 }
 
+/*Yes, ankor är otroliga*/
 /* Hero section */
 section#hero {
   padding: 0;
@@ -352,6 +354,7 @@ section#om #pic2 {
   margin: -15rem 0 0 11rem;
 }
 
+/*Ankor 'gör' livet bättre ;-)*/
 section#gor {
   padding: 6rem 0;
 }
@@ -713,13 +716,15 @@ footer .icon {
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    padding: 2rem;
-    background: blue;
-    /*margin-left: 7rem;*/
+  /*SCSS not working here?!?!?!*/
+  section#hero {
+    margin-left: auto;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 0;
+    width: 62.7%;
   }
-  img {
-    width: 1rem;
+  section#hero img {
+    width: 60%;
   }
 }
 

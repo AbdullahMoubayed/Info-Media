@@ -1,5 +1,4 @@
 
-
 //root
 $purple: #B0008B;
 $purple-l: #F9EBF6;
@@ -613,20 +612,66 @@ footer{
 }
 
 
-@media screen and (min-width: 600px) { /*SCSS not working here?!?!?!*/
+@media screen and (min-width: 600px) { 
+ 
+  //nav{
 
+  //  .menu-btn-burger{
+  //    display: none;
+  //  }
+  //}
     section#hero{
     
     
       margin-left: auto;
-      border-bottom-left-radius: 25%;
+      border-bottom-left-radius: 30%;
       border-bottom-right-radius: 0;
       width: 62.7%;
-    
+      height: 48rem;
+      
+
+      h1, p{
+        position: absolute;
+        left: 8rem;
+        
+      }
+
+      h1{
+        top: 7.6875rem;
+        font-size: 5rem;
+      }
+      
+      p{
+        margin-left: 0;
+        top: 17rem;
+        font-weight: 300;
+        
+
+        u{
+          filter: drop-shadow(0 0 0.1rem $purple);
+        }
+        
+      }
+
       img{
-        width: 60%;
+        width: 70%;
+        align-items: center;
       } 
+
+      div.btns{
+        position: absolute;
+        direction: rtl;
+        left: 8rem;
+        top: 25rem;
+        
+
+        .white_t{
+          border: 0.1rem solid $purple;
+          margin-left: 2rem;
+        }
+      }
+      
     }
     
-  //}
+  
 }
