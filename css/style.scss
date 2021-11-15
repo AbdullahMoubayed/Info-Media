@@ -159,6 +159,7 @@ header{
 /*Yes, ankor är otroliga*/
 /* Hero section */
 section#hero{
+  grid-area: header;
   padding: 0;
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -256,6 +257,7 @@ h1{
   }
 
 section#om{
+  grid-area: om;
   .text{
     margin: 3rem 0;
     line-height: 1.5rem;
@@ -291,6 +293,7 @@ section#om{
 }
 /*Ankor 'gör' livet bättre ;-)*/
 section#gor {
+  grid-area: gor;
   padding: 6rem 0;
 
   h1{
@@ -334,7 +337,7 @@ section#gor {
 }
 
 section#varfor{
-
+  grid-area: varfor;
 
   p{
     margin-top: 2rem;
@@ -369,6 +372,7 @@ section#varfor{
 }
 
 section#Kursstruktur{
+  grid-area: Kursstruktur;
   padding: 6rem 3rem;
 
   h1{
@@ -388,6 +392,7 @@ section#Kursstruktur{
 
 
 .poang-plan{
+  grid-area: poang-plan;
   background: $purple-l;
   margin: auto;
   text-align: center;
@@ -428,6 +433,7 @@ h3{
 }
 
 section#ord{
+  grid-area: ord;
   padding: 3rem 2.1875rem;
   
   h1{
@@ -482,6 +488,7 @@ section#ord{
 }
 
 section#contact{
+  grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
 
@@ -539,6 +546,7 @@ section#contact{
 
 
 footer{
+  grid-area: footer;
   background: $purple-l;
   align-items: center;
   text-align: center;
@@ -613,7 +621,36 @@ footer{
 
 /*AnKoR aNkOr*/
 @media screen and (min-width: 600px) { 
+
+    header {
+      grid-area: header;
+    }
+
+    nav{
+      background: rgb(255, 255, 255);
+      padding: 1rem 5rem !important;
+
+      .logo{
+        width: 11rem !important;
+      }
+    }
+
+    body{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "header header header header"
+      "hero hero hero hero"
+      "om om om ord"
+      "gor gor gor poang-plan"
+      "varfor varfor varfor contact"
+      "footer footer footer footer"
+      ;
+    }
+
    section#hero{
+     grid-area: hero;
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
@@ -622,34 +659,57 @@ footer{
      border-radius: 0;
      padding: 5rem 5rem;
      
-     img.imgg{
-      margin-top: -1rem;
-      
-      
-      width: 40rem;
+     .imgg{
       border: 0;
-      margin-right: 6rem;
-      width: 35%;
       background: $purple-l;
+      padding: 7rem;
+      flex-grow: 2;
+      margin-right: -5rem;
+      margin-top: -5rem;
+      border-bottom-left-radius: 18rem;
+      
+      img{
+        width: 40rem;
+        margin: -5rem auto;
+        margin-left: -3rem;
+        margin-bottom: -9rem;
+        background: none !important;
+      }
      }
  
      span{
        margin: 0;
+       padding: 0;
+       flex-grow: 1;
 
        h1{
         text-align: left;
         font-size: 4rem;
+        margin-top: 5.5rem;
        }
        
        p{
         text-align: left;
         margin-left: 0;
-        
+        color: #707070;
+        font-weight: 100 !important;
+        font-style: italic;
+        font-size: 2.8rem;
+        width: 25rem;
+        line-height: 3.5rem;
        }
 
        .btns{
         text-align: left;
+        margin-top: 3rem;
         
+        .white_t{
+          border: 0.1rem solid $purple;
+        }
+
+        .purple_t{
+          border: 0.1rem solid $purple;
+        }
        }
 
        
@@ -657,7 +717,6 @@ footer{
      }
    }
  section#om{
-   width: 25%;
 
    .after, .text, .om-btns{
     margin-left: 3rem;
@@ -665,7 +724,6 @@ footer{
      
    }
    .after{
-     
      border: 0.1rem solid red;
    }
    .text{
@@ -677,20 +735,17 @@ footer{
      text-align: left;
    }
  }
+
   section#gor{
-  margin-left: 55rem;
-  text-align: center;
-  width: 25%;
-  background: white;
-  text-align: left;
-  border-radius: 0;
+    text-align: center;
+    background: white;
+    text-align: left;
+    border-radius: 0;
   
   }
   section#varfor{
-    width: 25%;
   }
   section#Kursstruktur{ 
-    width: 25%;
     border-radius: 25%; // How should we do with this one? Not existing in XD
   }
   section.poang-plan{
@@ -703,18 +758,14 @@ footer{
     }
     border-radius: 4.375rem;
     margin-right: 5rem;
-    width: 25%;
   }
   #contact{
     
-    width: 25%;
   }
   #ord{
-    width: 25%;
     
   }
   footer{
-    width: 60%;
     border-top-right-radius: 20rem;
     
   }
