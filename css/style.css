@@ -1,26 +1,5 @@
 @charset "UTF-8";
 /*  Mediaqueries to make the website responsible to desktop devices at least  */
-@media screen and (min-width: 600px) {
-  section#hero {
-    background-color: blue;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  section#hero img.imgg {
-    width: 0;
-  }
-  section#hero span {
-    margin: 0;
-  }
-}
-
 *, html, body {
   padding: 0;
   margin: 0;
@@ -735,5 +714,40 @@ footer .ic {
 footer .icon {
   width: 1.5rem;
   margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  section#hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 5rem 5rem;
+  }
+  section#hero img.imgg {
+    width: 40rem;
+    border: 0;
+  }
+  section#hero span {
+    margin: 0;
+  }
+  section#hero span h1 {
+    text-align: left;
+    font-size: 4rem;
+  }
+  section#hero span p {
+    text-align: left;
+  }
+  section#hero span .btns {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */

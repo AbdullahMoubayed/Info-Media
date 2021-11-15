@@ -612,3 +612,43 @@ footer{
 }
 
 
+@media screen and (min-width: 600px) { 
+   section#hero{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     background-color: transparent;
+     border: 0;
+     border-radius: 0;
+     padding: 5rem 5rem;
+      
+     img.imgg{
+      width: 40rem;
+      border: 0;
+         
+     }
+ 
+     span{
+       margin: 0;
+
+       h1{
+        text-align: left;
+        font-size: 4rem;
+       }
+       
+       p{
+        text-align: left;
+        
+       }
+
+       .btns{
+        text-align: left;
+       }
+
+     }
+   }
+ 
+    
+       
+     
+ }

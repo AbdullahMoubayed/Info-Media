@@ -1,4 +1,26 @@
 @charset "UTF-8";
+/*  Mediaqueries to make the website responsible to desktop devices at least  */
+@media screen and (min-width: 600px) {
+  section#hero {
+    background-color: blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#hero img.imgg {
+    width: 50rem;
+  }
+  section#hero span {
+    margin: 0;
+  }
+}
+
 *, html, body {
   padding: 0;
   margin: 0;
@@ -713,48 +735,6 @@ footer .ic {
 footer .icon {
   width: 1.5rem;
   margin-right: 0.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  section#hero {
-    margin-left: auto;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 0;
-    width: 62.7%;
-    height: 48rem;
-  }
-  section#hero h1, section#hero p {
-    position: absolute;
-    left: 5rem;
-  }
-  section#hero h1 {
-    top: 7.6875rem;
-    font-size: 5.5rem;
-  }
-  section#hero p {
-    margin-left: 0;
-    top: 17rem;
-  }
-  section#hero p u {
-    -webkit-filter: drop-shadow(0 0 0.1rem #B0008B);
-            filter: drop-shadow(0 0 0.1rem #B0008B);
-  }
-  section#hero img {
-    width: 70%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  section#hero div.btns {
-    position: absolute;
-    direction: rtl;
-    left: 8rem;
-    top: 25rem;
-  }
-  section#hero div.btns .white_t {
-    border: 0.1rem solid #B0008B;
-    margin-left: 2rem;
-  }
 }
 
 #pilpil {
