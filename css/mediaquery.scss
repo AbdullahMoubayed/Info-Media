@@ -1,2 +1,26 @@
+$purple: #B0008B;
+$purple-l: #F9EBF6;
+/*  Mediaqueries to make the website responsible to desktop devices at least  */
+@media screen and (min-width: 600px) { 
 
-/*  Mediaqueries to make the website responaible to nearly all device  */
+ 
+  section#hero{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img.imgg{
+        width: 50rem;
+        //border-bottom-left-radius: 25%;
+        //border-bottom-right-radius: 0;
+    }
+
+    span{
+      margin: 0;
+    }
+  }
+
+      
+      
+    
+}

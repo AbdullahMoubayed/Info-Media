@@ -1,2 +1,22 @@
-/*  Mediaqueries to make the website responaible to nearly all device  */
+/*  Mediaqueries to make the website responsible to desktop devices at least  */
+@media screen and (min-width: 600px) {
+  section#hero {
+    background-color: blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#hero img.imgg {
+    width: 50rem;
+  }
+  section#hero span {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=mediaquery.css.map */
