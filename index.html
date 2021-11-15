@@ -49,8 +49,8 @@
                 <h1 class="t_center">Info-Media</h1>
                 <p><i>Gör dina digitala idéer verkliga</i></p>
                 <div class="btns">
-                    <a href="html/las-mer.html"><button class="btn white_t t_center" type="button">Öppet hus</button></a>
-                    <a href="html/las-mer.html"><button class="btn purple_t t_center" type="button">Studieplan</button></a>
+                    <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet hus</button></a>
+                    <a href="#studieplan"><button class="btn purple_t t_center" type="button">Studieplan</button></a>
                 </div>
             </span>
             <img class="imgg" src="assets/img/hero.png" alt="Computah">
@@ -65,9 +65,8 @@
             <p class="text">Info-Media ger dig kunskaper om digital teknik. För dig som har intresset kring datorteknik, programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
 
             <div class="om-btns m_auto t_center">
-                <!--fix da button-click thing-->
-                <a href="html/las-mer.html"><input class="btn purple_t" type="button" value="Läs mer"></a>
-                <a href="html/las-mer.html"><input class="btn purple_t" type="button" value="Elev för en dag"></a>
+                <a href="html/las-mer.html#om1"><input class="btn purple_t" type="button" value="Läs mer"></a>
+                <a href="html/las-mer.html#elevforendag"><input class="btn purple_t" type="button" value="Elev för en dag"></a>
             </div>
             <img id="pic1" src="assets/img/code.jpg" alt="computar nerd">
             <img  id="pic2" src="assets/img/VR.jpg" alt="vr nerd">
@@ -80,9 +79,9 @@
             <p class='after'>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
             <p class='after'>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
             <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
-            <a href="html/las-mer.html"><input class="btn purple" type="button" value="Läs mer"></a>
+            <a href="html/las-mer.html#gor1"><input class="btn purple" type="button" value="Läs mer"></a>
             
-        <!-- The grid of the languages that we are going to learn -->
+        <!-- The grid of the languages that we are going to learn. From JS -->
             <div class="språk-grid-container flex">
                 <div class="språk-item" v-for="item in språk">
                     <img :src="item.url" alt="språk">
@@ -108,11 +107,11 @@
             <h1 class='after'>Kursstruktur</h1>
             <p class='after'>Info-Media är uppdelat i två spår: Ingenjör- och teknikerspåret. Olika kurser läggs till beroende på vilket spår du väljer.</p>
             <p>Oberoende på vilket spår du väljer kommer du läsa kurserna: Webbserverprogrammering 1, Webbutveckling 1, Programmering 1, Dator- och nätverksteknik 1 & Digitalt skapande 1.</p>
-            <a href="html/las-mer.html"><input class="btn purple_t" type="button" value="Studieplan"></a>
+            <a href="html/las-mer.html#struktur1"><input class="btn purple_t" type="button" value="Studieplan"></a>
             </section>
             
-            <section class='poang-plan'>
-                <h3>Poängplan</h3>
+            <section id="studieplan" class='poang-plan'>
+                <h3>Studieplan</h3>
                 <ul>
                     <li>Inriktningar</li>
                     <li>Åk 2</li>

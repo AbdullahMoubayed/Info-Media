@@ -611,7 +611,7 @@ footer{
   }
 }
 
-
+/*AnKoR aNkOr*/
 @media screen and (min-width: 600px) { 
    section#hero{
      display: flex;
@@ -621,11 +621,16 @@ footer{
      border: 0;
      border-radius: 0;
      padding: 5rem 5rem;
-      
+     
      img.imgg{
+      margin-top: -1rem;
+      
+      
       width: 40rem;
       border: 0;
-         
+      margin-right: 6rem;
+      width: 35%;
+      background: $purple-l;
      }
  
      span{
@@ -638,17 +643,80 @@ footer{
        
        p{
         text-align: left;
+        margin-left: 0;
         
        }
 
        .btns{
         text-align: left;
+        
        }
+
+       
 
      }
    }
- 
-    
-       
+ section#om{
+   width: 25%;
+
+   .after, .text, .om-btns{
+    margin-left: 3rem;
+     text-align: left;
      
+   }
+   .after{
+     
+     border: 0.1rem solid red;
+   }
+   .text{
+     border: 0.1rem solid blue;
+    margin-top: 1.5rem;
+    
+   }
+   .om-btns{
+     text-align: left;
+   }
+ }
+  section#gor{
+  margin-left: 55rem;
+  text-align: center;
+  width: 25%;
+  background: white;
+  text-align: left;
+  border-radius: 0;
+  
+  }
+  section#varfor{
+    width: 25%;
+  }
+  section#Kursstruktur{ 
+    width: 25%;
+    border-radius: 25%; // How should we do with this one? Not existing in XD
+  }
+  section.poang-plan{
+    
+    h3{
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin-top: -1.5rem;
+      
+    }
+    border-radius: 4.375rem;
+    margin-right: 5rem;
+    width: 25%;
+  }
+  #contact{
+    
+    width: 25%;
+  }
+  #ord{
+    width: 25%;
+    
+  }
+  footer{
+    width: 60%;
+    border-top-right-radius: 20rem;
+    
+  }
+
  }

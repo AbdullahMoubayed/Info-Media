@@ -716,6 +716,7 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
+/*AnKoR aNkOr*/
 @media screen and (min-width: 600px) {
   section#hero {
     display: -webkit-box;
@@ -733,8 +734,12 @@ footer .icon {
     padding: 5rem 5rem;
   }
   section#hero img.imgg {
+    margin-top: -1rem;
     width: 40rem;
     border: 0;
+    margin-right: 6rem;
+    width: 35%;
+    background: #F9EBF6;
   }
   section#hero span {
     margin: 0;
@@ -745,9 +750,62 @@ footer .icon {
   }
   section#hero span p {
     text-align: left;
+    margin-left: 0;
   }
   section#hero span .btns {
     text-align: left;
+  }
+  section#om {
+    width: 25%;
+  }
+  section#om .after, section#om .text, section#om .om-btns {
+    margin-left: 3rem;
+    text-align: left;
+  }
+  section#om .after {
+    border: 0.1rem solid red;
+  }
+  section#om .text {
+    border: 0.1rem solid blue;
+    margin-top: 1.5rem;
+  }
+  section#om .om-btns {
+    text-align: left;
+  }
+  section#gor {
+    margin-left: 55rem;
+    text-align: center;
+    width: 25%;
+    background: white;
+    text-align: left;
+    border-radius: 0;
+  }
+  section#varfor {
+    width: 25%;
+  }
+  section#Kursstruktur {
+    width: 25%;
+    border-radius: 25%;
+  }
+  section.poang-plan {
+    border-radius: 4.375rem;
+    margin-right: 5rem;
+    width: 25%;
+  }
+  section.poang-plan h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -1.5rem;
+  }
+  #contact {
+    width: 25%;
+  }
+  #ord {
+    width: 25%;
+  }
+  footer {
+    width: 60%;
+    border-top-right-radius: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
