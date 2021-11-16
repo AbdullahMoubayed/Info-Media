@@ -904,6 +904,12 @@ footer .icon {
   section#gor .span-cont p::after {
     display: none;
   }
+  section#gor .span-cont a {
+    width: 100%;
+  }
+  section#gor .span-cont a input {
+    margin-left: 5rem;
+  }
   section#gor .span-cont img {
     width: 20rem;
     height: auto;
@@ -911,21 +917,41 @@ footer .icon {
     margin-top: 3rem;
     margin-right: 3rem;
   }
+  section#gor ::-webkit-scrollbar {
+    width: 0;
+  }
+  section#gor .språk-grid-container {
+    padding-left: 0;
+  }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
+    margin: auto;
+    padding: 2.5rem 2rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  section#gor .språk-grid-container .språk-item img {
+    width: 6rem;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  section#gor .språk-grid-container .språk-item p {
+    margin: 0;
+    margin-top: 1rem;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
   section#gor input {
     color: #fff !important;
@@ -941,7 +967,7 @@ footer .icon {
     max-width: 24.5rem;
   }
   section.poang-plan {
-    border-radius: 4.375rem;
+    border-radius: 3rem;
     margin-right: 5rem !important;
     max-width: 24.5rem;
   }
@@ -953,7 +979,7 @@ footer .icon {
   #ord {
     margin-top: -3rem;
     background: #f9ebf6;
-    border-radius: 4.375rem;
+    border-radius: 3rem;
     overflow: visible;
     margin: auto;
     margin-right: 5rem;

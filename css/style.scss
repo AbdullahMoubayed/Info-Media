@@ -780,6 +780,14 @@ footer {
       p::after{
         display: none;
       }
+      
+      a{
+        width: 100%;
+
+        input{
+          margin-left: 5rem;
+        }
+      }
 
       img{
         width: 20rem;
@@ -790,13 +798,33 @@ footer {
       }
     }
 
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
     .språk-grid-container {
+      padding-left: 0;
       .språk-item {
         background-color: $purple-l;
+        margin: auto;
+        padding: 2.5rem 2rem;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
+        align-items: center;
+        transform: rotate(2deg);
+
+        img{
+          width: 6rem;
+          transform: rotate(-2deg);
+        }
+
+        p{
+          margin: 0;
+          margin-top: 1rem;
+          transform: rotate(-2deg);
+        }
       }
     }
 
@@ -820,7 +848,7 @@ footer {
   }
 
   section.poang-plan {
-    border-radius: 4.375rem;
+    border-radius: 3rem;
     margin-right: 5rem !important;
     max-width: 24.5rem;
 
@@ -835,7 +863,7 @@ footer {
   #ord {
     margin-top: -3rem;
     background: $purple-l;
-    border-radius: 4.375rem;
+    border-radius: 3rem;
     overflow: visible;
     margin: auto;
     margin-right: 5rem;
