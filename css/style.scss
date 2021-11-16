@@ -645,9 +645,9 @@ footer {
       'header header'
       'hero hero'
       'om poang-plan'
-      'varfor .'
+      'varfor contact'
       'gor gor'
-      'contact ord'
+      '. ord'
       'footer footer';
   }
 
@@ -769,7 +769,7 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -4rem;
+    margin-top: -40rem;
 
     .span-cont{
       display: flex;
@@ -804,6 +804,7 @@ footer {
 
     .språk-grid-container {
       padding-left: 0;
+      margin-top: 15rem;
       .språk-item {
         background-color: $purple-l;
         margin: auto;
@@ -881,6 +882,12 @@ footer {
     }
   }
   #contact {
+    width: 24.5rem !important;
+    margin: 0 !important;
+    margin-right: 5rem !important;
+    margin-left: auto !important;
+    padding: 0 !important;
+    margin-top: 5rem !important;
   }
   #ord {
     margin-top: -3rem;

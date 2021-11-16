@@ -762,7 +762,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'header header' 'hero hero' 'om poang-plan' 'varfor .' 'gor gor' 'contact ord' 'footer footer';
+        grid-template-areas: 'header header' 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' '. ord' 'footer footer';
   }
   #Kursstruktur {
     display: none;
@@ -887,7 +887,7 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -4rem;
+    margin-top: -40rem;
   }
   section#gor .span-cont {
     display: -webkit-box;
@@ -922,6 +922,7 @@ footer .icon {
   }
   section#gor .språk-grid-container {
     padding-left: 0;
+    margin-top: 15rem;
   }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
@@ -1002,6 +1003,14 @@ footer .icon {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     margin-top: -1.5rem;
+  }
+  #contact {
+    width: 24.5rem !important;
+    margin: 0 !important;
+    margin-right: 5rem !important;
+    margin-left: auto !important;
+    padding: 0 !important;
+    margin-top: 5rem !important;
   }
   #ord {
     margin-top: -3rem;
