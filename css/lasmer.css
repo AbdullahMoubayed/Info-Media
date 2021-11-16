@@ -825,11 +825,7 @@ footer .icon {
     margin-left: 3rem;
     text-align: left;
   }
-  section#om .after {
-    border: 0.1rem solid red;
-  }
   section#om .text {
-    border: 0.1rem solid blue;
     margin-top: 1.5rem;
   }
   section#om .om-btns {
