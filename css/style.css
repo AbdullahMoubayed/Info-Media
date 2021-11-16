@@ -762,7 +762,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'header header' 'hero hero' 'om ord' 'gor gor' 'varfor contact' '. puang-plan' 'footer footer';
+        grid-template-areas: 'header header' 'hero hero' 'om ord' 'gor gor' 'varfor contact' '. poang-plan' 'footer footer';
   }
   #Kursstruktur {
     display: none;
