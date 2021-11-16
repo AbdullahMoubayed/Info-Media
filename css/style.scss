@@ -637,15 +637,15 @@ footer{
 
     body{
       display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-columns: 33% 33% 33%;
       grid-template-rows: auto;
       grid-template-areas: 
-      "header header header header"
-      "hero hero hero hero"
-      "om om om ord"
-      "gor gor gor poang-plan"
-      "varfor varfor varfor contact"
-      "footer footer footer footer"
+      "header header  header"
+      "hero hero  hero"
+      "om om  ord"
+      "gor gor  poang-plan"
+      "varfor  varfor contact"
+      "footer  footer footer"
       ;
     }
 
