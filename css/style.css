@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*  Mediaqueries to make the website responsible to desktop devices at least  */
-*, html, body {
+*,
+html,
+body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -11,14 +13,14 @@
 
 .purple_t {
   color: #fff;
-  background: #B0008B;
-  margin-left: .5rem;
+  background: #b0008b;
+  margin-left: 0.5rem;
 }
 
 .white_t {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   background: #fff;
-  color: #B0008B;
+  color: #b0008b;
 }
 
 .btn {
@@ -30,7 +32,7 @@
 
 /* Ankor are the best även här*/
 header {
-  background-color: #F9EBF6;
+  background-color: #f9ebf6;
   position: fixed;
   z-index: 111;
   width: 100%;
@@ -57,8 +59,8 @@ header nav .logo {
 header nav .menu-btn {
   height: 1rem;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,10 +75,10 @@ header nav .menu-btn {
 
 header nav .menu-btn .menu-btn_burger {
   width: 2rem;
-  height: .15rem;
-  background-color: #38524F;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  height: 0.15rem;
+  background-color: #38524f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header nav ul {
@@ -178,10 +180,10 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   font-size: 2rem;
-  color: #38524F;
+  color: #38524f;
   font-weight: thin;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#38524F), to(#38524F));
-  background-image: linear-gradient(#38524F, #38524F);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#38524f), to(#38524f));
+  background-image: linear-gradient(#38524f, #38524f);
   background-size: 0 0.105rem;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -222,7 +224,7 @@ section#hero {
   padding-top: 5rem;
   padding-bottom: 3rem;
   margin: 0 0 3rem 0;
-  background: #F9EBF6;
+  background: #f9ebf6;
   border-bottom-left-radius: 100rem;
   border-bottom-right-radius: 100rem;
   z-index: 5;
@@ -232,7 +234,7 @@ section#hero h1 {
   margin-top: 3rem;
   font-size: 4rem;
   text-align: center;
-  color: #B0008B;
+  color: #b0008b;
 }
 
 section#hero p {
@@ -260,7 +262,7 @@ section#hero .framtid {
   text-transform: uppercase;
   margin-top: -6rem;
   width: 100%;
-  color: #F9EBF6;
+  color: #f9ebf6;
   text-align: center;
   margin-bottom: 3rem;
   z-index: -1;
@@ -301,7 +303,7 @@ section {
 }
 
 section.round {
-  background: #F9EBF6;
+  background: #f9ebf6;
   border-radius: 100rem;
   padding: 6rem 2.1875rem;
 }
@@ -311,10 +313,10 @@ h1 {
 }
 
 .after::after {
-  content: "";
+  content: '';
   display: block;
   padding: 0.04rem;
-  background: #B0008B;
+  background: #b0008b;
   width: 35%;
   margin: auto;
   margin-top: 1rem;
@@ -374,7 +376,7 @@ section#gor p {
 
 section#gor .btn {
   background: white;
-  color: #B0008B;
+  color: #b0008b;
   margin: 1rem 0 0 0;
 }
 
@@ -460,10 +462,10 @@ section#Kursstruktur input {
 
 .poang-plan {
   grid-area: poang-plan;
-  background: #F9EBF6;
+  background: #f9ebf6;
   margin: auto;
   text-align: center;
-  background: #F9EBF6;
+  background: #f9ebf6;
   border-radius: 100rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -599,7 +601,7 @@ section#contact .cperson div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 0.3rem solid #F9EBF6;
+  border: 0.3rem solid #f9ebf6;
   background-color: #f9ebf62d;
   padding: 1rem;
   border-radius: 1rem;
@@ -632,7 +634,7 @@ section#contact .cperson div img {
 
 footer {
   grid-area: footer;
-  background: #F9EBF6;
+  background: #f9ebf6;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -670,7 +672,7 @@ footer .pil {
           justify-content: center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  background: #F9EBF6;
+  background: #f9ebf6;
   margin: auto;
 }
 
@@ -731,13 +733,14 @@ footer .icon {
 /*AnKoR aNkOr*/
 /*--< MEDIA QUERY FOR DESKTOP >--*/
 @media screen and (min-width: 600px) {
-  button, input {
+  button,
+  input {
     cursor: pointer;
   }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    -ms-grid-column-span: 2;
     grid-area: header;
   }
   nav {
@@ -755,11 +758,11 @@ footer .icon {
     padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "header header header header" "hero hero hero hero" "om om ord ord" "gor gor poang-plan poang-plan" "varfor varfor varfor contact" "footer footer footer footer";
+        grid-template-areas: 'header header' 'hero hero' 'om ord' 'gor gor' 'varfor contact' '. puang-plan' 'footer footer';
   }
   #Kursstruktur {
     display: none;
@@ -767,7 +770,7 @@ footer .icon {
   section#hero {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    -ms-grid-column-span: 2;
     grid-area: hero;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,7 +788,7 @@ footer .icon {
   }
   section#hero .imgg {
     border: 0;
-    background: #F9EBF6;
+    background: #f9ebf6;
     padding: 7rem;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
@@ -797,6 +800,7 @@ footer .icon {
   }
   section#hero .imgg img {
     width: 40rem;
+    height: auto;
     margin: -5rem auto;
     margin-left: -3rem;
     margin-bottom: -9rem;
@@ -829,29 +833,51 @@ footer .icon {
     margin-top: 3rem;
   }
   section#hero span .btns .white_t {
-    border: 0.1rem solid #B0008B;
+    border: 0.1rem solid #b0008b;
   }
   section#hero span .btns .purple_t {
-    border: 0.1rem solid #B0008B;
+    border: 0.1rem solid #b0008b;
   }
   section#om {
     padding: 0;
     margin: 0;
     padding-left: 5rem;
-    margin-top: -3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
-  section#om .after, section#om .text, section#om .om-btns {
+  section#om .after,
+  section#om .text,
+  section#om .om-btns {
     text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  section#om .after input,
+  section#om .text input,
+  section#om .om-btns input {
+    margin-left: 0;
+    margin-right: 1rem;
   }
   section#om .text {
     width: 20rem;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
   }
-  section#om .om-btns {
-    text-align: left;
-  }
-  section#om #pic1, section#om #pic2 {
+  section#om #pic1,
+  section#om #pic2 {
     display: none;
+  }
+  section#om #pic3 {
+    width: 20rem;
+    height: auto;
+    border-radius: 1.5rem;
+    margin-top: 5rem;
   }
   section#gor {
     text-align: center;
@@ -861,10 +887,32 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -20rem;
+    margin-top: -11rem;
+  }
+  section#gor .span-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: 60%;
+  }
+  section#gor .span-cont p::after {
+    display: none;
+  }
+  section#gor .span-cont img {
+    width: 20rem;
+    height: auto;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
   }
   section#gor .språk-grid-container .språk-item {
-    background-color: #F9EBF6;
+    background-color: #f9ebf6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -881,10 +929,11 @@ footer .icon {
   }
   section#gor input {
     color: #fff !important;
-    background: #B0008B !important;
+    background: #b0008b !important;
     cursor: pointer;
   }
-  section#gor h1, section#gor p {
+  section#gor h1,
+  section#gor p {
     margin-left: 0;
   }
   section#gor .text {
@@ -903,12 +952,12 @@ footer .icon {
   }
   #ord {
     margin-top: -3rem;
-    background: #F9EBF6;
+    background: #f9ebf6;
     border-radius: 4.375rem;
     overflow: visible;
     margin: auto;
     margin-right: 5rem;
-    padding: 2rem 1rem  2rem 1.5rem !important;
+    padding: 2rem 1rem 2rem 1.5rem !important;
   }
   #ord .sub {
     width: 15rem;

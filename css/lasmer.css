@@ -729,7 +729,11 @@ footer .icon {
 }
 
 /*AnKoR aNkOr*/
+/*--< MEDIA QUERY FOR DESKTOP >--*/
 @media screen and (min-width: 600px) {
+  button, input {
+    cursor: pointer;
+  }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -743,14 +747,22 @@ footer .icon {
   nav .logo {
     width: 11rem !important;
   }
+  .after::after {
+    margin: 0;
+  }
   body {
+    margin: 0;
+    padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "header header header header" "hero hero hero hero" "om om om ord" "gor gor gor poang-plan" "varfor varfor varfor contact" "footer footer footer footer";
+        grid-template-areas: "header header header header" "hero hero hero hero" "om om ord ord" "gor gor poang-plan poang-plan" "varfor varfor varfor contact" "footer footer footer footer";
+  }
+  #Kursstruktur {
+    display: none;
   }
   section#hero {
     -ms-grid-row: 2;
@@ -781,6 +793,7 @@ footer .icon {
     margin-right: -5rem;
     margin-top: -5rem;
     border-bottom-left-radius: 18rem;
+    height: 100vh;
   }
   section#hero .imgg img {
     width: 40rem;
@@ -821,36 +834,93 @@ footer .icon {
   section#hero span .btns .purple_t {
     border: 0.1rem solid #B0008B;
   }
+  section#om {
+    padding: 0;
+    margin: 0;
+    padding-left: 5rem;
+    margin-top: -3.5rem;
+  }
   section#om .after, section#om .text, section#om .om-btns {
-    margin-left: 3rem;
     text-align: left;
   }
   section#om .text {
+    width: 20rem;
     margin-top: 1.5rem;
   }
   section#om .om-btns {
     text-align: left;
+  }
+  section#om #pic1, section#om #pic2 {
+    display: none;
   }
   section#gor {
     text-align: center;
     background: white;
     text-align: left;
     border-radius: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 5rem;
+    margin-top: -20rem;
   }
-  section#Kursstruktur {
-    border-radius: 25%;
+  section#gor .språk-grid-container .språk-item {
+    background-color: #F9EBF6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#gor input {
+    color: #fff !important;
+    background: #B0008B !important;
+    cursor: pointer;
+  }
+  section#gor h1, section#gor p {
+    margin-left: 0;
+  }
+  section#gor .text {
+    width: 5rem;
+    max-width: 24.5rem;
   }
   section.poang-plan {
     border-radius: 4.375rem;
-    margin-right: 5rem;
+    margin-right: 5rem !important;
+    max-width: 24.5rem;
   }
   section.poang-plan h3 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     margin-top: -1.5rem;
   }
+  #ord {
+    margin-top: -3rem;
+    background: #F9EBF6;
+    border-radius: 4.375rem;
+    overflow: visible;
+    margin: auto;
+    margin-right: 5rem;
+    padding: 2rem 1rem  2rem 1.5rem !important;
+  }
+  #ord .sub {
+    width: 15rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+  }
   footer {
     border-top-right-radius: 20rem;
+  }
+  footer a {
+    text-decoration: none;
   }
 }
 

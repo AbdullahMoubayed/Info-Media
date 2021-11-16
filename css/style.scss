@@ -1,72 +1,72 @@
 @import 'mediaquery.scss';
 //root
-$purple: #B0008B;
-$purple-l: #F9EBF6;
+$purple: #b0008b;
+$purple-l: #f9ebf6;
 
-*, html, body{
+*,
+html,
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; /*The holy font*/
 }
 
-.purple_t{
-  color: #fff; 
+.purple_t {
+  color: #fff;
   background: $purple;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
-.white_t{
-  margin-right: .5rem;
+.white_t {
+  margin-right: 0.5rem;
   background: #fff;
   color: $purple;
 }
 
-.btn{
+.btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
   border: none;
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 /* Ankor are the best även här*/
 //Kontaktknapp
 
-header{
+header {
   background-color: $purple-l;
   position: fixed;
   z-index: 111;
   width: 100%;
-  
 
-  nav{
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.1875rem;
-    
 
     .logo {
       width: 9rem;
     }
 
     /* Menu functionality */
-    .menu-btn{
+    .menu-btn {
       height: 1rem;
       cursor: pointer;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      .menu-btn_burger{
+      .menu-btn_burger {
         width: 2rem;
-        height: .15rem;
-        background-color: #38524F;
-        transition: all .5s ease-in-out;
+        height: 0.15rem;
+        background-color: #38524f;
+        transition: all 0.5s ease-in-out;
       }
     }
 
-    ul{
+    ul {
       position: fixed;
       top: 0;
       left: 0;
@@ -79,86 +79,89 @@ header{
       display: flex;
       flex-direction: column;
       opacity: 0;
-      
 
-      &.activ{
+      &.activ {
         animation: fadeIn 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
-        
+
         @keyframes fadeIn {
-          0% { opacity: 0; }
-          1% { opacity: 0; }
-          100% { opacity:1 }
+          0% {
+            opacity: 0;
+          }
+          1% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
         opacity: 1;
 
         @keyframes upper {
-          0% { 
-            margin-top: 4rem;
-             opacity: 0;
-          }
-          1% { 
+          0% {
             margin-top: 4rem;
             opacity: 0;
-
           }
-          100% { 
+          1% {
+            margin-top: 4rem;
+            opacity: 0;
+          }
+          100% {
             margin-top: 2rem;
             opacity: 1;
-
           }
         }
       }
 
-      i{
+      i {
         margin-left: auto;
         margin-top: 1.19rem;
         margin-bottom: 3rem;
       }
 
-      li{
+      li {
         margin-top: 2rem;
         margin-left: 1rem;
         list-style: none;
         text-align: left;
         animation: upper 0.65s cubic-bezier(0, 0, 0.2, 1);
-        
-        a{
+
+        a {
           text-decoration: none;
           font-size: 2rem;
-          color: #38524F;
+          color: #38524f;
           font-weight: thin;
-          background-image: linear-gradient(#38524F, #38524F);
+          background-image: linear-gradient(#38524f, #38524f);
           background-size: 0 0.105rem;
           background-repeat: no-repeat;
           background-position: left bottom;
           transition: background-size 500ms cubic-bezier(0.55, 0.16, 0, 0.94);
 
-          &:hover{
+          &:hover {
             background-size: 100% 0.105rem;
           }
         }
       }
 
-      div.i{
+      div.i {
         display: flex;
         justify-content: space-between;
         margin-top: auto;
         margin-bottom: 1rem;
 
-        img{
+        img {
           width: 2rem;
         }
       }
     }
 
-    .open{
+    .open {
       display: flex;
     }
   }
 }
 /*Yes, ankor är otroliga*/
 /* Hero section */
-section#hero{
+section#hero {
   grid-area: header;
   padding: 0;
   padding-top: 5rem;
@@ -169,34 +172,33 @@ section#hero{
   border-bottom-right-radius: 100rem;
   z-index: 5;
 
-  h1{
+  h1 {
     margin-top: 3rem;
     font-size: 4rem;
     text-align: center;
     color: $purple;
   }
 
-  p{
+  p {
     text-align: center;
     margin: 2rem 2rem;
     font-size: 3rem;
     font-weight: 300;
   }
 
-  .btns{
+  .btns {
     text-align: center;
     margin-top: 1rem;
-    
   }
 
-  img{
+  img {
     margin-top: 1rem;
     text-align: center;
     width: 100%;
     padding: 0 4rem;
   }
 
-  .framtid{
+  .framtid {
     font-family: arial; /*Should change font*/
     text-transform: uppercase;
     margin-top: -6rem;
@@ -208,8 +210,8 @@ section#hero{
   }
 }
 
-//contact 
-.contact-cr{
+//contact
+.contact-cr {
   width: 5rem;
   height: 5rem;
   background-color: rgba(176, 0, 139, 0.6);
@@ -225,10 +227,9 @@ section#hero{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-section{
+section {
   margin: auto;
   text-align: center;
   padding: 1rem 2.1875rem;
@@ -236,46 +237,45 @@ section{
   overflow: hidden;
 }
 
-section.round{
+section.round {
   background: $purple-l;
   border-radius: 100rem;
   padding: 6rem 2.1875rem;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-.after::after{
-    content: "";
-    display: block;
-    padding: 0.04rem;
-    background: $purple;
-    width: 35%;
-    margin: auto;
-    margin-top: 1rem;
-  }
+.after::after {
+  content: '';
+  display: block;
+  padding: 0.04rem;
+  background: $purple;
+  width: 35%;
+  margin: auto;
+  margin-top: 1rem;
+}
 
-section#om{
+section#om {
   grid-area: om;
-  .text{
+  .text {
     margin: 3rem 0;
     line-height: 1.5rem;
   }
 
-  .om-btns{
+  .om-btns {
     width: 100%;
     margin: auto;
     text-align: center;
-    
 
-    input{
+    input {
       margin-bottom: 1.5rem;
     }
   }
 
   /*First two pictures*/
-  #pic1{
+  #pic1 {
     width: 13rem;
     transform: rotate(-17deg);
     border-radius: 2rem;
@@ -286,7 +286,7 @@ section#om{
     width: 13rem;
     transform: rotate(12deg);
     border-radius: 2rem;
-    margin: -15rem 0 0 11rem; 
+    margin: -15rem 0 0 11rem;
   }
 
   /*ettor och nollor insert here*/
@@ -296,7 +296,7 @@ section#gor {
   grid-area: gor;
   padding: 6rem 0;
 
-  h1{
+  h1 {
     // font-size: 3.2rem;
     margin: 0 2.1875rem 2rem 2.1875rem;
   }
@@ -306,92 +306,90 @@ section#gor {
     margin: 2rem 2.1875rem;
   }
 
-  .btn{
+  .btn {
     background: white;
     color: $purple;
     margin: 1rem 0 0 0;
   }
 
-  .språk-grid-container{
+  .språk-grid-container {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    padding: 0 2.1875rem;    
+    padding: 0 2.1875rem;
     margin-top: 4rem;
 
-    .språk-item{
+    .språk-item {
       background: #fff;
       border-radius: 1rem;
       padding: 1.5rem 0.6rem;
       margin-right: 1rem;
 
-      img{
+      img {
         width: 4rem;
       }
 
-      p{
+      p {
         margin-bottom: 0;
       }
     }
   }
 }
 
-section#varfor{
+section#varfor {
   grid-area: varfor;
 
-  p{
+  p {
     margin-top: 2rem;
     line-height: 1.5rem;
   }
 
-  #v-div{
+  #v-div {
     width: 100%;
     margin: auto;
     text-align: center;
     padding: 2rem 0;
   }
 
-  .v-wrapper{
+  .v-wrapper {
     width: 100%;
     margin-top: 2rem;
 
-    img{
+    img {
       width: 17rem;
-      border-radius: 1rem;    
+      border-radius: 1rem;
     }
 
-    #v-img-1{
+    #v-img-1 {
       margin-right: -10rem;
     }
 
-    #v-img-2{
+    #v-img-2 {
       margin-left: -10rem;
     }
   }
-  
 }
 
-section#Kursstruktur{
+section#Kursstruktur {
   grid-area: Kursstruktur;
   padding: 6rem 3rem;
 
-  h1{
+  h1 {
     margin-bottom: 3rem;
     font-size: 2.5rem;
   }
 
-  p{
+  p {
     margin-top: 2rem;
     line-height: 1.5rem;
     line-height: 1.8rem;
   }
-  input{
+  input {
     margin-top: 3rem;
   }
 }
 
-
-.poang-plan{
+.poang-plan {
   grid-area: poang-plan;
   background: $purple-l;
   margin: auto;
@@ -401,67 +399,67 @@ section#Kursstruktur{
   padding-top: 5rem;
   padding-bottom: 5rem;
 
-  ul{
+  ul {
     display: flex;
     justify-content: space-between;
     margin: 1rem;
     text-align: left;
 
-    li{
+    li {
       list-style: none;
     }
   }
-  
-div.div{
-  background: #ffff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 10rem;
-  display: flex;
-  justify-content: space-between;
+
+  div.div {
+    background: #ffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .NIU {
+    padding: 0.5rem 0;
+    color: rgb(49, 46, 46);
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
-.NIU{
-  padding: 0.5rem 0;
-  color: rgb(49, 46, 46);
-}
-
-h3{
-  text-align: center;
-  font-size: 2rem;
-}   
-}
-
-section#ord{
+section#ord {
   grid-area: ord;
   padding: 3rem 2.1875rem;
-  
-  h1{
+
+  h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
   }
-  
+
   /*both students*/
-  div{
+  div {
     display: flex;
     align-items: flex-start;
     margin: 1.5rem auto;
 
-    &#2{
+    &#2 {
       direction: ltr;
     }
 
-    &#2{
+    &#2 {
       direction: rtl;
     }
 
-    img{
+    img {
       width: 4rem;
       border-radius: 50%;
     }
     /*each separate student*/
-    div{
+    div {
       display: inline-block;
       margin: auto 1.5rem;
       font-size: 0.95rem;
@@ -472,45 +470,43 @@ section#ord{
         text-align: left;
       }
 
-      .work{
+      .work {
         margin-top: 0.4rem;
         color: gray;
         font-size: 0.8rem;
         text-align: left;
       }
 
-      p{
+      p {
         font-style: italic;
         text-align: left;
       }
     }
-  } 
+  }
 }
 
-section#contact{
+section#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
 
-  #rtlperson{
+  #rtlperson {
     direction: rtl;
 
-    h3{
+    h3 {
       text-align: right;
     }
-    p{
+    p {
       direction: ltr;
     }
-    
   }
 
-  .cperson{
-
-    h3{
+  .cperson {
+    h3 {
       text-align: left;
     }
 
-    div{
+    div {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -520,23 +516,23 @@ section#contact{
       border-radius: 1rem;
       margin: 1.5rem 0;
 
-      span{
+      span {
         text-align: left;
         margin-left: 1.5rem;
         margin-right: auto;
-        h5{
+        h5 {
           font-size: 1rem;
         }
-        a{
+        a {
           text-decoration: none;
           color: rgb(85, 85, 85);
         }
-        p{
+        p {
           color: rgb(85, 85, 85);
         }
       }
 
-      img{
+      img {
         width: 3rem;
         border-radius: 50%;
       }
@@ -544,8 +540,7 @@ section#contact{
   }
 }
 
-
-footer{
+footer {
   grid-area: footer;
   background: $purple-l;
   align-items: center;
@@ -553,21 +548,21 @@ footer{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
-  #alle{
+  #alle {
     width: 45%;
     margin: 1.0625rem;
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
     font-weight: 300;
     margin: 2rem 0 0.5rem 0;
   }
-  
-  .sm{
+
+  .sm {
     width: 2rem;
     margin: 2rem 0.5rem 1.5rem 0.5rem;
   }
-  .pil{
+  .pil {
     width: 2rem;
     display: flex;
     align-items: center;
@@ -575,45 +570,42 @@ footer{
     transform: rotate(180deg);
     background: $purple-l;
     margin: auto;
-    
-    .pil:hover{
+
+    .pil:hover {
       filter: drop-shadow(0 0 0.2rem blue);
     }
-    
   }
-  #pil1{
+  #pil1 {
     margin-top: 0.5rem;
     margin-bottom: -1rem;
-    
   }
-  #pil2{
-    
+  #pil2 {
     margin-top: 0.1rem;
   }
 
-  span{
+  span {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
   }
 
-  #best{
+  #best {
     width: 1.5rem;
   }
-  p{
+  p {
     padding: 0.5rem;
     margin-top: 0;
   }
 
-  .ic{
+  .ic {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .icon{
+  .icon {
     width: 1.5rem;
     margin-right: 0.5rem;
   }
@@ -621,58 +613,59 @@ footer{
 /*AnKoR aNkOr*/
 
 /*--< MEDIA QUERY FOR DESKTOP >--*/
-@media screen and (min-width: 600px) { 
-  button, input{
+@media screen and (min-width: 600px) {
+  button,
+  input {
     cursor: pointer;
   }
-    header {
-      grid-area: header;
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    background: rgb(255, 255, 255);
+    padding: 1rem 5rem !important;
+
+    .logo {
+      width: 11rem !important;
     }
+  }
 
-    nav{
-      background: rgb(255, 255, 255);
-      padding: 1rem 5rem !important;
-
-      .logo{
-        width: 11rem !important;
-      }
-    }
-
-    .after::after{
+  .after::after {
     margin: 0;
-    }
+  }
 
-    body{
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: auto;
-      grid-template-areas: 
-      "header header header header"
-      "hero hero hero hero"
-      "om om ord ord"
-      "gor gor poang-plan poang-plan"
-      "varfor varfor varfor contact"
-      "footer footer footer footer";
-      
-    }
-    
-    #Kursstruktur{
-      display: none;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header'
+      'hero hero'
+      'om ord'
+      'gor gor'
+      'varfor contact'
+      '. puang-plan'
+      'footer footer';
+  }
 
-   section#hero{
-     grid-area: hero;
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-start;
-     background-color: transparent;
-     border: 0;
-     border-radius: 0;
-     padding: 5rem 5rem;
-     
-     .imgg{
+  #Kursstruktur {
+    display: none;
+  }
+
+  section#hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 5rem 5rem;
+
+    .imgg {
       border: 0;
       background: $purple-l;
       padding: 7rem;
@@ -681,28 +674,29 @@ footer{
       margin-top: -5rem;
       border-bottom-left-radius: 18rem;
       height: 100vh;
-      
-      img{
+
+      img {
         width: 40rem;
+        height: auto;
         margin: -5rem auto;
         margin-left: -3rem;
         margin-bottom: -9rem;
         background: none !important;
       }
-     }
- 
-     span{
-       margin: 0;
-       padding: 0;
-       flex-grow: 1;
+    }
 
-       h1{
+    span {
+      margin: 0;
+      padding: 0;
+      flex-grow: 1;
+
+      h1 {
         text-align: left;
         font-size: 4rem;
         margin-top: 5.5rem;
-       }
-       
-       p{
+      }
+
+      p {
         text-align: left;
         margin-left: 0;
         color: #707070;
@@ -711,50 +705,63 @@ footer{
         font-size: 2.8rem;
         width: 25rem;
         line-height: 3.5rem;
-       }
+      }
 
-       .btns{
+      .btns {
         text-align: left;
         margin-top: 3rem;
-        
-        .white_t{
+
+        .white_t {
           border: 0.1rem solid $purple;
         }
 
-        .purple_t{
+        .purple_t {
           border: 0.1rem solid $purple;
         }
-       }
-
-       
-
-     }
-   }
- section#om{
+      }
+    }
+  }
+  section#om {
     padding: 0;
     margin: 0;
     padding-left: 5rem;
-    margin-top: -3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 
-   .after, .text, .om-btns{
-     text-align: left;
-     
-   }
-   
-   .text{
-    width: 20rem;
-    margin-top: 1.5rem;
-    
-   }
-   .om-btns{
-     text-align: left;
-   }
-   #pic1, #pic2{
-     display: none;
-   }
- }
 
-  section#gor{
+    .after,
+    .text,
+    .om-btns {
+      text-align: left;
+      margin-left: 0;
+      padding-left: 0;
+
+      input{
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+    }
+
+    .text {
+      width: 20rem;
+      margin-top: 4rem;
+    }
+
+    #pic1,
+    #pic2 {
+      display: none;
+    }
+
+    #pic3 {
+      width: 20rem;
+      height: auto;
+      border-radius: 1.5rem;
+      margin-top: 5rem;
+    }
+  }
+
+  section#gor {
     text-align: center;
     background: white;
     text-align: left;
@@ -762,82 +769,90 @@ footer{
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -20rem;
+    margin-top: -11rem;
 
-    .språk-grid-container{
-      .språk-item{
+    .span-cont{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      width: 60%;
+
+      p::after{
+        display: none;
+      }
+
+      img{
+        width: 20rem;
+        height: auto;
+        border-radius: 1.5rem;
+        margin-top: 3rem;
+        margin-right: 3rem;
+      }
+    }
+
+    .språk-grid-container {
+      .språk-item {
         background-color: $purple-l;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
       }
-    } 
+    }
 
-
-    input{
+    input {
       color: #fff !important;
-      background: #B0008B !important;
+      background: #b0008b !important;
       cursor: pointer;
     }
 
-    h1, p{
+    h1,
+    p {
       margin-left: 0;
     }
 
-    .text{
+    .text {
       width: 5rem;
       max-width: 24.5rem;
     }
-  
   }
-  section#varfor{
-    
+  section#varfor {
   }
- 
-  section.poang-plan{
+
+  section.poang-plan {
     border-radius: 4.375rem;
     margin-right: 5rem !important;
     max-width: 24.5rem;
-    
-    h3{
+
+    h3 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
       margin-top: -1.5rem;
-      
     }
-    
-    
   }
-  #contact{
-    
+  #contact {
   }
-  #ord{
+  #ord {
     margin-top: -3rem;
     background: $purple-l;
     border-radius: 4.375rem;
     overflow: visible;
     margin: auto;
     margin-right: 5rem;
-    padding: 2rem 1rem  2rem 1.5rem !important;
-    
+    padding: 2rem 1rem 2rem 1.5rem !important;
 
-    .sub{
+    .sub {
       width: 15rem;
       background: #fff;
       border-radius: 1.5rem;
       padding: 1.2rem;
-      
     }
-
-    
   }
-  footer{
+  footer {
     border-top-right-radius: 20rem;
-    
-    a{
+
+    a {
       text-decoration: none;
     }
   }
-
- }
+}
