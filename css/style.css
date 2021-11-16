@@ -762,7 +762,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'header header' 'hero hero' 'om ord' 'gor gor' 'varfor contact' '. poang-plan' 'footer footer';
+        grid-template-areas: 'header header' 'hero hero' 'om poang-plan' 'varfor .' 'gor gor' 'contact ord' 'footer footer';
   }
   #Kursstruktur {
     display: none;
@@ -887,7 +887,7 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -11rem;
+    margin-top: -4rem;
   }
   section#gor .span-cont {
     display: -webkit-box;
@@ -915,7 +915,7 @@ footer .icon {
     height: auto;
     border-radius: 1.5rem;
     margin-top: 3rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
   section#gor ::-webkit-scrollbar {
     width: 0;
@@ -965,6 +965,33 @@ footer .icon {
   section#gor .text {
     width: 5rem;
     max-width: 24.5rem;
+  }
+  section#varfor {
+    padding: 0;
+    margin: 0;
+    padding-left: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-top: -30rem;
+  }
+  section#varfor span {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+  section#varfor img {
+    width: 20rem;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+  }
+  section#varfor .v-wrapper {
+    display: none;
   }
   section.poang-plan {
     border-radius: 3rem;

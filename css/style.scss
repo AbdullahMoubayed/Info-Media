@@ -644,10 +644,10 @@ footer {
     grid-template-areas:
       'header header'
       'hero hero'
-      'om ord'
+      'om poang-plan'
+      'varfor .'
       'gor gor'
-      'varfor contact'
-      '. poang-plan'
+      'contact ord'
       'footer footer';
   }
 
@@ -769,7 +769,7 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -11rem;
+    margin-top: -4rem;
 
     .span-cont{
       display: flex;
@@ -794,7 +794,7 @@ footer {
         height: auto;
         border-radius: 1.5rem;
         margin-top: 3rem;
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
     }
 
@@ -845,6 +845,28 @@ footer {
     }
   }
   section#varfor {
+    padding: 0;
+    margin: 0;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: -30rem;
+
+    span{
+      text-align: left;
+      margin-left: 2.5rem;
+    }
+
+    img{
+      width: 20rem;
+      border-radius: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .v-wrapper{
+      display: none;
+    }
   }
 
   section.poang-plan {
