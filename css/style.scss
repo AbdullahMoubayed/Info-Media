@@ -548,6 +548,17 @@ footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
+  .con{
+    grid-area: kontakt;
+  }
+  .besok{
+    grid-area: besok;
+  }
+
+  .arrow{
+    grid-area: arrow;
+  }
+
   #alle {
     width: 45%;
     margin: 1.0625rem;
@@ -647,7 +658,7 @@ footer {
       'om poang-plan'
       'varfor contact'
       'gor gor'
-      '. ord'
+      'iframe ord'
       'footer footer';
   }
 
@@ -673,7 +684,6 @@ footer {
       margin-right: -5rem;
       margin-top: -5rem;
       border-bottom-left-radius: 18rem;
-      height: 100vh;
 
       img {
         width: 40rem;
@@ -771,6 +781,12 @@ footer {
     margin-left: 5rem;
     margin-top: -40rem;
 
+    h3{
+      margin-top: 15rem;
+      font-size: 1.8rem;
+      margin-bottom: -3rem;
+    }
+
     .span-cont{
       display: flex;
       justify-content: space-between;
@@ -804,7 +820,6 @@ footer {
 
     .språk-grid-container {
       padding-left: 0;
-      margin-top: 15rem;
       .språk-item {
         background-color: $purple-l;
         margin: auto;
@@ -897,6 +912,7 @@ footer {
     margin: auto;
     margin-right: 5rem;
     padding: 2rem 1rem 2rem 1.5rem !important;
+    margin-top: 8rem;
 
     .sub {
       width: 15rem;
@@ -909,9 +925,26 @@ footer {
       height: 100px;
     }
   }
+
+  iframe{
+    grid-area: iframe;
+    margin-left: 5rem;
+    width: 88%;
+    height: 25rem;
+    margin-top: 8rem;
+  }
+
   footer {
     border-top-right-radius: 20rem;
-    width: 70%;
+    width: 60%;
+    margin-top: 10rem;
+    text-align: left;
+
+    .ic{
+      justify-content: flex-start;
+      margin-left: -0.6rem;
+    }
+
     a {
       text-decoration: none;
     }
@@ -919,31 +952,45 @@ footer {
       position: absolute;
     }
     #alle{
-      width: 25%;
-      margin: 0;
-      right: 2.5rem;
-      margin-bottom: 15.9375rem;
-      padding-top: 1rem;
+      width: 20%;
+      right: 0;
+      margin-right: 5rem;
+      margin-top: 0;
+
     }
     .copyright{
       z-index: 100;
-      right: 4rem;
-      margin-top: 5rem;
+      right: 5rem;
+      margin-top: 0;
       padding: 0;
+      font-size: 0.9rem;
     }
     span{
       right: 10rem;
-      margin-top: 10rem;
+      margin-top: 7rem;
     }
     .author{
       right: 4rem;
-      margin-top: 12rem;
+      margin-top: 13rem;
+      margin-bottom: 3rem;
+    }
+
+    .con{
+      margin-top: 0;
+      grid-area: kontakta;
+      h3{
+        margin-top: 0;
+      }
+    }
+    .besok{
+      grid-area: besok;
     }
     
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'arrow arrow'
+      'kontakta besok';
   }
 }

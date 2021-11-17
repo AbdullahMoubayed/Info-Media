@@ -643,6 +643,18 @@ footer {
   padding-bottom: 1.5rem;
 }
 
+footer .con {
+  grid-area: kontakt;
+}
+
+footer .besok {
+  grid-area: besok;
+}
+
+footer .arrow {
+  grid-area: arrow;
+}
+
 footer #alle {
   width: 45%;
   margin: 1.0625rem;
@@ -762,7 +774,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'header header' 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' '. ord' 'footer footer';
+        grid-template-areas: 'header header' 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' 'iframe ord' 'footer footer';
   }
   #Kursstruktur {
     display: none;
@@ -796,7 +808,6 @@ footer .icon {
     margin-right: -5rem;
     margin-top: -5rem;
     border-bottom-left-radius: 18rem;
-    height: 100vh;
   }
   section#hero .imgg img {
     width: 40rem;
@@ -889,6 +900,11 @@ footer .icon {
     margin-left: 5rem;
     margin-top: -40rem;
   }
+  section#gor h3 {
+    margin-top: 15rem;
+    font-size: 1.8rem;
+    margin-bottom: -3rem;
+  }
   section#gor .span-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,7 +938,6 @@ footer .icon {
   }
   section#gor .språk-grid-container {
     padding-left: 0;
-    margin-top: 15rem;
   }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
@@ -1020,6 +1035,7 @@ footer .icon {
     margin: auto;
     margin-right: 5rem;
     padding: 2rem 1rem 2rem 1.5rem !important;
+    margin-top: 8rem;
   }
   #ord .sub {
     width: 15rem;
@@ -1031,23 +1047,33 @@ footer .icon {
     width: 100px;
     height: 100px;
   }
+  iframe {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: iframe;
+    margin-left: 5rem;
+    width: 88%;
+    height: 25rem;
+    margin-top: 8rem;
+  }
   footer {
     border-top-right-radius: 20rem;
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 60%;
+    margin-top: 10rem;
+    text-align: left;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'arrow arrow' 'kontakta besok';
+  }
+  footer .ic {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: -0.6rem;
   }
   footer a {
     text-decoration: none;
@@ -1056,25 +1082,40 @@ footer .icon {
     position: absolute;
   }
   footer #alle {
-    width: 25%;
-    margin: 0;
-    right: 2.5rem;
-    margin-bottom: 15.9375rem;
-    padding-top: 1rem;
+    width: 20%;
+    right: 0;
+    margin-right: 5rem;
+    margin-top: 0;
   }
   footer .copyright {
     z-index: 100;
-    right: 4rem;
-    margin-top: 5rem;
+    right: 5rem;
+    margin-top: 0;
     padding: 0;
+    font-size: 0.9rem;
   }
   footer span {
     right: 10rem;
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
   footer .author {
     right: 4rem;
-    margin-top: 12rem;
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+  }
+  footer .con {
+    margin-top: 0;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: kontakta;
+  }
+  footer .con h3 {
+    margin-top: 0;
+  }
+  footer .besok {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: besok;
   }
 }
 /*# sourceMappingURL=style.css.map */
