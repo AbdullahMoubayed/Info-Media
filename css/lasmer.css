@@ -1063,15 +1063,15 @@ footer .icon {
     margin-left: 5rem;
     margin-top: -17rem;
   }
+  .card .tid {
+    padding-top: 1.5rem;
+  }
   .card #datum {
     font-size: 1.5rem;
   }
   .card p {
     line-height: 1.8rem;
     font-size: 1.2rem;
-  }
-  .card .tid {
-    padding: 0;
   }
   footer {
     border-top-right-radius: 20rem;
