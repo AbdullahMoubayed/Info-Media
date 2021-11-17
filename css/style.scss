@@ -1,4 +1,3 @@
-@import 'mediaquery.scss';
 //root
 $purple: #b0008b;
 $purple-l: #f9ebf6;
@@ -539,7 +538,6 @@ section#contact {
     }
   }
 }
-
 footer {
   grid-area: footer;
   background: $purple-l;
@@ -548,14 +546,14 @@ footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
-  .con{
+  .con {
     grid-area: kontakt;
   }
-  .besok{
+  .besok {
     grid-area: besok;
   }
 
-  .arrow{
+  .arrow {
     grid-area: arrow;
   }
 
@@ -659,6 +657,7 @@ footer {
       'varfor contact'
       'gor gor'
       'iframe ord'
+      'card .'
       'footer footer';
   }
 
@@ -739,7 +738,6 @@ footer {
     justify-content: space-between;
     align-items: start;
 
-
     .after,
     .text,
     .om-btns {
@@ -747,7 +745,7 @@ footer {
       margin-left: 0;
       padding-left: 0;
 
-      input{
+      input {
         margin-left: 0;
         margin-right: 1rem;
       }
@@ -781,31 +779,31 @@ footer {
     margin-left: 5rem;
     margin-top: -40rem;
 
-    h3{
+    h3 {
       margin-top: 15rem;
       font-size: 1.8rem;
       margin-bottom: -3rem;
     }
 
-    .span-cont{
+    .span-cont {
       display: flex;
       justify-content: space-between;
       align-items: start;
       width: 60%;
 
-      p::after{
+      p::after {
         display: none;
       }
-      
-      a{
+
+      a {
         width: 100%;
 
-        input{
+        input {
           margin-left: 5rem;
         }
       }
 
-      img{
+      img {
         width: 20rem;
         height: auto;
         border-radius: 1.5rem;
@@ -831,12 +829,12 @@ footer {
         align-items: center;
         transform: rotate(2deg);
 
-        img{
+        img {
           width: 6rem;
           transform: rotate(-2deg);
         }
 
-        p{
+        p {
           margin: 0;
           margin-top: 1rem;
           transform: rotate(-2deg);
@@ -869,18 +867,18 @@ footer {
     align-items: start;
     margin-top: -30rem;
 
-    span{
+    span {
       text-align: left;
       margin-left: 2.5rem;
     }
 
-    img{
+    img {
       width: 20rem;
       border-radius: 1.5rem;
       margin-top: 3rem;
     }
 
-    .v-wrapper{
+    .v-wrapper {
       display: none;
     }
   }
@@ -920,20 +918,37 @@ footer {
       border-radius: 1.5rem;
       padding: 1.2rem;
     }
-    video{ //Not working at all
-      width: 100px;
-      height: 100px;
-    }
   }
 
-  iframe{
+  iframe {
     grid-area: iframe;
     margin-left: 5rem;
     width: 88%;
     height: 25rem;
     margin-top: 8rem;
   }
+  .card {
+    border: 0.3rem solid #c191b7;
+    background: $purple-l;
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    grid-area: card;
+    margin-left: 5rem;
+    margin-top: -17rem;
 
+    .tid {
+      padding-top: 1.5rem;
+    }
+
+    #datum {
+      font-size: 1.5rem;
+    }
+    p {
+      line-height: 1.8rem;
+      font-size: 1.2rem;
+    }
+  }
   footer {
     border-top-right-radius: 20rem;
     margin: 0;
@@ -943,86 +958,83 @@ footer {
     text-align: left;
     padding: 5rem;
 
-    .ic{
+    .ic {
       justify-content: flex-start;
-      font-size:1rem;
+      font-size: 1rem;
       text-decoration: none;
       color: inherit;
       padding: 0;
     }
 
-    .sm{
+    .sm {
       margin: 0;
     }
 
-    .pinn{
+    .pinn {
       margin-left: -0.2rem;
     }
 
-    h3{
+    h3 {
       margin-top: 0;
       font-size: 1.3rem;
       font-weight: bold;
     }
 
-    
-
-    .arrow{
+    .arrow {
       padding: 0;
       margin-top: -2.5rem;
 
-      #pil1{
+      #pil1 {
         padding-top: 0;
         margin-top: 0;
       }
     }
 
-    #alle{
+    #alle {
       width: 15rem;
       grid-area: alle;
       padding: 0;
       margin: 0;
       margin-left: auto;
     }
-    .copyright{
+    .copyright {
       z-index: 100;
       padding: 0;
       font-size: 0.9rem;
       grid-area: copyright;
     }
-    span{
+    span {
       grid-area: ankan;
     }
-    .author{
+    .author {
       right: 4rem;
-      margin-bottom: 3rem;
       grid-area: author;
     }
 
-    #con{
+    #con {
       margin-top: 0;
       padding-top: 0;
       grid-area: kontakta;
     }
-    .besok{
+    .besok {
       grid-area: besok;
     }
 
-    .footer3{
+    .footer3 {
       grid-area: footer3;
       display: grid;
       justify-items: center;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-template-areas:
-      'copyright'
-      'ankan'
-      'author';
+        'copyright'
+        'ankan'
+        'author';
       margin-left: auto;
       padding: 0;
       margin-right: -1rem;
     }
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -1030,6 +1042,5 @@ footer {
       'arrow arrow alle'
       'kontakta besok footer3';
     align-items: start !important;
-
   }
 }
