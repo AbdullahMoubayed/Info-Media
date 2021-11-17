@@ -1027,6 +1027,10 @@ footer .icon {
     border-radius: 1.5rem;
     padding: 1.2rem;
   }
+  #ord video {
+    width: 100px;
+    height: 100px;
+  }
   footer {
     border-top-right-radius: 20rem;
     width: 70%;
@@ -1041,32 +1045,34 @@ footer .icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer a {
     text-decoration: none;
   }
+  footer #alle, footer .copyright, footer span, footer .author {
+    position: absolute;
+  }
   footer #alle {
     width: 25%;
-    position: absolute;
     margin: 0;
     right: 2.5rem;
     margin-bottom: 15.9375rem;
     padding-top: 1rem;
   }
   footer .copyright {
-    position: absolute;
     z-index: 100;
     right: 4rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 0;
   }
   footer span {
-    position: absolute;
     right: 10rem;
-    margin-top: 9rem;
+    margin-top: 10rem;
   }
   footer .author {
-    position: absolute;
     right: 4rem;
     margin-top: 12rem;
   }
