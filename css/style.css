@@ -14,19 +14,26 @@ body {
   color: #fff;
   background: #b0008b;
   margin-left: 0.5rem;
+  border: 0.2rem #b0008b;
 }
 
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
   color: #b0008b;
+  border: 0.2rem #b0008b;
 }
 
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
-  border: none;
   font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #f9ebf6;
+  color: black;
+  border: 0.2rem #b0008b;
 }
 
 /* Ankor are the best även här*/
@@ -192,7 +199,7 @@ header nav ul li a {
   text-decoration: none;
   font-size: 2rem;
   color: #38524f;
-  font-weight: 300;
+  font-weight: thin;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#38524f), to(#38524f));
   background-image: linear-gradient(#38524f, #38524f);
   background-size: 0 0.105rem;
@@ -828,12 +835,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'hero hero'
- 'om poang-plan'
- 'varfor contact'
- 'gor gor'
- 'iframe ord'
- 'card .';
+        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' 'iframe ord' 'card .';
     max-width: 95rem;
     margin: auto;
   }
@@ -1241,8 +1243,7 @@ footer .icon {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'arrow arrow'
- 'kontakta besok';
+        grid-template-areas: 'arrow arrow' 'kontakta besok';
     background: #f9ebf6;
     border-top-right-radius: 15rem;
     padding-left: 5rem;
@@ -1260,10 +1261,7 @@ footer .icon {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'alle'
- 'copyright'
- 'ankan'
- 'author';
+        grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
     margin-left: auto;
     padding: 0;
   }

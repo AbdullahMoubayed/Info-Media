@@ -101,10 +101,17 @@ header nav ul span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 header nav ul span .flex {
   margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header nav ul.activ {
@@ -168,9 +175,8 @@ header nav ul.activ {
 }
 
 header nav ul i {
+  margin-top: 1.8rem !important;
   margin-left: auto;
-  margin-top: 1.19rem;
-  margin-bottom: 3rem;
 }
 
 header nav ul li {
@@ -273,6 +279,7 @@ section#hero .framtid {
   z-index: -1;
 }
 
+/*STYLES FOR CONTACT BUTTON DOWN RIGHT*/
 .contact-cr {
   width: 5rem;
   height: 5rem;
@@ -327,10 +334,9 @@ h1 {
   margin-top: 1rem;
 }
 
+/*STYLES FOR OM INFO-MEDIA*/
 section#om {
   grid-area: om;
-  /*First two pictures*/
-  /*ettor och nollor insert here*/
 }
 
 section#om .text {
@@ -365,9 +371,11 @@ section#om #pic2 {
 }
 
 /*Ankor 'gör' livet bättre ;-)*/
+/*STYLES FOR VAD VI GÖR*/
 section#gor {
   grid-area: gor;
   padding: 6rem 0;
+  /*STYLES FOR THE LANGUAGE-GRID*/
 }
 
 section#gor h1 {
@@ -411,6 +419,7 @@ section#gor .språk-grid-container .språk-item p {
   margin-bottom: 0;
 }
 
+/*STYLES FOR VARFÖR INFO-MEDIA*/
 section#varfor {
   grid-area: varfor;
 }
@@ -445,6 +454,7 @@ section#varfor .v-wrapper #v-img-2 {
   margin-left: -10rem;
 }
 
+/*STYLES FOR KURSSTRUKTUR*/
 section#Kursstruktur {
   grid-area: Kursstruktur;
   padding: 6rem 3rem;
@@ -465,6 +475,7 @@ section#Kursstruktur input {
   margin-top: 3rem;
 }
 
+/*STYLES FOR STUDIEPLAN*/
 .poang-plan {
   grid-area: poang-plan;
   background: #f9ebf6;
@@ -474,6 +485,7 @@ section#Kursstruktur input {
   border-radius: 100rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  /*STYLES FOR THE DISCLAIMER TEXT ABOUT NIU & RIG*/
 }
 
 .poang-plan ul {
@@ -487,18 +499,24 @@ section#Kursstruktur input {
   text-align: left;
 }
 
+.poang-plan ul div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .poang-plan ul li {
   list-style: none;
 }
 
 .poang-plan ul .ak2 {
-  margin-right: 2rem;
-  position: absolute;
+  margin-right: 1rem;
   right: 9rem;
   z-index: 100;
 }
 
-.poang-plan ul .ak2p {
+.poang-plan .ak2p {
+  margin-right: 3rem;
   right: 8rem;
 }
 
@@ -513,6 +531,9 @@ section#Kursstruktur input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .poang-plan .NIU {
@@ -525,6 +546,7 @@ section#Kursstruktur input {
   font-size: 2rem;
 }
 
+/*STYELS FOR ORD FRÅN TIDIGARE ELEVER*/
 section#ord {
   grid-area: ord;
   padding: 3rem 2.1875rem;
@@ -548,11 +570,11 @@ section#ord div {
   /*each separate student*/
 }
 
-section#ord div#2 {
+section#ord div#ett {
   direction: ltr;
 }
 
-section#ord div#2 {
+section#ord div#two {
   direction: rtl;
 }
 
@@ -585,10 +607,12 @@ section#ord div div p {
   text-align: left;
 }
 
+/*STYLES FOR CONTACTPEOPLE*/
 section#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
+  /*STYLES FOR OUR ANETTE*/
 }
 
 section#contact #rtlperson {
@@ -648,6 +672,7 @@ section#contact .cperson div img {
   border-radius: 50%;
 }
 
+/*STYLES FOR THE FOOTER*/
 footer {
   grid-area: footer;
   background: #f9ebf6;
@@ -759,7 +784,7 @@ footer .icon {
 }
 
 /*AnKoR aNkOr*/
-/*--< MEDIA QUERY FOR DESKTOP >--*/
+/*--MEDIA QUERY FOR DESKTOP--*/
 @media screen and (min-width: 600px) {
   button,
   input {
@@ -780,6 +805,17 @@ footer .icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 95rem !important;
+    margin: auto;
+  }
+  nav span li {
+    margin-bottom: 1rem !important;
+  }
+  nav span i {
+    margin-right: 3rem;
+  }
+  nav span .i {
+    width: 20rem;
   }
   .after::after {
     margin: 0;
@@ -882,6 +918,7 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    /*Magic to make pictures disappear*/
   }
   section#om .after,
   section#om .text,

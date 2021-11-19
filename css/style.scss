@@ -15,19 +15,25 @@ body {
   color: #fff;
   background: $purple;
   margin-left: 0.5rem;
+  border: 0.2rem $purple;
 }
 
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
   color: $purple;
+  border: 0.2rem $purple;
 }
 
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
-  border: none;
   font-size: 1.1rem;
+}
+.btn:hover{
+  background: $purple-l;
+  color: black;
+  border: 0.2rem $purple;
 }
 /* Ankor are the best även här*/
 //Kontaktknapp
