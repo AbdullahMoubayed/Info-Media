@@ -13,33 +13,35 @@
 
 <body class='app'>
     <header id="start" class="purple-1">
-        <nav class="flex i_center">
+        <nav id="starten" class="flex i_center">
             <!-- Two icons for closing and opening the menu -->
-            <a href="http://localhost:5501/index.html"><img class="logo" src="../assets/img/infomedia.svg"
-                    alt="Info-Media"></a>
+            <a href="#"><img class="logo" src="../assets/img/infomedia.svg" alt="Info-Media"></a>
             <i v-show='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
                 <div class="menu-btn_burger"></div>
                 <div class="menu-btn_burger"></div>
             </i>
             <!-- The menu itself  -->
-            <ul v-show='isOpen' class="flex">
-                <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
-                    <div class="menu-btn_burger"></div>
-                    <div class="menu-btn_burger"></div>
-                </i>
-                <li><a href="#om">Om Info-media</a></li>
-                <li><a href="#gor">Vad vi gör</a></li>
-                <li><a href="#varfor">Varför Info-Media</a></li>
-                <li><a href="#struktur">Kursstruktur</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+            <ul v-show='isOpen' :class='{ activ: isOpen }'>
+                <span>
+                    <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger"></div>
+                        <div class="menu-btn_burger"></div>
+                    </i>
+                    <li><a href="#om">Om Info-media</a></li>
+                    <li><a href="#gor">Vad vi gör</a></li>
+                    <li><a href="#varfor">Varför Info-Media</a></li>
+                    <li><a href="#struktur">Kursstruktur</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
 
-                <div class="i flex">
-                    <a href="#"><img src='../assets/icon/facebook-outline.svg'></img></a>
-                    <a href="#"><img src='../assets/icon/instagram.svg'></img></a>
-                    <a href="#"><img src='../assets/icon/email-outline.svg'></img></a>
-                    <a href="#"><img src='../assets/icon/phone-outline.svg'></img></a>
-                    <a href="#"><img src='../assets/icon/pin-outline.svg'></img></a>
-                </div>
+                    <div class="i flex">
+                        <!--Clickable icons-->
+                        <a href="#"><img src='../assets/icon/facebook-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/instagram.svg'></a>
+                        <a href="#"><img src='../assets/icon/email-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/phone-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/pin-outline.svg'></a>
+                    </div>
+                </span>
             </ul>
         </nav>
     </header>
@@ -47,7 +49,7 @@
     <section id='hero' class="hero2">
         <span>
             <h1 class="t_center">Info-Media</h1>
-            <p><i>Mer info</i></p>
+            <p><i>Mer info om inriktningen</i></p>
             <!-- <img id="pilpil" src="../assets/icon/arrow.png" alt="Mer info nedan"> -->
             <div class="btns">
                 <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet
@@ -57,6 +59,7 @@
         </span>
         <span class="imgg"><img class="imgg" src="../assets/img/aboute.png" alt="Computah"></span>
     </section>
+
 
     <div id="bodyy">
         <section class='poang-plan poängplanen'>
@@ -290,10 +293,10 @@
 
     <footer>
         <span class='footer-wrapper'>
-            <a href="#hero" class="arrow">
+            <a href="#starten" class="arrow">
                 <img class="pil" id="pil2" src="../assets/icon/arrow.png" alt="Hem"></img>
             </a>
-    
+
             <div id="con">
                 <h3>Kontakt</h3>
                 <p class="ic"><img class="icon" src="../assets/icon/phone-outline.svg"> 0582-35 500</p>
@@ -305,7 +308,7 @@
                     href="https://www.google.se/maps/place/All%C3%A9skolan/@59.0642752,15.1069081,17z/data=!3m1!4b1!4m5!3m4!1s0x465c0c880d00e7db:0x489137916f501c2e!8m2!3d59.0642947!4d15.109084">
                     <img class="icon pinn" src="../assets/icon/pin-outline.svg"> Södra Allén 14, Hallsberg
                 </a>
-    
+
                 <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
                     <img class="sm" src="../assets/icon/instagram.svg" alt="Instagram">
                 </a>
@@ -314,16 +317,16 @@
                 </a>
             </div>
         </span>
-    
+
         <!--Most important area of the whole website 😎 -->
         <span class="footer3">
             <img id="alle" src="../assets/img/allelogo.png" alt="Allé Info-Media">
-            <span>
+            <span class='ankann'>
                 <p class="anka">We ❤️ </p><img id="best" src="../assets/img/ankan.png" alt="Fantastisk anka">
             </span>
             <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
             <!-- 2nd-Most important area of the whole website 😎 -->
-            <p class="author">Coded with ❤️ by David & Abdullah</p>
+            <p class="author">Coded with ❤️ by <br> David🎷🏓 & Abdullah🐴🏓</p>
         </span>
     </footer>
     <script src="https://unpkg.com/vue@3.0.0"></script>

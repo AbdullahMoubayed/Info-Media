@@ -14,19 +14,26 @@ body {
   color: #fff;
   background: #b0008b;
   margin-left: 0.5rem;
+  border: 0.2rem #b0008b;
 }
 
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
   color: #b0008b;
+  border: 0.2rem #b0008b;
 }
 
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
-  border: none;
   font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #f9ebf6;
+  color: black;
+  border: 0.2rem #b0008b;
 }
 
 /* Ankor are the best även här*/
@@ -89,7 +96,6 @@ header nav ul {
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
   padding: 1rem 2.1875rem;
-  height: 100vh;
   opacity: 0;
 }
 
@@ -101,7 +107,7 @@ header nav ul span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 100vh !important;
 }
 
 header nav ul span .flex {
@@ -214,7 +220,7 @@ header nav ul div.i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 header nav ul div.i img {
@@ -370,6 +376,10 @@ section#om #pic2 {
   margin: -15rem 0 0 11rem;
 }
 
+section#om #pic3 {
+  display: none;
+}
+
 /*Ankor 'gör' livet bättre ;-)*/
 /*STYLES FOR VAD VI GÖR*/
 section#gor {
@@ -385,6 +395,10 @@ section#gor h1 {
 section#gor p {
   line-height: 1.5rem;
   margin: 2rem 2.1875rem;
+}
+
+section#gor #vr-img {
+  display: none;
 }
 
 section#gor .btn {
@@ -424,6 +438,10 @@ section#varfor {
   grid-area: varfor;
 }
 
+section#varfor #blender {
+  display: none;
+}
+
 section#varfor p {
   margin-top: 2rem;
   line-height: 1.5rem;
@@ -452,6 +470,34 @@ section#varfor .v-wrapper #v-img-1 {
 
 section#varfor .v-wrapper #v-img-2 {
   margin-left: -10rem;
+}
+
+iframe {
+  width: 100%;
+  height: 15rem;
+  margin-top: -2rem;
+}
+
+.card {
+  border: 0.3rem solid #c191b7;
+  background: #f9ebf6;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 4rem 2rem;
+}
+
+.card .tid {
+  padding-top: 1.5rem;
+}
+
+.card #datum {
+  font-size: 1.5rem;
+}
+
+.card p {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
 }
 
 /*STYLES FOR KURSSTRUKTUR*/
@@ -682,6 +728,22 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  overflow-x: hidden;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .ic {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer .con {
@@ -697,14 +759,17 @@ footer .arrow {
 }
 
 footer #alle {
-  width: 45%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: alle;
+  width: 13rem;
   margin: 1.0625rem;
 }
 
 footer h3 {
   font-size: 1.5rem;
-  font-weight: 300;
-  margin: 2rem 0 0.5rem 0;
+  font-weight: 400;
+  margin: 2rem 0 0.4rem 0;
 }
 
 footer .sm {
@@ -743,17 +808,45 @@ footer #pil2 {
   margin-top: 0.1rem;
 }
 
-footer span {
+footer .footer3 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+      grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
+}
+
+footer .ankann {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ankan;
+  margin-top: 1rem;
+}
+
+footer .copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+  margin-top: -1rem;
+}
+
+footer .author {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: author;
 }
 
 footer #best {
@@ -946,6 +1039,7 @@ footer .icon {
     height: auto;
     border-radius: 1.5rem;
     margin-top: 5rem;
+    display: block;
   }
   section#gor {
     text-align: center;
@@ -956,6 +1050,9 @@ footer .icon {
     padding: 0;
     margin-left: 5rem;
     margin-top: -40rem;
+  }
+  section#gor #vr-img {
+    display: block;
   }
   section#gor h3 {
     margin-top: 15rem;
@@ -1053,6 +1150,9 @@ footer .icon {
         -ms-flex-align: start;
             align-items: start;
     margin-top: -30rem;
+  }
+  section#varfor #blender {
+    display: block;
   }
   section#varfor span {
     text-align: left;
@@ -1192,6 +1292,7 @@ footer .icon {
     margin-left: auto;
   }
   footer .copyright {
+    margin: 0.5rem auto !important;
     z-index: 100;
     padding: 0;
     font-size: 0.9rem;
@@ -1213,6 +1314,7 @@ footer .icon {
     -ms-grid-column: 1;
     grid-area: author;
     margin-right: 0;
+    text-align: center;
   }
   footer #con {
     margin-top: 0;
@@ -1267,8 +1369,23 @@ footer .icon {
           filter: drop-shadow(0 0 0.3rem #b0008b);
 }
 
+body {
+  margin: 0 !important;
+}
+
 .hero2 {
   grid-area: hero;
+}
+
+#hero {
+  max-width: 95rem;
+  margin: auto !important;
+  width: 100%;
+}
+
+#bodyy {
+  max-width: 95rem;
+  margin: auto;
 }
 
 .poang-plan {
