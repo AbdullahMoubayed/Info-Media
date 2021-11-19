@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Declaring variables for common used colors*/
+/*STYLES FOR EVERY PART OF THE WEBSITE*/
 *,
 html,
 body {
@@ -10,6 +12,7 @@ body {
   /*The holy font*/
 }
 
+/*Styles for specific button Öppet Hus bl.a.*/
 .purple_t {
   color: #fff;
   background: #b0008b;
@@ -17,6 +20,7 @@ body {
   border: 0.2rem #b0008b;
 }
 
+/*Styles for specific button, "Läs mer" buttons*/
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
@@ -24,12 +28,14 @@ body {
   border: 0.2rem #b0008b;
 }
 
+/*Styles for every button*/
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
 
+/*Styles for the button when hovering it with cursor*/
 .btn:hover {
   background: #f9ebf6;
   color: black;
@@ -37,6 +43,7 @@ body {
 }
 
 /* Ankor are the best även här*/
+/*STYLES FOR THE HEADER*/
 header {
   position: fixed;
   z-index: 111;
@@ -234,7 +241,7 @@ header nav .open {
 }
 
 /*Yes, ankor är otroliga*/
-/* Hero section */
+/* STYLES FOR THE HERO */
 section#hero {
   grid-area: header;
   padding: 0;
@@ -285,7 +292,7 @@ section#hero .framtid {
   z-index: -1;
 }
 
-/*STYLES FOR CONTACT BUTTON DOWN RIGHT*/
+/*STYLES FOR CONTACT BUTTON RIGHT BOTTOM CORNER*/
 .contact-cr {
   width: 5rem;
   height: 5rem;
@@ -312,6 +319,7 @@ section#hero .framtid {
           align-items: center;
 }
 
+/*Styles for each section*/
 section {
   margin: auto;
   text-align: center;
@@ -320,12 +328,14 @@ section {
   overflow: hidden;
 }
 
+/*Styles for each purple box*/
 section.round {
   background: #f9ebf6;
   border-radius: 100rem;
   padding: 6rem 2.1875rem;
 }
 
+/*Pretty obvious what's happening here*/
 h1 {
   font-size: 3rem;
 }
@@ -532,6 +542,7 @@ section#Kursstruktur input {
   padding-top: 5rem;
   padding-bottom: 5rem;
   /*STYLES FOR THE DISCLAIMER TEXT ABOUT NIU & RIG*/
+  /*Styles for the actual discaimer text*/
 }
 
 .poang-plan ul {
@@ -596,7 +607,7 @@ section#Kursstruktur input {
 section#ord {
   grid-area: ord;
   padding: 3rem 2.1875rem;
-  /*both students*/
+  /*Styles for both former students*/
 }
 
 section#ord h1 {
@@ -613,7 +624,7 @@ section#ord div {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 1.5rem auto;
-  /*each separate student*/
+  /*Styles för each former student*/
 }
 
 section#ord div#ett {
@@ -658,7 +669,8 @@ section#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
-  /*STYLES FOR OUR ANETTE*/
+  /*Styles for our Anette*/
+  /*Styles for each contactperson*/
 }
 
 section#contact #rtlperson {
