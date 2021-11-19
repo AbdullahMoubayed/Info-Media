@@ -14,19 +14,26 @@ body {
   color: #fff;
   background: #b0008b;
   margin-left: 0.5rem;
+  border: 0.2rem #b0008b;
 }
 
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
   color: #b0008b;
+  border: 0.2rem #b0008b;
 }
 
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
-  border: none;
   font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #f9ebf6;
+  color: black;
+  border: 0.2rem #b0008b;
 }
 
 /* Ankor are the best även här*/
@@ -1274,7 +1281,7 @@ footer .icon {
 .poang-plan {
   background: #f9ebf6;
   margin: auto;
-  text-align: center;
+  text-align: left;
   background: #f9ebf6;
   border-radius: 100rem;
   padding-top: 5rem;
@@ -1293,8 +1300,25 @@ footer .icon {
   text-align: left;
 }
 
+.poang-plan ul div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .poang-plan ul li {
   list-style: none;
+}
+
+.poang-plan ul .ak2 {
+  margin-right: 1rem;
+  right: 9rem;
+  z-index: 100;
+}
+
+.poang-plan ul .ak2p {
+  margin-right: 3rem;
+  right: 8rem;
 }
 
 .poang-plan div.div {
@@ -1308,6 +1332,9 @@ footer .icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .poang-plan .NIU {
@@ -1320,10 +1347,12 @@ footer .icon {
   font-size: 2rem;
 }
 
+/*STYLES FOR ALL INFO(all text) ABOUT THE AREAS*/
 #allinfo {
   font-family: 'Raleway', sans-serif;
   text-align: left;
   grid-area: allinfo;
+  /*Öppet Hus styles, the card thing*/
 }
 
 #allinfo p {
@@ -1359,6 +1388,7 @@ footer .icon {
   font-weight: 600;
 }
 
+/*STYLES FOR THE FOOTER*/
 footer {
   background: #f9ebf6;
   -webkit-box-align: center;
@@ -1453,7 +1483,7 @@ footer .icon {
   margin-right: 0.5rem;
 }
 
-/*--< MEDIA QUERY FOR DESKTOP >--*/
+/*--MEDIA QUERY FOR DESKTOP--*/
 @media screen and (min-width: 600px) {
   header {
     -ms-grid-row: 1;
@@ -1476,6 +1506,7 @@ footer .icon {
     margin-top: 0;
     padding-top: 0;
   }
+  /*Grid rules for the structure*/
   body {
     display: -ms-grid;
     display: grid;
@@ -1485,12 +1516,14 @@ footer .icon {
         grid-template-rows: auto;
         grid-template-areas: 'header header' 'hero hero' 'body body' 'footer footer';
   }
+  /*Styles för Ord från tidigare elever*/
   #ord {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: ord;
     margin-top: 5rem;
   }
+  /*Styles för Kontakt section*/
   #contact {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
@@ -1580,6 +1613,7 @@ footer .icon {
   .hero2 span .btns .purple_t {
     border: 0.1rem solid #b0008b;
   }
+  /*STYLES FOR THE FOOTER*/
   footer {
     margin: 0;
     margin-top: 10rem;
