@@ -28,7 +28,7 @@ body{
 .poang-plan {
   background: $purple-l;
   margin: auto;
-  text-align: center;
+  text-align: left;
   background: $purple-l;
   border-radius: 100rem;
   padding-top: 5rem;
@@ -40,9 +40,20 @@ body{
     justify-content: space-between;
     margin: 1rem;
     text-align: left;
-
+    div{
+      display: flex;
+    }
     li {
       list-style: none;
+    }
+    .ak2{
+      margin-right: 1rem;   
+      right: 9rem;
+      z-index: 100;
+    }
+    .ak2p{
+      margin-right: 3rem;
+      right: 8rem;
     }
   }
 
@@ -53,6 +64,7 @@ body{
     border-radius: 10rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .NIU {
@@ -65,7 +77,7 @@ body{
     font-size: 2rem;
   }
 }
-
+/*STYLES FOR ALL INFO(all text) ABOUT THE AREAS*/
 #allinfo {
   font-family: 'Raleway', sans-serif;
   text-align: left;
@@ -86,7 +98,7 @@ body{
     margin-bottom: 1.5rem;
     margin-top: 3.5rem;
   }
-
+/*Öppet Hus styles, the card thing*/
   #card {
     // background: $purple-l;
     border: 0.3rem solid $purple-l;
@@ -104,7 +116,7 @@ body{
     }
   }
 }
-
+/*STYLES FOR THE FOOTER*/
 footer {
   background: $purple-l;
   align-items: center;
@@ -173,7 +185,7 @@ footer {
     margin-right: 0.5rem;
   }
 }
-/*--< MEDIA QUERY FOR DESKTOP >--*/
+/*--MEDIA QUERY FOR DESKTOP--*/
 @media screen and (min-width: 600px) {
   header {
     grid-area: header;
@@ -192,7 +204,7 @@ footer {
       padding-top: 0;
     }
   }
-
+/*Grid rules for the structure*/
   body {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -203,12 +215,12 @@ footer {
       'body body'
       'footer footer';
   }
-  
+  /*Styles för Ord från tidigare elever*/
   #ord{
     grid-area: ord;
     margin-top: 5rem;
   }
-
+  /*Styles för Kontakt section*/
   #contact{
     grid-area: contact;
   }
@@ -290,7 +302,7 @@ footer {
       }
     }
   }
-
+/*STYLES FOR THE FOOTER*/
   footer {
     margin: 0;
     margin-top: 10rem;

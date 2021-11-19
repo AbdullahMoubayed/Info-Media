@@ -1,7 +1,8 @@
 //root
+/*Declaring variables for common used colors*/
 $purple: #b0008b;
 $purple-l: #f9ebf6;
-
+/*STYLES FOR EVERY PART OF THE WEBSITE*/
 *,
 html,
 body {
@@ -10,36 +11,35 @@ body {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; /*The holy font*/
 }
-
+/*Styles for specific button Öppet Hus bl.a.*/
 .purple_t {
   color: #fff;
   background: $purple;
   margin-left: 0.5rem;
   border: 0.2rem $purple;
 }
-
+/*Styles for specific button, "Läs mer" buttons*/
 .white_t {
   margin-right: 0.5rem;
   background: #fff;
   color: $purple;
   border: 0.2rem $purple;
 }
-
+/*Styles for every button*/
 .btn {
   border-radius: 5.9375rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
+/*Styles for the button when hovering it with cursor*/
 .btn:hover{
   background: $purple-l;
   color: black;
   border: 0.2rem $purple;
 }
 /* Ankor are the best även här*/
-//Kontaktknapp
-
+/*STYLES FOR THE HEADER*/
 header {
-  // background-color: $purple-l;
   position: fixed;
   z-index: 111;
   width: 100%;
@@ -174,7 +174,7 @@ header {
   }
 }
 /*Yes, ankor är otroliga*/
-/* Hero section */
+/* STYLES FOR THE HERO */
 section#hero {
   grid-area: header;
   padding: 0;
@@ -224,7 +224,7 @@ section#hero {
   }
 }
 
-/*STYLES FOR CONTACT BUTTON DOWN RIGHT*/
+/*STYLES FOR CONTACT BUTTON RIGHT BOTTOM CORNER*/
 .contact-cr {
   width: 5rem;
   height: 5rem;
@@ -242,7 +242,7 @@ section#hero {
   justify-content: center;
   align-items: center;
 }
-
+/*Styles for each section*/
 section {
   margin: auto;
   text-align: center;
@@ -250,13 +250,13 @@ section {
   margin: 3rem 0;
   overflow: hidden;
 }
-
+/*Styles for each purple box*/
 section.round {
   background: $purple-l;
   border-radius: 100rem;
   padding: 6rem 2.1875rem;
 }
-
+/*Pretty obvious what's happening here*/
 h1 {
   font-size: 3rem;
 }
@@ -486,7 +486,7 @@ section#Kursstruktur {
     padding: 0.5rem 0;
     color: rgb(49, 46, 46);
   }
-
+/*Styles for the actual discaimer text*/
   h3 {
     text-align: center;
     font-size: 2rem;
@@ -503,7 +503,7 @@ section#ord {
     font-size: 2rem;
   }
 
-  /*both students*/
+  /*Styles for both former students*/
   div {
     display: flex;
     align-items: flex-start;
@@ -521,7 +521,7 @@ section#ord {
       width: 4rem;
       border-radius: 50%;
     }
-    /*each separate student*/
+    /*Styles för each former student*/
     div {
       display: inline-block;
       margin: auto 1.5rem;
@@ -552,7 +552,7 @@ section#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
-
+/*Styles for our Anette*/
   #rtlperson {
     direction: rtl;
 
@@ -563,7 +563,7 @@ section#contact {
       direction: ltr;
     }
   }
-/*STYLES FOR OUR ANETTE*/
+  /*Styles for each contactperson*/
   .cperson {
     h3 {
       text-align: left;
