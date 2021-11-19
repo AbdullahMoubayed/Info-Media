@@ -6,8 +6,23 @@
   filter: drop-shadow(0 0 0.3rem rgba(176, 0, 139, 1));
 }
 
+body{
+  margin: 0 !important;
+}
+
 .hero2{
   grid-area: hero;
+}
+
+#hero{
+  max-width: 95rem;
+  margin: auto !important;
+  width: 100%;
+}
+
+#bodyy{
+  max-width: 95rem;
+  margin: auto;
 }
 
 .poang-plan {
