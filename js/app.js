@@ -1,3 +1,13 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    document.querySelector("header").style.backgroundColor = '#f9ebf6';
+  } else {
+    document.querySelector("header").style.backgroundColor = 'transparent';
+  }
+}
+
 const app = Vue.createApp( {
     data() {
       return {
@@ -20,6 +30,13 @@ const app = Vue.createApp( {
     methods: {
       toggleMenu() {
         this.isOpen = !this.isOpen;
+      }
+    },
+    computed: {
+      toggle() {
+        if (windowWidth.value < 600){
+        this.isOpen = true;
+      }
       }
     }
   })

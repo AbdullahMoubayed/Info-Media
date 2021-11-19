@@ -33,7 +33,7 @@ body {
 //Kontaktknapp
 
 header {
-  background-color: $purple-l;
+  // background-color: $purple-l;
   position: fixed;
   z-index: 111;
   width: 100%;
@@ -64,20 +64,27 @@ header {
         transition: all 0.5s ease-in-out;
       }
     }
-
+    
     ul {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100vh;
       z-index: 111;
       background: rgba(255, 213, 246, 0.548);
       backdrop-filter: blur(100px);
       padding: 1rem 2.1875rem;
-      display: flex;
-      flex-direction: column;
+      height: 100vh;
       opacity: 0;
+      
+      span{
+        display: flex;
+        flex-direction: column;
+
+        .flex{
+          margin-top: auto;
+        }
+      }
 
       &.activ {
         animation: fadeIn 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
@@ -632,11 +639,17 @@ footer {
   }
 
   nav {
-    background: rgb(255, 255, 255);
     padding: 1rem 5rem !important;
+    max-width: 95rem;
+    margin: auto;
 
     .logo {
       width: 11rem !important;
+    }
+
+    span{
+      align-items: center;
+
     }
   }
 
@@ -644,21 +657,24 @@ footer {
     margin: 0;
   }
 
-  body {
-    margin: 0;
-    padding: 0;
+  .our-body{
+    grid-area: our-body;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     grid-template-areas:
-      'header header'
-      'hero hero'
+    'hero hero'
       'om poang-plan'
       'varfor contact'
       'gor gor'
       'iframe ord'
-      'card .'
-      'footer footer';
+      'card .';
+      max-width: 95rem;
+      margin: auto;
+  }
+
+  body {
+    
   }
 
   #Kursstruktur {
@@ -673,7 +689,7 @@ footer {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    padding: 5rem 5rem;
+    padding: 5rem;
 
     .imgg {
       border: 0;
@@ -950,7 +966,8 @@ footer {
     }
   }
   footer {
-    margin: 0;
+    max-width: 95rem;
+    margin: auto;
     margin-top: 10rem;
     padding: 0;
     border-radius: 0;
