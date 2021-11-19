@@ -469,7 +469,7 @@ section#Kursstruktur input {
   grid-area: poang-plan;
   background: #f9ebf6;
   margin: auto;
-  text-align: center;
+  text-align: left;
   background: #f9ebf6;
   border-radius: 100rem;
   padding-top: 5rem;
@@ -489,6 +489,17 @@ section#Kursstruktur input {
 
 .poang-plan ul li {
   list-style: none;
+}
+
+.poang-plan ul .ak2 {
+  margin-right: 2rem;
+  position: absolute;
+  right: 9rem;
+  z-index: 100;
+}
+
+.poang-plan ul .ak2p {
+  right: 8rem;
 }
 
 .poang-plan div.div {

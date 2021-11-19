@@ -399,7 +399,7 @@ section#Kursstruktur {
   grid-area: poang-plan;
   background: $purple-l;
   margin: auto;
-  text-align: center;
+  text-align: left;
   background: $purple-l;
   border-radius: 100rem;
   padding-top: 5rem;
@@ -410,10 +410,19 @@ section#Kursstruktur {
     justify-content: space-between;
     margin: 1rem;
     text-align: left;
-
     li {
       list-style: none;
     }
+    .ak2{
+      margin-right: 2rem;
+      position: absolute;
+      right: 9rem;
+      z-index: 100;
+    }
+    .ak2p{
+      right: 8rem;
+    }
+    
   }
 
   div.div {
