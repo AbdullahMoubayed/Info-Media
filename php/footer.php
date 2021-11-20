@@ -33,6 +33,6 @@
             </span>
             <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
             <!-- 2nd-Most important area of the whole website 😎 -->
-            <p class="author">Coded with ❤️ by <br> David🎷🏓 & Abdullah🐴🏓</p>
+            <p class="author">Coded with ❤️ by <br> <a href="https://github.com/SaxManDS"> David</a>🎷🏓 & <a href="https://github.com/AbdullahMoubayed"> Abdullah</a>🐴🏓</p>
         </span>
     </footer>
