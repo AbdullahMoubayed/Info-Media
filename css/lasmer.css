@@ -554,6 +554,7 @@ section#Kursstruktur input {
           justify-content: space-between;
   margin: 1rem;
   text-align: left;
+  margin-top: 2.5rem;
 }
 
 .poang-plan ul div {
@@ -743,6 +744,10 @@ footer {
   overflow-x: hidden;
 }
 
+footer a {
+  color: #38524f;
+}
+
 footer .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -868,6 +873,10 @@ footer #best {
 footer p {
   padding: 0.5rem;
   margin-top: 0;
+}
+
+footer p a {
+  color: #38524f;
 }
 
 footer .ic {

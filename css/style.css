@@ -871,6 +871,10 @@ footer p {
   margin-top: 0;
 }
 
+footer p a {
+  color: inherit;
+}
+
 footer .ic {
   display: -webkit-box;
   display: -ms-flexbox;
