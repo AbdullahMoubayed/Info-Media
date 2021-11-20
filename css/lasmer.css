@@ -828,7 +828,10 @@ footer .footer3 {
   grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-      grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
+      grid-template-areas: 'alle'
+ 'copyright'
+ 'ankan'
+ 'author';
 }
 
 footer .ankann {
@@ -868,6 +871,10 @@ footer #best {
 footer p {
   padding: 0.5rem;
   margin-top: 0;
+}
+
+footer p a{
+  color: inherit;
 }
 
 footer .ic {
@@ -933,7 +940,12 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' 'iframe ord' 'card .';
+        grid-template-areas: 'hero hero'
+ 'om poang-plan'
+ 'varfor contact'
+ 'gor gor'
+ 'iframe ord'
+ 'card .';
     max-width: 95rem;
     margin: auto;
   }
@@ -1350,7 +1362,8 @@ footer .icon {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'arrow arrow' 'kontakta besok';
+        grid-template-areas: 'arrow arrow'
+ 'kontakta besok';
     background: #f9ebf6;
     border-top-right-radius: 15rem;
     padding-left: 5rem;
@@ -1368,7 +1381,10 @@ footer .icon {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
+        grid-template-areas: 'alle'
+ 'copyright'
+ 'ankan'
+ 'author';
     margin-left: auto;
     padding: 0;
   }
@@ -1636,7 +1652,10 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'header header' 'hero hero' 'body body' 'footer footer';
+        grid-template-areas: 'header header'
+ 'hero hero'
+ 'body body'
+ 'footer footer';
   }
   /*Styles för Ord från tidigare elever*/
   #ord {
@@ -1658,7 +1677,9 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'allinfo poang-plan' 'allinfo ord' 'allinfo contact';
+        grid-template-areas: 'allinfo poang-plan'
+ 'allinfo ord'
+ 'allinfo contact';
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1840,7 +1861,8 @@ footer .icon {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'arrow arrow' 'kontakta besok';
+        grid-template-areas: 'arrow arrow'
+ 'kontakta besok';
     background: #f9ebf6;
     border-top-right-radius: 15rem;
     padding-left: 5rem;
@@ -1858,7 +1880,10 @@ footer .icon {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
+        grid-template-areas: 'alle'
+ 'copyright'
+ 'ankan'
+ 'author';
     margin-left: auto;
     padding: 0;
   }
