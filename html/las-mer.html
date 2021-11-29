@@ -6,13 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Authors" content="Abdullah & David">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lasmer.css">
+    <link rel="stylesheet" href="../css/lasmer.css">
     <!--Some JS-script for great stuff-->
     <title>"Läs mer"-sidan!</title>
 </head>
 
 <body class='app'>
-    <?php require("php/header.php") ?>
+    <header id="start" class="purple-1">
+        <nav id="starten" class="flex i_center">
+            <!-- Two icons for closing and opening the menu -->
+            <a href="../index.html"><img class="logo" src="../assets/img/infomedia.svg" alt="Info-Media"></a>
+            <i v-show='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
+                <div class="menu-btn_burger"></div>
+                <div class="menu-btn_burger"></div>
+            </i>
+            <!-- The menu itself  -->
+            <ul v-show='isOpen' :class='{ activ: isOpen }'>
+                <span>
+                    <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger"></div>
+                        <div class="menu-btn_burger"></div>
+                    </i>
+                    <li><a href="#om">Om Info-media</a></li>
+                    <li><a href="#gor">Vad vi gör</a></li>
+                    <li><a href="#varfor">Varför Info-Media</a></li>
+                    <li><a href="#struktur">Kursstruktur</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+
+                    <div class="i flex">
+                        <!--Clickable icons-->
+                        <a href="#"><img src='../assets/icon/facebook-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/instagram.svg'></a>
+                        <a href="#"><img src='../assets/icon/email-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/phone-outline.svg'></a>
+                        <a href="#"><img src='../assets/icon/pin-outline.svg'></a>
+                    </div>
+                </span>
+            </ul>
+        </nav>
+    </header>
 
     <section id='hero' class="hero2">
         <span>
@@ -20,12 +52,12 @@
             <p><i>Mer info om inriktningen</i></p>
             <!-- <img id="pilpil" src="../assets/icon/arrow.png" alt="Mer info nedan"> -->
             <div class="btns">
-                <a href="las-mer.php"><button class="btn white_t t_center" type="button">Öppet
+                <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet
                         hus</button></a>
                 <a href="#studieplan"><button class="btn purple_t t_center" type="button">Studieplan</button></a>
             </div>
         </span>
-        <span class="imgg"><img class="imgg" src="assets/img/aboute.png" alt="Computah"></span>
+        <span class="imgg"><img class="imgg" src="../assets/img/aboute.png" alt="Computah"></span>
     </section>
 
 
@@ -58,7 +90,7 @@
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-                
+
             </ul>
             <div class='div'>
                 <span>Digitalt skapande 1 *</span>
@@ -75,7 +107,7 @@
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-                
+
             </ul>
             <div class='div'>
                 <span>Gränssnittsdesign</span>
@@ -92,7 +124,7 @@
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-                
+
             </ul>
             <div class='div'>
                 <span>Fysik 2</span>
@@ -172,10 +204,10 @@
                 <div id="card">
                     <p id="datum">Datum för kommande öppet hus:</p>
                     </br>
-                    <img src="assets/icon/calendar.svg" alt="KALÄNDEJ">
+                    <img src="../assets/icon/calendar.svg" alt="KALÄNDEJ">
                     <p>25/01-2022</p>
                     <p>(25:e Februari 2022)</p>
-                    <img src="assets/icon/clock.svg" alt="KLÖCKA">
+                    <img src="../assets/icon/clock.svg" alt="KLÖCKA">
                     <p>17:30 - 20:00</p>
                 </div>
             </div>
@@ -198,7 +230,7 @@
             <div class="cperson">
                 <h3>Rektor för teknikprogrammet</h3>
                 <div>
-                    <img src="assets/img/katrin.jpg" alt="Bild på Karin">
+                    <img src="../assets/img/katrin.jpg" alt="Bild på Karin">
                     <span>
                         <h5>Katrin Pedersen</h5>
                         <p>0582-353 83</p>
@@ -210,7 +242,7 @@
             <div id="rtlperson" class="cperson">
                 <h3>Programledare</h3>
                 <div>
-                    <img src="assets/img/Anette-Bengtsson-1.jpg" alt="Bild på Anette">
+                    <img src="../assets/img/Anette-Bengtsson-1.jpg" alt="Bild på Anette">
                     <span>
                         <h5>Anette Bengtsson</h5>
                         <p>0582-353 11</p>
@@ -223,7 +255,7 @@
             <div class="cperson">
                 <h3>Studie- och yrkesvägledare</h3>
                 <div>
-                    <img src="assets/img/Anna-Winck.jpg" alt="Bild på Karin">
+                    <img src="../assets/img/Anna-Winck.jpg" alt="Bild på Karin">
                     <span>
                         <h5>Anna Winck</h5>
                         <p>0582-355 67</p>
@@ -239,7 +271,7 @@
         <section id='ord' class="flex j_center">
             <h1 class="t_center">Ord från <br> tidigare elever</h1>
             <div class=" flex">
-                <img id="1" src="assets/img/elev-Lucas-Wass.jpg" alt="">
+                <img id="1" src="../assets/img/elev-Lucas-Wass.jpg" alt="">
                 <div>
                     <p class="sub">"Skolan har fantastiska och engagerade lärare som har hjälpt mig att utvecklas och
                         skapa
@@ -254,7 +286,7 @@
             </div>
 
             <div>
-                <img id="2" src="assets/img/elev-Emil-Ivarsson.jpg" alt="">
+                <img id="2" src="../assets/img/elev-Emil-Ivarsson.jpg" alt="">
                 <div>
                     <p class="sub">"Det absolut viktigaste med att gå på teknik är att du får med dig massor av kunskap
                         för
@@ -270,11 +302,46 @@
         </section>
     </div>
 
-    
-    <?php require("php/footer.php") ?>
-    
+    <footer>
+        <span class='footer-wrapper'>
+            <a href="#starten" class="arrow">
+                <img class="pil" id="pil2" src="../assets/icon/arrow.png" alt="Hem"></img>
+            </a>
+
+            <div id="con">
+                <h3>Kontakt</h3>
+                <p class="ic"><img class="icon" src="../assets/icon/phone-outline.svg"> 0582-35 500</p>
+                <p class="ic"><img class="icon" src="../assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</p>
+            </div>
+            <div id="besok">
+                <h3>Besöksadress</h3>
+                <a class="ic"
+                    href="https://www.google.se/maps/place/All%C3%A9skolan/@59.0642752,15.1069081,17z/data=!3m1!4b1!4m5!3m4!1s0x465c0c880d00e7db:0x489137916f501c2e!8m2!3d59.0642947!4d15.109084">
+                    <img class="icon pinn" src="../assets/icon/pin-outline.svg"> Södra Allén 14, Hallsberg
+                </a>
+
+                <a href="https://www.instagram.com/alleskolan.eu/" class="insta">
+                    <img class="sm" src="../assets/icon/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://sv-se.facebook.com/alleskolanhallsberg/" class="fb">
+                    <img class="sm" src="../assets/icon/facebook-outline.svg" alt="Facebook">
+                </a>
+            </div>
+        </span>
+
+        <!--Most important area of the whole website 😎 -->
+        <span class="footer3">
+            <img id="alle" src="../assets/img/allelogo.png" alt="Allé Info-Media">
+            <span class='ankann'>
+                <p class="anka">We ❤️ </p><img id="best" src="../assets/img/ankan.png" alt="Fantastisk anka">
+            </span>
+            <p class="copyright">Copyright &copy; 2021 Alléskolan Hallsberg </p>
+            <!-- 2nd-Most important area of the whole website 😎 -->
+            <p class="author">Coded with ❤️ by<br> David🎷🏓 & Abdullah🐴🏓</p>
+        </span>
+    </footer>
     <script src="https://unpkg.com/vue@3.0.0"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
