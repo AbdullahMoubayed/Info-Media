@@ -938,7 +938,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' 'iframe ord' 'card .';
+        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor poang-plan' 'gor contact' 'iframe ord' 'card .';
     max-width: 95rem;
     margin: auto;
   }
@@ -1059,6 +1059,9 @@ footer .icon {
     display: block;
   }
   section#gor {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: gor;
     text-align: center;
     background: white;
     text-align: left;
@@ -1066,13 +1069,12 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -40rem;
   }
   section#gor #vr-img {
     display: block;
   }
   section#gor h3 {
-    margin-top: 15rem;
+    margin-top: 5rem;
     font-size: 1.8rem;
     margin-bottom: -3rem;
   }
@@ -1086,7 +1088,7 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    width: 60%;
+    width: 100%;
   }
   section#gor .span-cont p::after {
     display: none;
@@ -1109,6 +1111,7 @@ footer .icon {
   }
   section#gor .språk-grid-container {
     padding-left: 0;
+    width: 100%;
   }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
@@ -1166,7 +1169,6 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-top: -30rem;
   }
   section#varfor #blender {
     display: block;

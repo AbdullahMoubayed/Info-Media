@@ -783,8 +783,8 @@ footer {
     grid-template-areas:
       'hero hero'
       'om poang-plan'
-      'varfor contact'
-      'gor gor'
+      'varfor poang-plan'
+      'gor contact'
       'iframe ord'
       'card .';
     max-width: 95rem;
@@ -901,6 +901,7 @@ footer {
   }
 
   section#gor {
+    grid-area: gor;
     text-align: center;
     background: white;
     text-align: left;
@@ -908,14 +909,13 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -40rem;
 
     #vr-img {
       display: block;
     }
 
     h3 {
-      margin-top: 15rem;
+      margin-top: 5rem;
       font-size: 1.8rem;
       margin-bottom: -3rem;
     }
@@ -924,7 +924,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: start;
-      width: 60%;
+      width: 100%;
 
       p::after {
         display: none;
@@ -954,6 +954,7 @@ footer {
 
     .språk-grid-container {
       padding-left: 0;
+      width: 100%;
       .språk-item {
         background-color: $purple-l;
         margin: auto;
@@ -1001,7 +1002,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-top: -30rem;
+    // margin-top: -30rem;
 
     #blender {
       display: block;
