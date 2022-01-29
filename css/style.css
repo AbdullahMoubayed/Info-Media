@@ -20,6 +20,12 @@ body {
   border: 0.2rem #b0008b;
 }
 
+.purple_t:hover {
+  background: #f9ebf6 !important;
+  color: black !important;
+  border: 0.2rem #b0008b !important;
+}
+
 /*Styles for specific button, "Läs mer" buttons*/
 .white_t {
   margin-right: 0.5rem;
@@ -37,9 +43,9 @@ body {
 
 /*Styles for the button when hovering it with cursor*/
 .btn:hover {
-  background: #f9ebf6;
-  color: black;
-  border: 0.2rem #b0008b;
+  background: #f9ebf6 !important;
+  color: black !important;
+  border: 0.2rem #b0008b !important;
 }
 
 /* Ankor are the best även här*/
@@ -425,7 +431,7 @@ section#gor .språk-grid-container {
       flex-wrap: nowrap;
   overflow: auto;
   padding: 0 2.1875rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 section#gor .språk-grid-container .språk-item {
@@ -674,15 +680,15 @@ section#contact {
   /*Styles for each contactperson*/
 }
 
-section#contact #rtlperson {
+section#contact .rtlperson {
   direction: rtl;
 }
 
-section#contact #rtlperson h3 {
+section#contact .rtlperson h3 {
   text-align: right;
 }
 
-section#contact #rtlperson p {
+section#contact .rtlperson p {
   direction: ltr;
 }
 
@@ -720,6 +726,11 @@ section#contact .cperson div span h5 {
 section#contact .cperson div span a {
   text-decoration: none;
   color: #555555;
+}
+
+section#contact .cperson div span .mail:hover {
+  text-decoration: underline;
+  color: blue;
 }
 
 section#contact .cperson div span p {
@@ -894,7 +905,7 @@ footer .icon {
 }
 
 /*AnKoR aNkOr*/
-/*--MEDIA QUERY FOR DESKTOP--*/
+/*---------------------------------------------MEDIA QUERY FOR DESKTOP---------------------------------*/
 @media screen and (min-width: 600px) {
   button,
   input {
@@ -1069,14 +1080,16 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
+    margin-top: -9rem;
+    z-index: 10;
   }
   section#gor #vr-img {
     display: block;
   }
   section#gor h3 {
-    margin-top: 5rem;
+    margin-top: 7rem;
     font-size: 1.8rem;
-    margin-bottom: -3rem;
+    margin-bottom: -5rem;
   }
   section#gor .span-cont {
     display: -webkit-box;
@@ -1169,6 +1182,8 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    margin-top: -10rem;
+    margin-bottom: -3rem;
   }
   section#varfor #blender {
     display: block;
@@ -1269,6 +1284,10 @@ footer .icon {
         -ms-flex-align: start !important;
             align-items: start !important;
   }
+  footer a:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
   footer .ic {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1296,10 +1315,10 @@ footer .icon {
     padding: 0;
     padding-bottom: 2rem;
     padding-top: 2rem;
-  }
-  footer .arrow #pil1 {
-    padding-top: 0;
-    margin-top: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
   }
   footer #alle {
     width: 15rem;

@@ -18,6 +18,13 @@ body {
   margin-left: 0.5rem;
   border: 0.2rem $purple;
 }
+
+.purple_t:hover {
+  background: $purple-l !important;
+  color: black !important;
+  border: 0.2rem $purple !important;
+}
+
 /*Styles for specific button, "Läs mer" buttons*/
 .white_t {
   margin-right: 0.5rem;
@@ -33,9 +40,9 @@ body {
 }
 /*Styles for the button when hovering it with cursor*/
 .btn:hover {
-  background: $purple-l;
-  color: black;
-  border: 0.2rem $purple;
+  background: $purple-l !important;
+  color: black !important;
+  border: 0.2rem $purple !important;
 }
 /* Ankor are the best även här*/
 /*STYLES FOR THE HEADER*/
@@ -335,7 +342,7 @@ section#gor {
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0 2.1875rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .språk-item {
       background: #fff;
@@ -552,7 +559,7 @@ section#contact {
   padding: 1rem;
   margin: 3rem 1.5rem;
   /*Styles for our Anette*/
-  #rtlperson {
+  .rtlperson {
     direction: rtl;
 
     h3 {
@@ -589,6 +596,10 @@ section#contact {
           text-decoration: none;
           color: rgb(85, 85, 85);
         }
+        .mail:hover{
+          text-decoration: underline;
+          color: blue;
+        }
         p {
           color: rgb(85, 85, 85);
         }
@@ -610,6 +621,7 @@ footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   overflow-x: hidden;
+
 
   .footer-wrapper {
     display: flex;
@@ -668,14 +680,6 @@ footer {
     margin-top: 0.1rem;
   }
 
-  // span {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   margin-bottom: 1rem;
-  //   flex-direction: column;
-  // }
-
   .footer3 {
     display: grid;
     justify-items: center;
@@ -733,8 +737,9 @@ footer {
 }
 /*AnKoR aNkOr*/
 
-/*--MEDIA QUERY FOR DESKTOP--*/
+/*---------------------------------------------MEDIA QUERY FOR DESKTOP---------------------------------*/
 @media screen and (min-width: 600px) {
+  
   button,
   input {
     cursor: pointer;
@@ -860,6 +865,7 @@ footer {
       }
     }
   }
+  
   section#om {
     padding: 0;
     margin: 0;
@@ -909,15 +915,18 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
+    margin-top: -9rem;
+    z-index: 10;
+
 
     #vr-img {
       display: block;
     }
 
     h3 {
-      margin-top: 5rem;
+      margin-top: 7rem;
       font-size: 1.8rem;
-      margin-bottom: -3rem;
+      margin-bottom: -5rem;
     }
 
     .span-cont {
@@ -1002,7 +1011,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    // margin-top: -30rem;
+    margin-top: -10rem;
+    margin-bottom: -3rem;
 
     #blender {
       display: block;
@@ -1099,6 +1109,11 @@ footer {
     text-align: left;
     background: #fff;
 
+    a:hover{
+    text-decoration: underline;
+    color: inherit;
+  }
+
     .ic {
       justify-content: flex-start;
       font-size: 1rem;
@@ -1128,11 +1143,8 @@ footer {
       padding: 0;
       padding-bottom: 2rem;
       padding-top: 2rem;
-
-      #pil1 {
-        padding-top: 0;
-        margin-top: 0;
-      }
+      width: fit-content;
+      margin: auto;
     }
 
     #alle {
