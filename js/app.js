@@ -12,6 +12,7 @@ const app = Vue.createApp({
   data() {
     return {
       isOpen: false,
+      clicked: false,
       språk: [
         { url: 'assets/img/språk/html.png', title: 'HTML' },
         { url: 'assets/img/språk/css.png', title: 'CSS' },
@@ -30,6 +31,9 @@ const app = Vue.createApp({
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
+    },
+    closeMenu() {
+      this.isOpen = false;
     }
   },
   computed: {

@@ -51,6 +51,24 @@ header {
   z-index: 111;
   width: 100%;
 
+  .x-container{
+    position: relative;
+    padding-right: 1.8rem;
+    .x{
+      position: absolute;
+
+      &:nth-child(1) {
+        
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -75,6 +93,10 @@ header {
         height: 0.15rem;
         background-color: #38524f;
         transition: all 0.5s ease-in-out;
+
+        &:nth-child(2){
+          height: 0.19rem;
+        }
       }
     }
 
@@ -132,6 +154,38 @@ header {
           }
         }
       }
+
+      // &.unactiv {
+      //   animation: fadeOut 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
+
+      //   @keyframes fadeOut {
+      //     0% {
+      //       opacity: 1;
+      //     }
+      //     1% {
+      //       opacity: 1;
+      //     }
+      //     100% {
+      //       opacity: 0;
+      //     }
+      //   }
+      //   opacity: 0;
+
+      //   // @keyframes upper {
+      //   //   0% {
+      //   //     margin-top: 2rem;
+      //   //     opacity: 1;
+      //   //   }
+      //   //   1% {
+      //   //     margin-top: 2rem;
+      //   //     opacity: 1;
+      //   //   }
+      //   //   100% {
+      //   //     margin-top: 4rem;
+      //   //     opacity: 0;
+      //   //   }
+      //   // }
+      // }
 
       i {
         margin-top: 1.8rem !important;
@@ -199,11 +253,28 @@ section#hero {
     color: $purple;
   }
 
-  p {
+  p{
     text-align: center;
     margin: 2rem 2rem;
     font-size: 3rem;
     font-weight: 300;
+    position: relative;
+
+    span img{
+      
+      width: 12rem;
+      transform: rotate(90deg);
+      position: absolute;
+      margin-top: 0;
+      margin-left: -3.5rem;
+      // margin: 0;
+      // padding: 0;
+
+      &.click{
+        margin-left: 2rem;
+        transition: 0.5s ease-in-out;
+      }
+    }
   }
 
   .btns {
@@ -216,17 +287,6 @@ section#hero {
     text-align: center;
     width: 100%;
     padding: 0 4rem;
-  }
-
-  .framtid {
-    font-family: arial; /*Should change font*/
-    text-transform: uppercase;
-    margin-top: -6rem;
-    width: 100%;
-    color: $purple-l;
-    text-align: center;
-    margin-bottom: 3rem;
-    z-index: -1;
   }
 }
 

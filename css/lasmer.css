@@ -1320,10 +1320,6 @@ footer .icon {
     width: fit-content;
     margin: auto;
   }
-  footer .arrow #pil1 {
-    padding-top: 0;
-    margin-top: 0;
-  }
   footer #alle {
     width: 15rem;
     -ms-grid-row: 1;

@@ -56,6 +56,25 @@ header {
   width: 100%;
 }
 
+header .x-container {
+  position: relative;
+  padding-right: 1.8rem;
+}
+
+header .x-container .x {
+  position: absolute;
+}
+
+header .x-container .x:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .x-container .x:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +116,10 @@ header nav .menu-btn .menu-btn_burger {
   background-color: #38524f;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+header nav .menu-btn .menu-btn_burger:nth-child(2) {
+  height: 0.19rem;
 }
 
 header nav ul {
@@ -272,6 +295,22 @@ section#hero p {
   margin: 2rem 2rem;
   font-size: 3rem;
   font-weight: 300;
+  position: relative;
+}
+
+section#hero p span img {
+  width: 12rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  margin-top: 0;
+  margin-left: -3.5rem;
+}
+
+section#hero p span img.click {
+  margin-left: 2rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 section#hero .btns {
@@ -284,18 +323,6 @@ section#hero img {
   text-align: center;
   width: 100%;
   padding: 0 4rem;
-}
-
-section#hero .framtid {
-  font-family: arial;
-  /*Should change font*/
-  text-transform: uppercase;
-  margin-top: -6rem;
-  width: 100%;
-  color: #f9ebf6;
-  text-align: center;
-  margin-bottom: 3rem;
-  z-index: -1;
 }
 
 /*STYLES FOR CONTACT BUTTON RIGHT BOTTOM CORNER*/

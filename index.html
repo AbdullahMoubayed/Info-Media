@@ -21,11 +21,11 @@
                 <div class="menu-btn_burger"></div>
             </i>
             <!-- The menu itself  -->
-            <ul v-show='isOpen' :class='{ activ: isOpen }'>
-                <span>
-                    <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
-                        <div class="menu-btn_burger"></div>
-                        <div class="menu-btn_burger"></div>
+            <ul v-show='isOpen' :class='{ activ: isOpen }' :class='{ unactiv: !isOpen }' @click='closeMenu'>
+                <span @click='closeMenu'>
+                    <i class="menu-btn flex x-container" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger x"></div>
+                        <div class="menu-btn_burger x"></div>
                     </i>
                     <li><a href="#om">Om Info-media</a></li>
                     <li><a href="#gor">Vad vi gör</a></li>
@@ -51,7 +51,7 @@
         <section id="hero" class="flex j-center purple-1">
             <span>
                 <h1 class="t_center">Info-Media</h1>
-                <p><i>Gör dina digitala idéer verkliga</i></p>
+                <p><i>Gör dina digitala idéer verkliga <span><img src="assets/icon/usb.jpg" alt="">  </span> </i></p>
                 <div class="btns">
                     <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet
                             hus</button></a>
@@ -321,7 +321,8 @@
             <div id="con">
                 <h3>Kontakt</h3>
                 <p class="ic"><img class="icon" src="assets/icon/phone-outline.svg"> 0582-35 500</p>
-                <a href='mailto:alleskolan@alleskolan.eu' class="ic"><img class="icon" src="assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</a>
+                <a href='mailto:alleskolan@alleskolan.eu' class="ic"><img class="icon"
+                        src="assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</a>
             </div>
             <div id="besok">
                 <h3>Besöksadress</h3>
