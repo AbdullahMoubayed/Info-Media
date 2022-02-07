@@ -299,12 +299,7 @@ section#hero p {
 }
 
 section#hero p span img {
-  width: 12rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: absolute;
-  margin-top: 0;
-  margin-left: -3.5rem;
+  display: none;
 }
 
 section#hero p span img.click {
@@ -450,6 +445,11 @@ section#gor .btn {
   margin: 1rem 0 0 0;
 }
 
+section#gor h3 {
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
 section#gor .språk-grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,7 +458,26 @@ section#gor .språk-grid-container {
       flex-wrap: nowrap;
   overflow: auto;
   padding: 0 2.1875rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar {
+  height: 0.4rem;
+  width: 80%;
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 10rem;
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar-thumb {
+  background: #b0008b;
+  border-radius: 0.2rem;
 }
 
 section#gor .språk-grid-container .språk-item {
@@ -828,35 +847,12 @@ footer .sm {
   margin: 2rem 0.5rem 1.5rem 0.5rem;
 }
 
-footer .pil {
-  width: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  background: #f9ebf6;
-  margin: auto;
+footer .pil svg {
+  width: 2.5rem;
 }
 
-footer .pil .pil:hover {
-  -webkit-filter: drop-shadow(0 0 0.2rem blue);
-          filter: drop-shadow(0 0 0.2rem blue);
-}
-
-footer #pil1 {
-  margin-top: 0.5rem;
-  margin-bottom: -1rem;
-}
-
-footer #pil2 {
-  margin-top: 0.1rem;
+footer .pil1 {
+  display: none;
 }
 
 footer .footer3 {
@@ -1042,6 +1038,15 @@ footer .icon {
     font-size: 2.8rem;
     width: 25rem;
     line-height: 3.5rem;
+  }
+  section#hero span p img {
+    display: inline-block;
+    width: 12rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    margin-top: 0;
+    margin-left: -3.5rem;
   }
   section#hero span .btns {
     text-align: left;
@@ -1346,6 +1351,13 @@ footer .icon {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+  }
+  footer .arrow .pil {
+    display: inline-block;
+    margin-top: 0 !important;
+  }
+  footer .arrow .pil1:hover {
+    margin-top: -2rem;
   }
   footer #alle {
     width: 15rem;

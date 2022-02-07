@@ -155,37 +155,6 @@ header {
         }
       }
 
-      // &.unactiv {
-      //   animation: fadeOut 0.35s cubic-bezier(0.8, 0.61, 0.37, 0.72);
-
-      //   @keyframes fadeOut {
-      //     0% {
-      //       opacity: 1;
-      //     }
-      //     1% {
-      //       opacity: 1;
-      //     }
-      //     100% {
-      //       opacity: 0;
-      //     }
-      //   }
-      //   opacity: 0;
-
-      //   // @keyframes upper {
-      //   //   0% {
-      //   //     margin-top: 2rem;
-      //   //     opacity: 1;
-      //   //   }
-      //   //   1% {
-      //   //     margin-top: 2rem;
-      //   //     opacity: 1;
-      //   //   }
-      //   //   100% {
-      //   //     margin-top: 4rem;
-      //   //     opacity: 0;
-      //   //   }
-      //   // }
-      // }
 
       i {
         margin-top: 1.8rem !important;
@@ -261,14 +230,8 @@ section#hero {
     position: relative;
 
     span img{
+      display: none;
       
-      width: 12rem;
-      transform: rotate(90deg);
-      position: absolute;
-      margin-top: 0;
-      margin-left: -3.5rem;
-      // margin: 0;
-      // padding: 0;
 
       &.click{
         margin-left: 2rem;
@@ -397,12 +360,37 @@ section#gor {
     margin: 1rem 0 0 0;
   }
   /*STYLES FOR THE LANGUAGE-GRID*/
+  h3{
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
   .språk-grid-container {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0 2.1875rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    /* width */
+    &::-webkit-scrollbar {
+      height: 0.4rem;
+      width: 80%  ;
+      
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      margin-top: 10rem;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $purple;
+      border-radius: 0.2rem;
+    }
+    
 
     .språk-item {
       background: #fff;
@@ -720,24 +708,12 @@ footer {
     margin: 2rem 0.5rem 1.5rem 0.5rem;
   }
   .pil {
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(180deg);
-    background: $purple-l;
-    margin: auto;
-
-    .pil:hover {
-      filter: drop-shadow(0 0 0.2rem blue);
+    svg{
+      width: 2.5rem;
     }
   }
-  #pil1 {
-    margin-top: 0.5rem;
-    margin-bottom: -1rem;
-  }
-  #pil2 {
-    margin-top: 0.1rem;
+  .pil1{
+    display: none;
   }
 
   .footer3 {
@@ -909,6 +885,15 @@ footer {
         font-size: 2.8rem;
         width: 25rem;
         line-height: 3.5rem;
+
+        img{
+          display: inline-block;
+          width: 12rem;
+          transform: rotate(90deg);
+          position: absolute;
+          margin-top: 0;
+          margin-left: -3.5rem;
+        }
       }
 
       .btns {
@@ -1205,6 +1190,14 @@ footer {
       padding-top: 2rem;
       width: fit-content;
       margin: auto;
+
+      .pil{
+        display: inline-block;
+        margin-top: 0 !important;
+      }
+      .pil1:hover{
+        margin-top: -2rem;
+      }
     }
 
     #alle {
