@@ -90,7 +90,7 @@ header {
 
       .menu-btn_burger {
         width: 2rem;
-        height: 0.15rem;
+        height: 0.19rem;
         background-color: #38524f;
         transition: all 0.5s ease-in-out;
 
@@ -657,6 +657,23 @@ section#contact {
         width: 3rem;
         border-radius: 50%;
       }
+
+      .tobbe{
+        background-color: #fff;
+        width: 3rem;
+        height: 3rem;
+        margin: 0;
+        border: none;
+        border-radius: 50%;
+        background-image: url('../assets/img/TOBBE.png');
+        background-size: cover;
+        &.tobbe:hover{
+          background-image: url('../assets/img/ankan.png');
+          background-repeat: no-repeat;
+          background-size: 80%;
+          background-position: center;
+        }
+      }
     }
   }
 }
@@ -783,11 +800,20 @@ footer {
   header {
     grid-area: header;
   }
+  
+  .menu-btn_burger {
+    height: 0.20rem !important;
+
+    &:nth-child(2){
+      height: 0.20rem !important;
+    }
+  }
 
   nav {
     padding: 1rem 5rem !important;
     max-width: 95rem;
     margin: auto;
+
 
     .logo {
       width: 11rem !important;
@@ -886,13 +912,27 @@ footer {
         width: 25rem;
         line-height: 3.5rem;
 
+        &:hover{
+          .usb{
+            margin-left: 3.5rem;
+          }
+        }
+
         img{
           display: inline-block;
-          width: 12rem;
+          width: 4rem;
           transform: rotate(90deg);
           position: absolute;
           margin-top: 0;
-          margin-left: -3.5rem;
+          margin-left: 0.4rem;
+          transition: ease-in-out 200ms;
+          padding: 0 !important;
+          
+          &.ankusb{
+            z-index: -1;
+            transform: rotate(0);
+            width: 3rem;
+          }
         }
       }
 
@@ -970,8 +1010,9 @@ footer {
 
     h3 {
       margin-top: 7rem;
-      font-size: 1.8rem;
-      margin-bottom: -5rem;
+      padding-left: 0 !important;
+      font-size: 1.5rem;
+      margin-bottom: -2rem;
     }
 
     .span-cont {
@@ -1009,6 +1050,9 @@ footer {
     .språk-grid-container {
       padding-left: 0;
       width: 100%;
+      margin-top: 2rem;
+      
+
       .språk-item {
         background-color: $purple-l;
         margin: auto;
@@ -1029,6 +1073,7 @@ footer {
           margin: 0;
           margin-top: 1rem;
           transform: rotate(-2deg);
+          
         }
       }
     }
@@ -1153,6 +1198,7 @@ footer {
     border-radius: 0;
     text-align: left;
     background: #fff;
+    position: relative;
 
     a:hover{
     text-decoration: underline;
@@ -1190,13 +1236,26 @@ footer {
       padding-top: 2rem;
       width: fit-content;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      
 
       .pil{
         display: inline-block;
-        margin-top: 0 !important;
       }
-      .pil1:hover{
-        margin-top: -2rem;
+
+      .pil1{
+        position: absolute;
+        top: 2.5rem;
+        transition: ease-in-out 150ms;
+
+        &:hover{
+          top: 2rem;
+        }
+      }
+
+      .pil2{
+        margin-top: 0.3rem;
       }
     }
 
