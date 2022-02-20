@@ -112,7 +112,7 @@ header nav .menu-btn {
 
 header nav .menu-btn .menu-btn_burger {
   width: 2rem;
-  height: 0.15rem;
+  height: 0.19rem;
   background-color: #38524f;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -788,6 +788,24 @@ section#contact .cperson div img {
   border-radius: 50%;
 }
 
+section#contact .cperson div .tobbe {
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../assets/img/TOBBE.png");
+  background-size: cover;
+}
+
+section#contact .cperson div .tobbe.tobbe:hover {
+  background-image: url("../assets/img/ankan.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
 /*STYLES FOR THE FOOTER*/
 footer {
   grid-area: footer;
@@ -937,6 +955,12 @@ footer .icon {
   header {
     grid-area: header;
   }
+  .menu-btn_burger {
+    height: 0.20rem !important;
+  }
+  .menu-btn_burger:nth-child(2) {
+    height: 0.20rem !important;
+  }
   nav {
     padding: 1rem 5rem !important;
     max-width: 95rem;
@@ -1039,14 +1063,26 @@ footer .icon {
     width: 25rem;
     line-height: 3.5rem;
   }
+  section#hero span p:hover .usb {
+    margin-left: 3.5rem;
+  }
   section#hero span p img {
     display: inline-block;
-    width: 12rem;
+    width: 4rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     position: absolute;
     margin-top: 0;
-    margin-left: -3.5rem;
+    margin-left: 0.4rem;
+    -webkit-transition: ease-in-out 200ms;
+    transition: ease-in-out 200ms;
+    padding: 0 !important;
+  }
+  section#hero span p img.ankusb {
+    z-index: -1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    width: 3rem;
   }
   section#hero span .btns {
     text-align: left;
@@ -1120,8 +1156,9 @@ footer .icon {
   }
   section#gor h3 {
     margin-top: 7rem;
-    font-size: 1.8rem;
-    margin-bottom: -5rem;
+    padding-left: 0 !important;
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
   }
   section#gor .span-cont {
     display: -webkit-box;
@@ -1157,6 +1194,7 @@ footer .icon {
   section#gor .språk-grid-container {
     padding-left: 0;
     width: 100%;
+    margin-top: 2rem;
   }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
@@ -1305,6 +1343,7 @@ footer .icon {
     border-radius: 0;
     text-align: left;
     background: #fff;
+    position: relative;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 65% 35%;
@@ -1351,13 +1390,28 @@ footer .icon {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .arrow .pil {
     display: inline-block;
-    margin-top: 0 !important;
+  }
+  footer .arrow .pil1 {
+    position: absolute;
+    top: 2.5rem;
+    -webkit-transition: ease-in-out 150ms;
+    transition: ease-in-out 150ms;
   }
   footer .arrow .pil1:hover {
-    margin-top: -2rem;
+    top: 2rem;
+  }
+  footer .arrow .pil2 {
+    margin-top: 0.3rem;
   }
   footer #alle {
     width: 15rem;
