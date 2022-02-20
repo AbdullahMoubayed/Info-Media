@@ -1,5 +1,8 @@
 @import 'style.scss';
 
+$purple: #b0008b;
+$purple-l: #f9ebf6;
+
 #pilpil {
   width: 50% !important;
   margin-top: -1.5rem !important;
@@ -100,8 +103,8 @@ body{
   }
 /*Öppet Hus styles, the card thing*/
   #card {
-    // background: $purple-l;
-    border: 0.3rem solid $purple-l;
+    background: $purple-l;
+    border: 0.3rem solid #c191b7;
     border-radius: 1.5rem;
     padding: 3rem 2rem;
     text-align: center;

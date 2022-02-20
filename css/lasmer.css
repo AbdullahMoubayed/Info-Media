@@ -20,6 +20,12 @@ body {
   border: 0.2rem #b0008b;
 }
 
+.purple_t:hover {
+  background: #f9ebf6 !important;
+  color: black !important;
+  border: 0.2rem #b0008b !important;
+}
+
 /*Styles for specific button, "Läs mer" buttons*/
 .white_t {
   margin-right: 0.5rem;
@@ -37,9 +43,9 @@ body {
 
 /*Styles for the button when hovering it with cursor*/
 .btn:hover {
-  background: #f9ebf6;
-  color: black;
-  border: 0.2rem #b0008b;
+  background: #f9ebf6 !important;
+  color: black !important;
+  border: 0.2rem #b0008b !important;
 }
 
 /* Ankor are the best även här*/
@@ -48,6 +54,25 @@ header {
   position: fixed;
   z-index: 111;
   width: 100%;
+}
+
+header .x-container {
+  position: relative;
+  padding-right: 1.8rem;
+}
+
+header .x-container .x {
+  position: absolute;
+}
+
+header .x-container .x:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .x-container .x:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 header nav {
@@ -91,6 +116,10 @@ header nav .menu-btn .menu-btn_burger {
   background-color: #38524f;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+header nav .menu-btn .menu-btn_burger:nth-child(2) {
+  height: 0.19rem;
 }
 
 header nav ul {
@@ -266,6 +295,17 @@ section#hero p {
   margin: 2rem 2rem;
   font-size: 3rem;
   font-weight: 300;
+  position: relative;
+}
+
+section#hero p span img {
+  display: none;
+}
+
+section#hero p span img.click {
+  margin-left: 2rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 section#hero .btns {
@@ -278,18 +318,6 @@ section#hero img {
   text-align: center;
   width: 100%;
   padding: 0 4rem;
-}
-
-section#hero .framtid {
-  font-family: arial;
-  /*Should change font*/
-  text-transform: uppercase;
-  margin-top: -6rem;
-  width: 100%;
-  color: #f9ebf6;
-  text-align: center;
-  margin-bottom: 3rem;
-  z-index: -1;
 }
 
 /*STYLES FOR CONTACT BUTTON RIGHT BOTTOM CORNER*/
@@ -417,6 +445,11 @@ section#gor .btn {
   margin: 1rem 0 0 0;
 }
 
+section#gor h3 {
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
 section#gor .språk-grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,7 +458,26 @@ section#gor .språk-grid-container {
       flex-wrap: nowrap;
   overflow: auto;
   padding: 0 2.1875rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar {
+  height: 0.4rem;
+  width: 80%;
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 10rem;
+}
+
+section#gor .språk-grid-container::-webkit-scrollbar-thumb {
+  background: #b0008b;
+  border-radius: 0.2rem;
 }
 
 section#gor .språk-grid-container .språk-item {
@@ -674,15 +726,15 @@ section#contact {
   /*Styles for each contactperson*/
 }
 
-section#contact #rtlperson {
+section#contact .rtlperson {
   direction: rtl;
 }
 
-section#contact #rtlperson h3 {
+section#contact .rtlperson h3 {
   text-align: right;
 }
 
-section#contact #rtlperson p {
+section#contact .rtlperson p {
   direction: ltr;
 }
 
@@ -720,6 +772,11 @@ section#contact .cperson div span h5 {
 section#contact .cperson div span a {
   text-decoration: none;
   color: #555555;
+}
+
+section#contact .cperson div span .mail:hover {
+  text-decoration: underline;
+  color: blue;
 }
 
 section#contact .cperson div span p {
@@ -790,35 +847,12 @@ footer .sm {
   margin: 2rem 0.5rem 1.5rem 0.5rem;
 }
 
-footer .pil {
-  width: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  background: #f9ebf6;
-  margin: auto;
+footer .pil svg {
+  width: 2.5rem;
 }
 
-footer .pil .pil:hover {
-  -webkit-filter: drop-shadow(0 0 0.2rem blue);
-          filter: drop-shadow(0 0 0.2rem blue);
-}
-
-footer #pil1 {
-  margin-top: 0.5rem;
-  margin-bottom: -1rem;
-}
-
-footer #pil2 {
-  margin-top: 0.1rem;
+footer .pil1 {
+  display: none;
 }
 
 footer .footer3 {
@@ -894,7 +928,7 @@ footer .icon {
 }
 
 /*AnKoR aNkOr*/
-/*--MEDIA QUERY FOR DESKTOP--*/
+/*---------------------------------------------MEDIA QUERY FOR DESKTOP---------------------------------*/
 @media screen and (min-width: 600px) {
   button,
   input {
@@ -938,7 +972,7 @@ footer .icon {
         grid-template-columns: 60% 40%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor contact' 'gor gor' 'iframe ord' 'card .';
+        grid-template-areas: 'hero hero' 'om poang-plan' 'varfor poang-plan' 'gor contact' 'iframe ord' 'card .';
     max-width: 95rem;
     margin: auto;
   }
@@ -1005,6 +1039,15 @@ footer .icon {
     width: 25rem;
     line-height: 3.5rem;
   }
+  section#hero span p img {
+    display: inline-block;
+    width: 12rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    margin-top: 0;
+    margin-left: -3.5rem;
+  }
   section#hero span .btns {
     text-align: left;
     margin-top: 3rem;
@@ -1059,6 +1102,9 @@ footer .icon {
     display: block;
   }
   section#gor {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: gor;
     text-align: center;
     background: white;
     text-align: left;
@@ -1066,15 +1112,16 @@ footer .icon {
     margin: 0;
     padding: 0;
     margin-left: 5rem;
-    margin-top: -40rem;
+    margin-top: -9rem;
+    z-index: 10;
   }
   section#gor #vr-img {
     display: block;
   }
   section#gor h3 {
-    margin-top: 15rem;
+    margin-top: 7rem;
     font-size: 1.8rem;
-    margin-bottom: -3rem;
+    margin-bottom: -5rem;
   }
   section#gor .span-cont {
     display: -webkit-box;
@@ -1086,7 +1133,7 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    width: 60%;
+    width: 100%;
   }
   section#gor .span-cont p::after {
     display: none;
@@ -1109,6 +1156,7 @@ footer .icon {
   }
   section#gor .språk-grid-container {
     padding-left: 0;
+    width: 100%;
   }
   section#gor .språk-grid-container .språk-item {
     background-color: #f9ebf6;
@@ -1166,7 +1214,8 @@ footer .icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-top: -30rem;
+    margin-top: -10rem;
+    margin-bottom: -3rem;
   }
   section#varfor #blender {
     display: block;
@@ -1267,6 +1316,10 @@ footer .icon {
         -ms-flex-align: start !important;
             align-items: start !important;
   }
+  footer a:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
   footer .ic {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1294,10 +1347,17 @@ footer .icon {
     padding: 0;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
   }
-  footer .arrow #pil1 {
-    padding-top: 0;
-    margin-top: 0;
+  footer .arrow .pil {
+    display: inline-block;
+    margin-top: 0 !important;
+  }
+  footer .arrow .pil1:hover {
+    margin-top: -2rem;
   }
   footer #alle {
     width: 15rem;
@@ -1499,7 +1559,8 @@ body {
 }
 
 #allinfo #card {
-  border: 0.3rem solid #f9ebf6;
+  background: #f9ebf6;
+  border: 0.3rem solid #c191b7;
   border-radius: 1.5rem;
   padding: 3rem 2rem;
   text-align: center;

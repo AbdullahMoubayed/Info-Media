@@ -12,6 +12,7 @@ const app = Vue.createApp({
   data() {
     return {
       isOpen: false,
+      clicked: false,
       språk: [
         { url: 'assets/img/språk/html.png', title: 'HTML' },
         { url: 'assets/img/språk/css.png', title: 'CSS' },
@@ -19,7 +20,7 @@ const app = Vue.createApp({
         { url: 'assets/img/språk/sass.png', title: 'SCSS' },
         { url: 'assets/img/språk/php.png', title: 'PHP' },
         { url: 'assets/img/språk/c.png', title: 'C#' },
-        { url: 'assets/img/språk/3d.png', title: '3D' },
+        { url: 'assets/img/språk/3d.png', title: 'Blender' },
         { url: 'assets/img/språk/xd.png', title: 'XD' },
         { url: 'assets/img/språk/unity.png', title: 'Unity' },
         { url: 'assets/img/språk/vr.png', title: 'VR' },
@@ -30,6 +31,9 @@ const app = Vue.createApp({
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
+    },
+    closeMenu() {
+      this.isOpen = false;
     }
   },
   computed: {

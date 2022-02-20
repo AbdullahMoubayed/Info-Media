@@ -21,11 +21,11 @@
                 <div class="menu-btn_burger"></div>
             </i>
             <!-- The menu itself  -->
-            <ul v-show='isOpen' :class='{ activ: isOpen }'>
-                <span>
-                    <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
-                        <div class="menu-btn_burger"></div>
-                        <div class="menu-btn_burger"></div>
+            <ul v-show='isOpen' :class='{ activ: isOpen }' :class='{ unactiv: !isOpen }' @click='closeMenu'>
+                <span @click='closeMenu'>
+                    <i class="menu-btn flex x-container" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger x"></div>
+                        <div class="menu-btn_burger x"></div>
                     </i>
                     <li><a href="#om">Om Info-media</a></li>
                     <li><a href="#gor">Vad vi gör</a></li>
@@ -51,7 +51,11 @@
         <section id="hero" class="flex j-center purple-1">
             <span>
                 <h1 class="t_center">Info-Media</h1>
-                <p><i>Gör dina digitala idéer verkliga</i></p>
+                <p><i>Gör dina digitala idéer verkliga
+                        <span><img class="usb" src="assets/icon/usb.jpg" alt=""><img class="ankusb"
+                                src="assets/img/ankan.png" alt="">
+                        </span>
+                    </i></p>
                 <div class="btns">
                     <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet
                             hus</button></a>
@@ -73,7 +77,7 @@
                     programmering, webbutveckling, 3D-modellering… så passar denna inriktning dig väldigt bra!</p>
 
                 <div class="om-btns m_auto t_center">
-                    <a href="html/las-mer.html#om1"><input class="btn purple_t" type="button" value="Läs mer"></a>
+                    <a href="html/las-mer.html#bodyy"><input class="btn purple_t" type="button" value="Läs mer"></a>
                     <a href="html/las-mer.html#elevforendag"><input class="btn purple_t" type="button"
                             value="Elev för en dag"></a>
                 </div>
@@ -91,16 +95,13 @@
                     <p class='after'>Här får du möjlighet till att utveckla och framställa dina digitala idéer.</p>
                     <p class='after'>Alltifrån 3D-modellering av spel till programmering av hemsidor.</p>
                     <p>Dina kunskaper utmanas ständigt som stärker din kunskap kring området.</p>
-                    <a href="html/las-mer.html#gor1">
-                        <input class="btn purple_t" type="submit" value="Läs mer">
-                        <button>Läs mer</button>
-                    </a>
+                    <a href="html/las-mer.html#gor2"><input class="btn purple_t" type="button" value="Läs mer"></a>
                 </span>
                 <img id='vr-img' src="assets/img/vvrr.png" alt="VR">
             </span>
 
             <!-- The grid of the languages that we are going to learn. From JS -->
-            <h3>Följande språk kommer du stöta på:</h3>
+            <h3>Följande arbetsområden kommer du stöta på:</h3>
             <div class="språk-grid-container flex">
                 <div class="språk-item" v-for="item in språk">
                     <img :src="item.url" alt="språk">
@@ -118,7 +119,7 @@
                 <h1 class='after'>Varför <br> Info-Media?</h1>
                 <p>I denna inriktning får du många framtida möjligheter till jobb inom datorteknik, eftersom jobb inom
                     datorteknik är väldigt efterfrågat i samhället.</p>
-                <div id="v-div" class="m_auto t_center"><a href="html/las-mer.html#om1"><input class="btn purple_t"
+                <div id="v-div" class="m_auto t_center"><a href="html/las-mer.html#varfor2"><input class="btn purple_t"
                             type="button" value="Läs mer"></a></div>
             </span>
             <div class='v-wrapper'><img id="v-img-1" src="assets/img/blalba.png" alt="Blender example"></div>
@@ -207,52 +208,52 @@
         </section>
 
         <!-- Ankor är bäst -->
-        <!--"Konatakt" section-->
+        <!--"Kontakt" section-->
         <section id="contact">
-          <div class="cperson">
-              <h3>Lärare för Info-Mediakurserna</h3>
-              <div>
-                  <img src="tobbebild" alt="Bild på Tobias">
-                  <span>
-                      <h5>Tobias Solem</h5>
-                      <p>0582-XXXXXXX</p>
-                      <a href="mailto:tobais.solem@alleskolan.eu">Kontakta via mail</a>
-                  </span>
-              </div>
-          </div>
             <div class="cperson">
+                <h3>Lärare för Info-Mediakurserna</h3>
+                <div class="tobias">
+                    <div class="tobbe"></div>
+                    <span>
+                        <h5>Tobias Solem</h5>
+                        <p>0582-XXXXXXX</p>
+                        <a href="mailto:tobais.solem@alleskolan.eu" class="mail">Kontakta via mail</a>
+                    </span>
+                </div>
+            </div>
+            <div class="cperson rtlperson">
                 <h3>Rektor för teknikprogrammet</h3>
                 <div>
                     <img src="assets/img/katrin.jpg" alt="Bild på Karin">
                     <span>
                         <h5>Katrin Pedersen</h5>
                         <p>0582-353 83</p>
-                        <a href="mailto:katrin.pedersen@alleskolan.eu">Kontakta via mail</a>
+                        <a href="mailto:katrin.pedersen@alleskolan.eu" class="mail">Kontakta via mail</a>
                     </span>
                 </div>
             </div>
 
-            <div id="rtlperson" class="cperson">
+            <div class="cperson">
                 <h3>Programledare</h3>
                 <div>
                     <img src="assets/img/Anette-Bengtsson-1.jpg" alt="Bild på Anette">
                     <span>
                         <h5>Anette Bengtsson</h5>
                         <p>0582-353 11</p>
-                        <a href="mailto:anette.bengtsson@alleskolan.eu">Kontakta via mail</a>
+                        <a href="mailto:anette.bengtsson@alleskolan.eu" class="mail">Kontakta via mail</a>
                     </span>
 
                 </div>
             </div>
 
-            <div class="cperson">
+            <div class="cperson rtlperson">
                 <h3>Studie- och yrkesvägledare</h3>
                 <div>
                     <img src="assets/img/Anna-Winck.jpg" alt="Bild på Karin">
                     <span>
                         <h5>Anna Winck</h5>
                         <p>0582-355 67</p>
-                        <a href="mailto:anna.winck@alleskolan.eu">Kontakta via mail</a>
+                        <a href="mailto:anna.winck@alleskolan.eu" class="mail">Kontakta via mail</a>
                     </span>
                 </div>
             </div>
@@ -302,11 +303,11 @@
         <div class="card">
             <p id="datum">Datum för kommande öppet hus:</p>
             <br>
-            <img src="/assets/icon/calendar.svg" alt="KALÄNDEJ">
+            <img src="assets/icon/calendar.svg" alt="KALÄNDEJ">
             <p>25/01-2022</p>
             <p>(25:e Januari 2022)</p>
             <div class="tid">
-                <img src="/assets/icon/clock.svg" alt="KLÖCKA">
+                <img src="assets/icon/clock.svg" alt="KLÖCKA">
                 <p>17:30 - 20:00</p>
             </div>
 
@@ -317,13 +318,39 @@
     <footer>
         <span class='footer-wrapper'>
             <a href="#start" class="arrow">
-                <img class="pil" id="pil2" src="assets/icon/arrow.png" alt="Hem"></img>
+                <div class="pil pil1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135.466" height="56.098"
+                        viewBox="0 0 135.466 56.098">
+                        <g id="Group_1" data-name="Group 1" transform="translate(-433.787 -536.996)">
+                            <line id="Line_1" data-name="Line 1" x2="64.228" y2="49.089"
+                                transform="translate(501.52 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                            <line id="Line_2" data-name="Line 2" x1="64.228" y2="49.089"
+                                transform="translate(437.291 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="pil pil2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135.466" height="56.098"
+                        viewBox="0 0 135.466 56.098">
+                        <g id="Group_1" data-name="Group 1" transform="translate(-433.787 -536.996)">
+                            <line id="Line_1" data-name="Line 1" x2="64.228" y2="49.089"
+                                transform="translate(501.52 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                            <line id="Line_2" data-name="Line 2" x1="64.228" y2="49.089"
+                                transform="translate(437.291 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                        </g>
+                    </svg>
+                </div>
             </a>
 
             <div id="con">
                 <h3>Kontakt</h3>
                 <p class="ic"><img class="icon" src="assets/icon/phone-outline.svg"> 0582-35 500</p>
-                <p class="ic"><img class="icon" src="assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</p>
+                <a href='mailto:alleskolan@alleskolan.eu' class="ic"><img class="icon"
+                        src="assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</a>
             </div>
             <div id="besok">
                 <h3>Besöksadress</h3>
