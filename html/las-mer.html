@@ -13,7 +13,7 @@
 
 <body class='app'>
     <header id="start" class="purple-1">
-        <nav id="starten" class="flex i_center">
+        <nav class="flex i_center">
             <!-- Two icons for closing and opening the menu -->
             <a href="../index.html"><img class="logo" src="../assets/img/infomedia.svg" alt="Info-Media"></a>
             <i v-show='!isOpen' class="menu-btn flex" :class='{ open: !isOpen }' @click='toggleMenu'>
@@ -21,18 +21,18 @@
                 <div class="menu-btn_burger"></div>
             </i>
             <!-- The menu itself  -->
-            <ul v-show='isOpen' :class='{ activ: isOpen }'>
-                <span>
-                    <i class="menu-btn flex" :class='{ open: isOpen }' @click='toggleMenu'>
-                        <div class="menu-btn_burger"></div>
-                        <div class="menu-btn_burger"></div>
+            <ul v-show='isOpen' :class='{ activ: isOpen }' :class='{ unactiv: !isOpen }' @click='closeMenu'>
+                <span @click='closeMenu'>
+                    <i class="menu-btn flex x-container" :class='{ open: isOpen }' @click='toggleMenu'>
+                        <div class="menu-btn_burger x"></div>
+                        <div class="menu-btn_burger x"></div>
                     </i>
                     <li><a href="#om">Om Info-media</a></li>
                     <li><a href="#gor">Vad vi gör</a></li>
                     <li><a href="#varfor">Varför Info-Media</a></li>
                     <li><a href="#struktur">Kursstruktur</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
-
+        
                     <div class="i flex">
                         <!--Clickable icons-->
                         <a href="#"><img src='../assets/icon/facebook-outline.svg'></a>
@@ -54,7 +54,7 @@
             <div class="btns">
                 <a href="html/las-mer.html#oppethus"><button class="btn white_t t_center" type="button">Öppet
                         hus</button></a>
-                <a href="#studieplan"><button class="btn purple_t t_center" type="button">Studieplan</button></a>
+                <a href="#bodyy"><button class="btn purple_t t_center" type="button">Studieplan</button></a>
             </div>
         </span>
         <span class="imgg"><img class="imgg" src="../assets/img/aboute.png" alt="Computah"></span>
@@ -62,8 +62,8 @@
 
 
     <div id="bodyy">
-        <section class='poang-plan poängplanen'>
-            <h3>Poängplan</h3>
+        <section id="studieplan" class='poang-plan'>
+            <h3>Studieplan</h3>
             <ul>
                 <li>Inriktningar</li>
                 <div>
@@ -83,14 +83,12 @@
                 <span>Webbutveckling 1</span>
                 <span class="ak2p">100p</span>
             </div>
-
             <ul>
                 <li>Programfördjupningar</li>
                 <div>
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-
             </ul>
             <div class='div'>
                 <span>Digitalt skapande 1 *</span>
@@ -100,14 +98,12 @@
                 <span>Webbserver-<br>programmering 1 *</span>
                 <span class="ak2p">100p</span>
             </div>
-
             <ul>
-                <li>Tilläggskurser för Teknikerspåret</li>
+                <li>Tilläggskurser för <br>Teknikerspåret</li>
                 <div>
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-
             </ul>
             <div class='div'>
                 <span>Gränssnittsdesign</span>
@@ -117,14 +113,12 @@
                 <span>Teknik - specialisering 1</span>
                 <span>100p</span>
             </div>
-
             <ul>
                 <li>Tilläggskurser för<br> Ingenjörspåret</li>
                 <div>
                     <li class="ak2">Åk 2</li>
                     <li>Åk 3</li>
                 </div>
-
             </ul>
             <div class='div'>
                 <span>Fysik 2</span>
@@ -132,7 +126,7 @@
             </div>
             <div class='div'>
                 <span>Matematik 4 </span>
-                <span>100p</span>
+                <span class="ak2p">100p</span>
             </div>
             <div class="NIU">
                 <p><i>*Ingår ej i ordinarie studieplan för NIU eller RIG-elever</i></p>
@@ -180,7 +174,7 @@
                 <p id="struktur2">Info-Media syftar på dig som är nyfiken på vad den moderna datateknikvärlden har att
                     erbjuda och
                     bombar dig med grundkompetensen du behöver för att utbilda sig till den utbildning du vill som är
-                    datarelaterat. ADDD</p>
+                    datarelaterat. ADDD yes Tobbe ändra detta!</p>
 
             </div>
             <div id="struktur1">
@@ -233,11 +227,11 @@
     <section id="contact">
         <div class="cperson">
             <h3>Lärare för Info-Mediakurserna</h3>
-            <div>
-                <img src="../assets/img/TOBBE.png" alt="Bild på Tobias">
+            <div class="tobias">
+                <div class="tobbe"></div>
                 <span>
                     <h5>Tobias Solem</h5>
-                    <p>0582-XXXXXXX</p>
+                    <p>0723-250041</p>
                     <a href="mailto:tobais.solem@alleskolan.eu" class="mail">Kontakta via mail</a>
                 </span>
             </div>
@@ -318,14 +312,40 @@
 
     <footer>
         <span class='footer-wrapper'>
-            <a href="#starten" class="arrow">
-                <img class="pil" id="pil2" src="../assets/icon/arrow.png" alt="Hem"></img>
+            <a href="#start" class="arrow">
+                <div class="pil pil1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135.466" height="56.098"
+                        viewBox="0 0 135.466 56.098">
+                        <g id="Group_1" data-name="Group 1" transform="translate(-433.787 -536.996)">
+                            <line id="Line_1" data-name="Line 1" x2="64.228" y2="49.089"
+                                transform="translate(501.52 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                            <line id="Line_2" data-name="Line 2" x1="64.228" y2="49.089"
+                                transform="translate(437.291 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="pil pil2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135.466" height="56.098"
+                        viewBox="0 0 135.466 56.098">
+                        <g id="Group_1" data-name="Group 1" transform="translate(-433.787 -536.996)">
+                            <line id="Line_1" data-name="Line 1" x2="64.228" y2="49.089"
+                                transform="translate(501.52 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                            <line id="Line_2" data-name="Line 2" x1="64.228" y2="49.089"
+                                transform="translate(437.291 540.5)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-width="5" />
+                        </g>
+                    </svg>
+                </div>
             </a>
 
             <div id="con">
                 <h3>Kontakt</h3>
                 <p class="ic"><img class="icon" src="../assets/icon/phone-outline.svg"> 0582-35 500</p>
-                <p class="ic"><img class="icon" src="../assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</p>
+                <a href='mailto:alleskolan@alleskolan.eu' class="ic"><img class="icon"
+                        src="../assets/icon/email-outline.svg"> alleskolan@alleskolan.eu</a>
             </div>
             <div id="besok">
                 <h3>Besöksadress</h3>

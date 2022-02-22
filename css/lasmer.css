@@ -1539,6 +1539,7 @@ body {
           justify-content: space-between;
   margin: 1rem;
   text-align: left;
+  margin-top: 2.5rem !important;
 }
 
 .poang-plan ul div {
@@ -1613,25 +1614,29 @@ body {
 }
 
 #allinfo #card {
-  background: #f9ebf6;
   border: 0.3rem solid #c191b7;
+  background: #f9ebf6;
   border-radius: 1.5rem;
   padding: 3rem 2rem;
   text-align: center;
 }
 
+#allinfo #card .tid {
+  padding-top: 1.5rem;
+}
+
 #allinfo #card #datum {
-  font-size: 1.2rem;
-  font-weight: 550;
+  font-size: 1.5rem;
 }
 
 #allinfo #card p {
+  line-height: 1.8rem;
   font-size: 1.2rem;
-  font-weight: 600;
 }
 
 /*STYLES FOR THE FOOTER*/
 footer {
+  grid-area: footer;
   background: #f9ebf6;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1639,19 +1644,48 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  grid-area: footer;
-  /*nummer osv m. ikoner*/
+  overflow-x: hidden;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .ic {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .con {
+  grid-area: kontakt;
+}
+
+footer .besok {
+  grid-area: besok;
+}
+
+footer .arrow {
+  grid-area: arrow;
 }
 
 footer #alle {
-  width: 45%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: alle;
+  width: 13rem;
   margin: 1.0625rem;
 }
 
 footer h3 {
   font-size: 1.5rem;
-  font-weight: 300;
-  margin: 2rem 0 0.5rem 0;
+  font-weight: 400;
+  margin: 2rem 0 0.4rem 0;
 }
 
 footer .sm {
@@ -1659,43 +1693,53 @@ footer .sm {
   margin: 2rem 0.5rem 1.5rem 0.5rem;
 }
 
-footer .pil {
-  width: 2rem;
+footer .pil svg {
+  width: 2.5rem;
+}
+
+footer .pil1 {
+  display: none;
+}
+
+footer .footer3 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+      grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
+}
+
+footer .ankann {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  background: #f9ebf6;
-  margin: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ankan;
+  margin-top: 1rem;
 }
 
-footer #pil1 {
-  margin-top: 0.5rem;
-  margin-bottom: -1rem;
+footer .copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+  margin-top: -1rem;
 }
 
-footer #pil2 {
-  margin-top: 0.1rem;
-}
-
-footer span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1rem;
+footer .author {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: author;
 }
 
 footer #best {
@@ -1705,6 +1749,10 @@ footer #best {
 footer p {
   padding: 0.5rem;
   margin-top: 0;
+}
+
+footer p a {
+  color: inherit;
 }
 
 footer .ic {
@@ -1857,12 +1905,14 @@ footer .icon {
   }
   /*STYLES FOR THE FOOTER*/
   footer {
+    max-width: 95rem;
     margin: 0;
     margin-top: 10rem;
     padding: 0;
     border-radius: 0;
     text-align: left;
     background: #fff;
+    position: relative;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 65% 35%;
@@ -1873,6 +1923,10 @@ footer .icon {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: start !important;
+  }
+  footer a:hover {
+    text-decoration: underline;
+    color: inherit;
   }
   footer .ic {
     -webkit-box-pack: start;
@@ -1901,10 +1955,32 @@ footer .icon {
     padding: 0;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  footer .arrow #pil1 {
-    padding-top: 0;
-    margin-top: 0;
+  footer .arrow .pil {
+    display: inline-block;
+  }
+  footer .arrow .pil1 {
+    position: absolute;
+    top: 2.5rem;
+    -webkit-transition: ease-in-out 150ms;
+    transition: ease-in-out 150ms;
+  }
+  footer .arrow .pil1:hover {
+    top: 2rem;
+  }
+  footer .arrow .pil2 {
+    margin-top: 0.3rem;
   }
   footer #alle {
     width: 15rem;
@@ -1916,6 +1992,7 @@ footer .icon {
     margin-left: auto;
   }
   footer .copyright {
+    margin: 0.5rem auto !important;
     z-index: 100;
     padding: 0;
     font-size: 0.9rem;
@@ -1937,6 +2014,7 @@ footer .icon {
     -ms-grid-column: 1;
     grid-area: author;
     margin-right: 0;
+    text-align: center;
   }
   footer #con {
     margin-top: 0;

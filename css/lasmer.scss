@@ -43,6 +43,8 @@ body{
     justify-content: space-between;
     margin: 1rem;
     text-align: left;
+    margin-top: 2.5rem !important;
+
     div{
       display: flex;
     }
@@ -103,69 +105,110 @@ body{
   }
 /*Öppet Hus styles, the card thing*/
   #card {
-    background: $purple-l;
-    border: 0.3rem solid #c191b7;
-    border-radius: 1.5rem;
-    padding: 3rem 2rem;
-    text-align: center;
+  border: 0.3rem solid #c191b7;
+  background: $purple-l;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
 
-    #datum {
-      font-size: 1.2rem;
-      font-weight: 550;
-    }
-    p {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
+  .tid {
+    padding-top: 1.5rem;
   }
+
+  #datum {
+    font-size: 1.5rem;
+  }
+  p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+}
 }
 /*STYLES FOR THE FOOTER*/
 footer {
+  grid-area: footer;
   background: $purple-l;
   align-items: center;
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  grid-area: footer;
+  overflow-x: hidden;
+
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ic {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .con {
+    grid-area: kontakt;
+  }
+  .besok {
+    grid-area: besok;
+  }
+
+  .arrow {
+    grid-area: arrow;
+  }
 
   #alle {
-    width: 45%;
+    grid-area: alle;
+    width: 13rem;
     margin: 1.0625rem;
   }
   h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin: 2rem 0 0.5rem 0;
+    font-weight: 400;
+    margin: 2rem 0 0.4rem 0;
   }
-
-  /*nummer osv m. ikoner*/
 
   .sm {
     width: 2rem;
     margin: 2rem 0.5rem 1.5rem 0.5rem;
   }
   .pil {
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(180deg);
-    background: $purple-l;
-    margin: auto;
+    svg{
+      width: 2.5rem;
+    }
   }
-  #pil1 {
-    margin-top: 0.5rem;
-    margin-bottom: -1rem;
-  }
-  #pil2 {
-    margin-top: 0.1rem;
+  .pil1{
+    display: none;
   }
 
-  span {
+  .footer3 {
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'alle'
+      'copyright'
+      'ankan'
+      'author';
+  }
+
+  .ankann {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+    grid-area: ankan;
+    margin-top: 1rem;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    margin-top: -1rem;
+  }
+
+  .author {
+    grid-area: author;
   }
 
   #best {
@@ -174,6 +217,10 @@ footer {
   p {
     padding: 0.5rem;
     margin-top: 0;
+
+    a {
+      color: inherit;
+    }
   }
 
   .ic {
@@ -307,12 +354,19 @@ footer {
   }
 /*STYLES FOR THE FOOTER*/
   footer {
-    margin: 0;
+    max-width: 95rem;
+    margin: auto;
     margin-top: 10rem;
     padding: 0;
     border-radius: 0;
     text-align: left;
     background: #fff;
+    position: relative;
+
+    a:hover{
+    text-decoration: underline;
+    color: inherit;
+  }
 
     .ic {
       justify-content: flex-start;
@@ -343,10 +397,28 @@ footer {
       padding: 0;
       padding-bottom: 2rem;
       padding-top: 2rem;
+      width: fit-content;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      
 
-      #pil1 {
-        padding-top: 0;
-        margin-top: 0;
+      .pil{
+        display: inline-block;
+      }
+
+      .pil1{
+        position: absolute;
+        top: 2.5rem;
+        transition: ease-in-out 150ms;
+
+        &:hover{
+          top: 2rem;
+        }
+      }
+
+      .pil2{
+        margin-top: 0.3rem;
       }
     }
 
@@ -358,6 +430,7 @@ footer {
       margin-left: auto;
     }
     .copyright {
+      margin: 0.5rem auto !important;
       z-index: 100;
       padding: 0;
       font-size: 0.9rem;
@@ -373,6 +446,7 @@ footer {
     .author {
       grid-area: author;
       margin-right: 0;
+      text-align: center;
     }
 
     #con {
@@ -384,7 +458,7 @@ footer {
       grid-area: besok;
     }
 
-    .footer-wrapper{
+    .footer-wrapper {
       grid-area: footer-wrapper;
       display: grid;
       grid-template-columns: 50% 50%;
@@ -417,8 +491,7 @@ footer {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: auto;
-    grid-template-areas:
-      'footer-wrapper footer3';
+    grid-template-areas: 'footer-wrapper footer3';
     align-items: start !important;
   }
 }
