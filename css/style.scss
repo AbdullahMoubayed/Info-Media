@@ -791,7 +791,7 @@ footer {
 /*AnKoR aNkOr*/
 
 /*---------------------------------------------MEDIA QUERY FOR DESKTOP---------------------------------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   
   button,
   input {
@@ -1331,4 +1331,9 @@ footer {
     grid-template-areas: 'footer-wrapper footer3';
     align-items: start !important;
   }
+}
+@media screen and (min-width: 1200px){
+ *{
+   display: none;
+ }
 }

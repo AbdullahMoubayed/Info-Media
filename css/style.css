@@ -947,7 +947,7 @@ footer .icon {
 
 /*AnKoR aNkOr*/
 /*---------------------------------------------MEDIA QUERY FOR DESKTOP---------------------------------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   button,
   input {
     cursor: pointer;
@@ -1490,6 +1490,12 @@ footer .icon {
         grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
     margin-left: auto;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
