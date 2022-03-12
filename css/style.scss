@@ -602,7 +602,7 @@ section#ord {
   }
 }
 /*STYLES FOR CONTACTPEOPLE*/
-section#contact {
+#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
@@ -1334,6 +1334,6 @@ footer {
 }
 @media screen and (min-width: 1200px){
  *{
-   display: none;
+  // display: none;
  }
 }
