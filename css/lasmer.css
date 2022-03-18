@@ -718,7 +718,7 @@ section#ord div div p {
 }
 
 /*STYLES FOR CONTACTPEOPLE*/
-section#contact {
+#contact {
   grid-area: contact;
   padding: 1rem;
   margin: 3rem 1.5rem;
@@ -726,23 +726,23 @@ section#contact {
   /*Styles for each contactperson*/
 }
 
-section#contact .rtlperson {
+#contact .rtlperson {
   direction: rtl;
 }
 
-section#contact .rtlperson h3 {
+#contact .rtlperson h3 {
   text-align: right;
 }
 
-section#contact .rtlperson p {
+#contact .rtlperson p {
   direction: ltr;
 }
 
-section#contact .cperson h3 {
+#contact .cperson h3 {
   text-align: left;
 }
 
-section#contact .cperson div {
+#contact .cperson div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,36 +759,36 @@ section#contact .cperson div {
   margin: 1.5rem 0;
 }
 
-section#contact .cperson div span {
+#contact .cperson div span {
   text-align: left;
   margin-left: 1.5rem;
   margin-right: auto;
 }
 
-section#contact .cperson div span h5 {
+#contact .cperson div span h5 {
   font-size: 1rem;
 }
 
-section#contact .cperson div span a {
+#contact .cperson div span a {
   text-decoration: none;
   color: #555555;
 }
 
-section#contact .cperson div span .mail:hover {
+#contact .cperson div span .mail:hover {
   text-decoration: underline;
   color: blue;
 }
 
-section#contact .cperson div span p {
+#contact .cperson div span p {
   color: #555555;
 }
 
-section#contact .cperson div img {
+#contact .cperson div img {
   width: 3rem;
   border-radius: 50%;
 }
 
-section#contact .cperson div .tobbe {
+#contact .cperson div .tobbe {
   background-color: #fff;
   width: 3rem;
   height: 3rem;
@@ -799,7 +799,7 @@ section#contact .cperson div .tobbe {
   background-size: cover;
 }
 
-section#contact .cperson div .tobbe.tobbe:hover {
+#contact .cperson div .tobbe.tobbe:hover {
   background-image: url("../assets/img/ankan.png");
   background-repeat: no-repeat;
   background-size: 80%;
@@ -1490,12 +1490,6 @@ footer .icon {
         grid-template-areas: 'alle' 'copyright' 'ankan' 'author';
     margin-left: auto;
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  * {
-    display: none;
   }
 }
 
